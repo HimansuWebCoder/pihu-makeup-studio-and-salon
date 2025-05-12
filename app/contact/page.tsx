@@ -6,12 +6,8 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
-import { Calendar } from "@/components/ui/calendar"
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { CalendarIcon, Clock, MapPin, Phone, Mail } from "lucide-react"
-import { cn } from "@/lib/utils"
-import { format } from "date-fns"
+import { Clock, MapPin, Phone, Mail } from "lucide-react"
 
 export default function ContactPage() {
   const [date, setDate] = useState<Date>()
@@ -27,32 +23,64 @@ export default function ContactPage() {
         <Card>
           <CardContent className="p-6">
             <h2 className="text-2xl font-semibold mb-6">Book an Appointment</h2>
-            <form className="space-y-4">
+            <form
+              className="space-y-4"
+              onSubmit={(e) => {
+                e.preventDefault()
+
+                // Get form data
+                const formData = new FormData(e.currentTarget)
+                const firstName = formData.get("first-name")
+                const lastName = formData.get("last-name")
+                const email = formData.get("email")
+                const phone = formData.get("phone")
+                const service = formData.get("service")
+                const date = formData.get("date")
+                const time = formData.get("time")
+                const message = formData.get("message")
+
+                // Format WhatsApp message
+                const whatsappMessage = `
+*New Appointment Request*
+Name: ${firstName} ${lastName}
+Email: ${email}
+Phone: ${phone}
+Service: ${service}
+Date: ${date}
+Time: ${time}
+Special Requests: ${message || "None"}
+              `.trim()
+
+                // Open WhatsApp with pre-filled message
+                // Replace 919876543210 with your actual WhatsApp number
+                window.open(`https://wa.me/9861194145?text=${encodeURIComponent(whatsappMessage)}`, "_blank")
+              }}
+            >
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="first-name">First Name</Label>
-                  <Input id="first-name" placeholder="Enter your first name" />
+                  <Input id="first-name" name="first-name" placeholder="Enter your first name" required />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="last-name">Last Name</Label>
-                  <Input id="last-name" placeholder="Enter your last name" />
+                  <Input id="last-name" name="last-name" placeholder="Enter your last name" required />
                 </div>
               </div>
 
               <div className="space-y-2">
                 <Label htmlFor="email">Email</Label>
-                <Input id="email" type="email" placeholder="Enter your email" />
+                <Input id="email" name="email" type="email" placeholder="Enter your email" />
               </div>
 
               <div className="space-y-2">
                 <Label htmlFor="phone">Phone</Label>
-                <Input id="phone" placeholder="Enter your phone number" />
+                <Input id="phone" name="phone" placeholder="Enter your phone number" required />
               </div>
 
               <div className="space-y-2">
                 <Label htmlFor="service">Service</Label>
-                <Select>
-                  <SelectTrigger>
+                <Select name="service">
+                  <SelectTrigger id="service">
                     <SelectValue placeholder="Select a service" />
                   </SelectTrigger>
                   <SelectContent>
@@ -71,26 +99,18 @@ export default function ContactPage() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label>Date</Label>
-                  <Popover>
-                    <PopoverTrigger asChild>
-                      <Button
-                        variant="outline"
-                        className={cn("w-full justify-start text-left font-normal", !date && "text-muted-foreground")}
-                      >
-                        <CalendarIcon className="mr-2 h-4 w-4" />
-                        {date ? format(date, "PPP") : "Select date"}
-                      </Button>
-                    </PopoverTrigger>
-                    <PopoverContent className="w-auto p-0">
-                      <Calendar mode="single" selected={date} onSelect={setDate} initialFocus />
-                    </PopoverContent>
-                  </Popover>
+                  <input
+                    type="date"
+                    name="date"
+                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                    required
+                  />
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="time">Time</Label>
-                  <Select>
-                    <SelectTrigger>
+                  <Select name="time">
+                    <SelectTrigger id="time">
                       <SelectValue placeholder="Select time" />
                     </SelectTrigger>
                     <SelectContent>
@@ -110,7 +130,7 @@ export default function ContactPage() {
 
               <div className="space-y-2">
                 <Label htmlFor="message">Special Requests</Label>
-                <Textarea id="message" placeholder="Any special requests or notes" />
+                <Textarea id="message" name="message" placeholder="Any special requests or notes" />
               </div>
 
               <Button type="submit" className="w-full">
@@ -162,25 +182,58 @@ export default function ContactPage() {
 
           <div>
             <h2 className="text-2xl font-semibold mb-6">Send Us a Message</h2>
-            <form className="space-y-4">
+            <form
+              className="space-y-4"
+              onSubmit={(e) => {
+                e.preventDefault()
+
+                // Get form data
+                const formData = new FormData(e.currentTarget)
+                const name = formData.get("contact-name")
+                const email = formData.get("contact-email")
+                const subject = formData.get("contact-subject")
+                const message = formData.get("contact-message")
+
+                // Format WhatsApp message
+                const whatsappMessage = `
+*New Message from Website*
+Name: ${name}
+Email: ${email}
+Subject: ${subject}
+
+Message:
+${message}
+                `.trim()
+
+                // Open WhatsApp with pre-filled message
+                // Replace 919876543210 with your actual WhatsApp number
+                window.open(`https://wa.me/9861194145?text=${encodeURIComponent(whatsappMessage)}`, "_blank")
+              }}
+            >
               <div className="space-y-2">
                 <Label htmlFor="contact-name">Name</Label>
-                <Input id="contact-name" placeholder="Enter your name" />
+                <Input id="contact-name" name="contact-name" placeholder="Enter your name" required />
               </div>
 
               <div className="space-y-2">
                 <Label htmlFor="contact-email">Email</Label>
-                <Input id="contact-email" type="email" placeholder="Enter your email" />
+                <Input id="contact-email" name="contact-email" type="email" placeholder="Enter your email" required />
               </div>
 
               <div className="space-y-2">
                 <Label htmlFor="contact-subject">Subject</Label>
-                <Input id="contact-subject" placeholder="Enter subject" />
+                <Input id="contact-subject" name="contact-subject" placeholder="Enter subject" required />
               </div>
 
               <div className="space-y-2">
                 <Label htmlFor="contact-message">Message</Label>
-                <Textarea id="contact-message" placeholder="Enter your message" rows={4} />
+                <Textarea
+                  id="contact-message"
+                  name="contact-message"
+                  placeholder="Enter your message"
+                  rows={4}
+                  required
+                />
               </div>
 
               <Button type="submit">Send Message</Button>
