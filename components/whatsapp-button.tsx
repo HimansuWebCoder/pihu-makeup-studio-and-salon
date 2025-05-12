@@ -6,7 +6,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 
 export default function WhatsAppButton() {
   const handleWhatsAppClick = () => {
-    window.open("https://wa.me/919876543210", "_blank")
+    window.open("https://wa.me/919438222888", "_blank")
   }
 
   return (

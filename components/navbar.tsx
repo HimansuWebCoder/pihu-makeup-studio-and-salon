@@ -36,7 +36,7 @@ export default function Navbar() {
             <Link href="/" className="mr-6">
               <div className="relative h-10 w-40">
                 <Image
-                  src="/placeholder.svg?height=40&width=160"
+                  src="/logo2.svg?height=40&width=160"
                   alt="Pihu Makeup Studio and Salon"
                   fill
                   className="object-contain"

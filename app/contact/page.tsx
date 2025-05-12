@@ -52,8 +52,8 @@ Special Requests: ${message || "None"}
               `.trim()
 
                 // Open WhatsApp with pre-filled message
-                // Replace 919876543210 with your actual WhatsApp number
-                window.open(`https://wa.me/9861194145?text=${encodeURIComponent(whatsappMessage)}`, "_blank")
+                // Replace 9438222888 with your actual WhatsApp number
+                window.open(`https://wa.me/9438222888?text=${encodeURIComponent(whatsappMessage)}`, "_blank")
               }}
             >
               <div className="grid grid-cols-2 gap-4">
@@ -148,8 +148,8 @@ Special Requests: ${message || "None"}
                 <MapPin className="h-5 w-5 mr-3 mt-0.5 text-primary" />
                 <div>
                   <h3 className="font-medium">Address</h3>
-                  <p className="text-muted-foreground">123 Beauty Lane, Fashion District</p>
-                  <p className="text-muted-foreground">New Delhi, 110001</p>
+                  <p className="text-muted-foreground">Srusti Plaza, First floor infront of Infront of bharat petrol pump, Jatni - Sundarapada Rd, Kantilo</p>
+                  <p className="text-muted-foreground">Bhubaneswar, Odisha 751002</p>
                 </div>
               </div>
 
@@ -157,7 +157,7 @@ Special Requests: ${message || "None"}
                 <Phone className="h-5 w-5 mr-3 mt-0.5 text-primary" />
                 <div>
                   <h3 className="font-medium">Phone</h3>
-                  <p className="text-muted-foreground">+91 98765 43210</p>
+                  <p className="text-muted-foreground">+91-9438222888</p>
                 </div>
               </div>
 
@@ -206,8 +206,8 @@ ${message}
                 `.trim()
 
                 // Open WhatsApp with pre-filled message
-                // Replace 919876543210 with your actual WhatsApp number
-                window.open(`https://wa.me/9861194145?text=${encodeURIComponent(whatsappMessage)}`, "_blank")
+                // Replace 9438222888 with your actual WhatsApp number
+                window.open(`https://wa.me/9438222888?text=${encodeURIComponent(whatsappMessage)}`, "_blank")
               }}
             >
               <div className="space-y-2">
@@ -243,7 +243,7 @@ ${message}
       </div>
 
       <div className="rounded-lg overflow-hidden h-[400px] relative">
-        <iframe
+       {/* <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.2536942171014!2d77.20659841508096!3d28.557375982445474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce26f903969d7%3A0x8f66310952fafd4!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1651900296272!5m2!1sen!2sin"
           width="100%"
           height="100%"
@@ -251,7 +251,17 @@ ${message}
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
+        ></iframe>*/}
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202442.83992947603!2d85.63874307812502!3d20.25199098638389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a72b163e292f%3A0x294a6a61e664cf90!2sPihu%20Makeup%20Studio%20%26%20Salon!5e1!3m2!1sen!2sin!4v1747048529691!5m2!1sen!2sin" 
+        width="100%"
+        height="100%"
+        style={{ border: 0 }}  
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+          
+        </iframe>
       </div>
     </div>
   )

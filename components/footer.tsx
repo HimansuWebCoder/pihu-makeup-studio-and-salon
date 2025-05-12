@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
             <div className="relative h-12 w-48 mb-4">
               <Image
-                src="/placeholder.svg?height=48&width=192"
+                src="/logo2.svg?height=48&width=192"
                 alt="Pihu Makeup Studio and Salon"
                 fill
                 className="object-contain"
@@ -60,6 +60,11 @@ export default function Footer() {
               <li>
                 <Link href="/gallery" className="text-muted-foreground hover:text-primary">
                   Gallery
+                </Link>
+              </li>
+              <li>
+                <Link href="/testimonials" className="text-muted-foreground hover:text-primary">
+                  Testimonials
                 </Link>
               </li>
               <li>
@@ -114,9 +119,11 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <address className="not-italic text-muted-foreground">
-              <p className="mb-2">123 Beauty Lane, Fashion District</p>
-              <p className="mb-2">New Delhi, 110001</p>
-              <p className="mb-2">Phone: +91 98765 43210</p>
+              <p className="mb-2">Srusti Plaza, First floor infront of Infront of bharat petrol pump, Jatni - Sundarapada Rd, Kantilo
+
+              </p>
+              <p className="mb-2">Bhubaneswar, Odisha 751002</p>
+              <p className="mb-2">Phone: +91-9438222888</p>
               <p className="mb-4">Email: info@pihumakeupstudio.com</p>
             </address>
             <p className="text-muted-foreground">
