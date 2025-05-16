@@ -14,13 +14,16 @@ export default function GalleryPage() {
     { id: "hair", name: "Hair Styling" },
     { id: "skincare", name: "Skincare" },
     { id: "nails", name: "Nail Art" },
+    { id: "pedicure", name: "Pedicure" },
+    { id: "manicure", name: "Manicure" },
+    { id: "facial", name: "Facial Makeup" },
   ]
 
   // Generate placeholder images for each category
   const generateImages = (category: string, count: number) => {
     return Array.from({ length: count }, (_, i) => ({
       id: `${category}-${i}`,
-      src: `/placeholder.svg?height=600&width=800`,
+      src: `/images/${category}${i + 1}.jpeg`,
       alt: `${category} image ${i + 1}`,
       category,
     }))
@@ -32,6 +35,9 @@ export default function GalleryPage() {
     ...generateImages("hair", 6),
     ...generateImages("skincare", 6),
     ...generateImages("nails", 6),
+    ...generateImages("pedicure", 6),
+    ...generateImages("manicure", 4),
+    ...generateImages("facial", 4),
   ]
 
   return (
@@ -42,7 +48,7 @@ export default function GalleryPage() {
       </p>
 
       <Tabs defaultValue="all" className="w-full mb-8">
-        <TabsList className="grid w-full grid-cols-3 md:grid-cols-6 mb-8">
+        <TabsList className="grid w-full h-auto grid-cols-3 md:grid-cols-6 mb-8">
           <TabsTrigger value="all">All</TabsTrigger>
           {categories.map((category) => (
             <TabsTrigger key={category.id} value={category.id}>

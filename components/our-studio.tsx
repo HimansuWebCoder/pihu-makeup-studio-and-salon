@@ -55,19 +55,19 @@ export default function OurStudio() {
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
         <div className="text-center">
-          <div className="text-4xl font-bold text-primary mb-2">5+</div>
+          <div className="text-4xl font-bold text-primary mb-2">13+</div>
           <p className="text-muted-foreground">Years of Experience</p>
         </div>
         <div className="text-center">
-          <div className="text-4xl font-bold text-primary mb-2">10+</div>
+          <div className="text-4xl font-bold text-primary mb-2">2+</div>
           <p className="text-muted-foreground">Professional Artists</p>
         </div>
         <div className="text-center">
-          <div className="text-4xl font-bold text-primary mb-2">1000+</div>
+          <div className="text-4xl font-bold text-primary mb-2">500+</div>
           <p className="text-muted-foreground">Happy Clients</p>
         </div>
         <div className="text-center">
-          <div className="text-4xl font-bold text-primary mb-2">500+</div>
+          <div className="text-4xl font-bold text-primary mb-2">50+</div>
           <p className="text-muted-foreground">Bridal Makeovers</p>
         </div>
       </div>

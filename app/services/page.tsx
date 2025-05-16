@@ -13,7 +13,7 @@ export default function ServicesPage() {
       </p>
 
       <Tabs defaultValue="makeup" className="w-full mb-16">
-        <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-8">
+        <TabsList className="grid w-full h-auto grid-cols-2 md:grid-cols-4 mb-8">
           <TabsTrigger value="makeup">Makeup</TabsTrigger>
           <TabsTrigger value="hair">Hair</TabsTrigger>
           <TabsTrigger value="skincare">Skincare</TabsTrigger>

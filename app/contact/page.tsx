@@ -148,7 +148,7 @@ Special Requests: ${message || "None"}
                 <MapPin className="h-5 w-5 mr-3 mt-0.5 text-primary" />
                 <div>
                   <h3 className="font-medium">Address</h3>
-                  <p className="text-muted-foreground">Srusti Plaza, First floor infront of Infront of bharat petrol pump, Jatni - Sundarapada Rd, Kantilo</p>
+                  <p className="text-muted-foreground">Srusti Plaza, First Floor Infront of bharat petrol pump, Jatni - Sundarapada Rd, Kantilo</p>
                   <p className="text-muted-foreground">Bhubaneswar, Odisha 751002</p>
                 </div>
               </div>
@@ -252,16 +252,16 @@ ${message}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>*/}
-        <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202442.83992947603!2d85.63874307812502!3d20.25199098638389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a72b163e292f%3A0x294a6a61e664cf90!2sPihu%20Makeup%20Studio%20%26%20Salon!5e1!3m2!1sen!2sin!4v1747048529691!5m2!1sen!2sin" 
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202442.83992947603!2d85.63874307812502!3d20.25199098638389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a72b163e292f%3A0x294a6a61e664cf90!2sPihu%20Makeup%20Studio%20%26%20Salon!5e1!3m2!1sen!2sin!4v1747048529691!5m2!1sen!2sin"
         width="100%"
         height="100%"
-        style={{ border: 0 }}  
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-          
-        </iframe>
+        style={{ border: 0 }}
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      />
+
       </div>
     </div>
   )

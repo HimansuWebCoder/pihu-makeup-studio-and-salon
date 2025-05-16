@@ -4,11 +4,11 @@ import { Button } from "@/components/ui/button"
 
 export default function Gallery() {
   const images = [
-    "/placeholder.svg?height=400&width=600",
-    "/placeholder.svg?height=400&width=600",
-    "/placeholder.svg?height=400&width=600",
-    "/placeholder.svg?height=400&width=600",
-    "/placeholder.svg?height=400&width=600",
+    "/img.png",
+    "/img.png",
+    "/img.png",
+    "/img.png",
+    "/img.png",
     "/placeholder.svg?height=400&width=600",
   ]
 
