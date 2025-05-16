@@ -67,7 +67,7 @@ export default function AboutPage() {
           yourself to some well-deserved self-care, we're here to make you look and feel amazing.
         </p>
         <Link href="/services">
-          <Button size="lg" variant="secondary" className="mr-4">
+          <Button size="lg" variant="secondary" className="mb-2 mr-2">
             Explore Services
           </Button>
         </Link>
