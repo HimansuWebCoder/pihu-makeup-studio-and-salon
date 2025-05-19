@@ -20,7 +20,7 @@ export default function ContactPage() {
       </p>
 
       <div className="grid md:grid-cols-2 gap-12 mb-16">
-        <Card className="">
+        <Card>
           <CardContent className="p-6">
             <h2 className="text-2xl font-semibold mb-6">Book an Appointment</h2>
             <form
@@ -41,15 +41,15 @@ export default function ContactPage() {
 
                 // Format WhatsApp message
                 const whatsappMessage = `
-*New Appointment Request*
-Name: ${firstName} ${lastName}
-Email: ${email}
-Phone: ${phone}
-Service: ${service}
-Date: ${date}
-Time: ${time}
-Special Requests: ${message || "None"}
-              `.trim()
+                  *New Appointment Request*
+                  Name: ${firstName} ${lastName}
+                  Email: ${email}
+                  Phone: ${phone}
+                  Service: ${service}
+                  Date: ${date}
+                  Time: ${time}
+                  Special Requests: ${message || "None"}
+                                `.trim()
 
                 // Open WhatsApp with pre-filled message
                 // Replace 9438222888 with your actual WhatsApp number
@@ -145,7 +145,7 @@ Special Requests: ${message || "None"}
             <h2 className="text-2xl font-semibold mb-6">Contact Information</h2>
             <div className="space-y-4">
               <div className="flex items-start">
-                <MapPin className="h-5 w-5 mr-3 mt-0.5 text-primary" />
+                <MapPin className="h-6 w-6 mr-3 mt-0.5 text-primary" />
                 <div>
                   <h3 className="font-medium">Address</h3>
                   <p className="text-muted-foreground">Srusti Plaza, First Floor Infront of Bharat Petrol Pump, Sundarapada Rd, Kantilo</p>
@@ -196,13 +196,13 @@ Special Requests: ${message || "None"}
 
                 // Format WhatsApp message
                 const whatsappMessage = `
-*New Message from Website*
-Name: ${name}
-Email: ${email}
-Subject: ${subject}
+                  *New Message from Website*
+                  Name: ${name}
+                  Email: ${email}
+                  Subject: ${subject}
 
-Message:
-${message}
+                  Message:
+                  ${message}
                 `.trim()
 
                 // Open WhatsApp with pre-filled message
