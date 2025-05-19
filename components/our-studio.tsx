@@ -16,13 +16,12 @@ export default function OurStudio() {
         <div className="order-2 md:order-1">
           <h3 className="text-2xl font-semibold mb-4">A Space Designed for Beauty</h3>
           <p className="text-muted-foreground mb-4">
-            Our studio is designed to provide a relaxing and luxurious experience. With state-of-the-art equipment and a
-            comfortable atmosphere, we ensure that your time with us is as enjoyable as the results.
+            Our studio is designed to provide a relaxing and luxurious experience.
+            At Pihu Makeup Studio and Salon, we want you to feel relaxed and special.
           </p>
           <p className="text-muted-foreground mb-6">
-            Located in the heart of the city, Pihu Makeup Studio and Salon offers a tranquil escape from the hustle and
-            bustle. Our team of professionals is dedicated to providing you with exceptional service in a welcoming
-            environment.
+            We use the best tools and create a cozy, calm space so you can enjoy your time with us and leave feeling great.
+            Our studio is right in the heart of the city, a peaceful spot where you can take a break from the busy world. We’re a small, friendly team of two, and we’re here to give you personal care and make sure you have a wonderful experience.
           </p>
           <Link href="/gallery">
             <Button>View Studio Gallery</Button>
