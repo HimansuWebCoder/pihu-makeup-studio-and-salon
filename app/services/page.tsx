@@ -186,8 +186,8 @@ export default function ServicesPage() {
       </Tabs>
 
       <div className="bg-muted p-8 rounded-lg text-center mb-16">
-        <h2 className="text-2xl font-semibold mb-4">Looking for a Custom Package?</h2>
-        <p className="mb-6 max-w-2xl mx-auto">
+        <h2 className="text-2xl font-semibold text-muted-foreground mb-4">Looking for a Custom Package?</h2>
+        <p className="mb-6 max-w-2xl text-muted-foreground mx-auto">
           We offer personalized service packages tailored to your specific needs and preferences. Contact us to discuss
           your requirements and create your perfect beauty package.
         </p>

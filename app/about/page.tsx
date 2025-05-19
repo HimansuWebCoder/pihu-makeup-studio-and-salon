@@ -28,8 +28,8 @@ export default function AboutPage() {
       </div>
 
       <div className="bg-muted p-8 rounded-lg mb-16">
-        <h2 className="text-3xl font-semibold text-center mb-8">Our Mission</h2>
-        <p className="text-xl text-center max-w-3xl mx-auto">
+        <h2 className="text-3xl text-muted-foreground font-semibold text-center mb-8">Our Mission</h2>
+        <p className="text-xl text-center text-muted-foreground max-w-3xl mx-auto">
           "At Pihu Makeup Studio and Salon, we believe beauty should be timeless. Our mission is to offer premium, gentle, and transformative services that make you feel confidently beautiful inside and out."
         </p>
       </div>
