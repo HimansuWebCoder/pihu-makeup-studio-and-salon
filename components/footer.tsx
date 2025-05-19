@@ -24,15 +24,15 @@ export default function Footer() {
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary">
+              <Link href="https://www.instagram.com/pihumakeupstudio2023" target="_blank" className="text-muted-foreground hover:text-primary">
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary">
+              {/*<Link href="#" className="text-muted-foreground hover:text-primary">
                 <Twitter className="h-5 w-5" />
                 <span className="sr-only">Twitter</span>
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary">
+              </Link>*/}
+              <Link href="https://www.youtube.com/@PIHUMAKEUPSTUDIO" target="_blank" className="text-muted-foreground hover:text-primary">
                 <Youtube className="h-5 w-5" />
                 <span className="sr-only">YouTube</span>
               </Link>
@@ -119,8 +119,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <address className="not-italic text-muted-foreground">
-              <p className="mb-2">Srusti Plaza, First floor infront of Infront of bharat petrol pump, Jatni - Sundarapada Rd, Kantilo
-
+              <p className="mb-2">Srusti Plaza, First Floor Infront of Bharat Petrol Pump, Sundarapada Rd, Kantilo
               </p>
               <p className="mb-2">Bhubaneswar, Odisha 751002</p>
               <p className="mb-2">Phone: +91-9438222888</p>
@@ -129,9 +128,8 @@ export default function Footer() {
             <p className="text-muted-foreground">
               <span className="font-semibold">Hours:</span>
               <br />
-              Monday - Saturday: 10:00 AM - 7:00 PM
+              Monday - Sunday: 10:00 AM - 8:30 PM
               <br />
-              Sunday: 11:00 AM - 5:00 PM
             </p>
           </div>
         </div>

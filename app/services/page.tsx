@@ -25,7 +25,7 @@ export default function ServicesPage() {
             <ServiceCard
               title="Bridal Makeup"
               description="Complete bridal makeup package including trials, day-of makeup, and touch-ups"
-              price="₹15,000"
+              price="₹10,000-₹15,000"
               image="/placeholder.svg?height=200&width=300"
             />
             <ServiceCard
@@ -191,9 +191,10 @@ export default function ServicesPage() {
           We offer personalized service packages tailored to your specific needs and preferences. Contact us to discuss
           your requirements and create your perfect beauty package.
         </p>
-        <Link href="/contact">
+        {/*<Link href="/contact">
           <Button size="lg">Contact Us</Button>
-        </Link>
+        </Link>*/}
+        <a size="lg" href="tel:+919861749625"><Button size="lg">Contact Us</Button></a>
       </div>
 
       <div className="text-center">

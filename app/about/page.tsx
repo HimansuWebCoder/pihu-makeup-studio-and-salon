@@ -11,17 +11,13 @@ export default function AboutPage() {
         <div>
           <h2 className="text-3xl font-semibold mb-4">Our Story</h2>
           <p className="text-lg mb-4">
-            Founded in 2015, Pihu Makeup Studio and Salon has been dedicated to bringing out the natural beauty in
-            everyone who walks through our doors.
+            Since 2023, Pihu Makeup Studio and Salon has been committed to delivering high-quality, luxurious beauty experiences that are safe, long-lasting, and enhance your natural elegance — all with no side effects. Step into a world of peace, care, and timeless beauty.
           </p>
-          <p className="text-lg mb-4">
-            Our founder, Pihu, started with a small studio and a big dream - to create a space where clients could
+         {/* <p className="text-lg mb-4">
+            Our founder, Anjali, started with a small studio and a big dream - to create a space where clients could
             transform and feel their absolute best.
-          </p>
-          <p className="text-lg mb-6">
-            Today, we've grown into a full-service beauty destination with a team of talented professionals who share
-            Pihu's passion for beauty, creativity, and exceptional client care.
-          </p>
+          </p>*/}
+          
           <Link href="/contact">
             <Button size="lg">Get in Touch</Button>
           </Link>
@@ -34,8 +30,7 @@ export default function AboutPage() {
       <div className="bg-muted p-8 rounded-lg mb-16">
         <h2 className="text-3xl font-semibold text-center mb-8">Our Mission</h2>
         <p className="text-xl text-center max-w-3xl mx-auto">
-          "To enhance natural beauty through artistic makeup and salon services, creating transformative experiences
-          that empower our clients to look and feel their absolute best."
+          "At Pihu Makeup Studio and Salon, we believe beauty should be timeless. Our mission is to offer premium, gentle, and transformative services that make you feel confidently beautiful inside and out."
         </p>
       </div>
 
@@ -43,7 +38,7 @@ export default function AboutPage() {
         <div className="bg-card p-6 rounded-lg shadow-sm">
           <h3 className="text-xl font-semibold mb-3">Quality Products</h3>
           <p>
-            We use only premium, cruelty-free products that deliver exceptional results while being kind to your skin
+            We use only high-quality, premium and organic products that deliver exceptional results while being kind to your skin
             and the environment.
           </p>
         </div>

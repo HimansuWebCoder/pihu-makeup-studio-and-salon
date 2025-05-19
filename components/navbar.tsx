@@ -58,18 +58,21 @@ export default function Navbar() {
             <Link href="/gallery" className="text-sm font-medium transition-colors hover:text-primary">
               Gallery
             </Link>
+            <Link href="/videos" className="text-sm font-medium transition-colors hover:text-primary">
+              Videos
+            </Link>
             <Link href="/testimonials" className="text-sm font-medium transition-colors hover:text-primary">
               Testimonials
             </Link>
             <Link href="/contact" className="text-sm font-medium transition-colors hover:text-primary">
-              Contact
+              Contact Us
             </Link>
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
             <div className="flex items-center">
               <Phone className="h-4 w-4 mr-2 text-primary" />
-              <span className="text-sm font-medium">+91 98765 43210</span>
+              <span className="text-sm font-medium">+91-9438222888</span>
             </div>
             <ModeToggle />
             <Link href="/contact">
@@ -98,11 +101,14 @@ export default function Navbar() {
                 <Link href="/gallery" className="text-lg font-medium transition-colors hover:text-primary">
                   Gallery
                 </Link>
+                <Link href="/videos" className="text-lg font-medium transition-colors hover:text-primary">
+                  Videos
+                </Link>
                 <Link href="/testimonials" className="text-lg font-medium transition-colors hover:text-primary">
                   Testimonials
                 </Link>
                 <Link href="/contact" className="text-lg font-medium transition-colors hover:text-primary">
-                  Contact
+                  Contact Us
                 </Link>
                 <div className="pt-4">
                   <div className="flex justify-center mb-4">

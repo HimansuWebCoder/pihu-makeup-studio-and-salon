@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
@@ -7,18 +9,24 @@ export default function PremiumCard() {
   const benefits = [
     "Priority booking for all services",
     "Exclusive access to new products and services",
-    "Complimentary birthday makeover",
-    "25% discount on all regular services",
-    "Quarterly makeup or hair consultation",
+    "Complimentary birthday and anniverasy makeover",
+    "birthday and anniversary extra 5% discount",
+    "Quarterly skin and hair consultation",
     "Personalized beauty plan",
   ]
 
+  // First row of brands
+  const brandsRow1 = ["MAC Cosmetics", "Estée Lauder", "L'Oréal Professional", "Kérastase", "Dermalogica", "OPI"]
+
+  // Second row of brands (for continuous animation effect)
+  const brandsRow2 = ["Wella", "Schwarzkopf", "Clinique", "Lakme", "Kryolan", "Forest Essentials"]
+
   return (
     <section className="container mx-auto px-4 py-16">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto mb-20">
         <Card className="overflow-hidden bg-gradient-to-br from-rose-50 to-pink-50 dark:from-rose-950/30 dark:to-pink-950/30 border-rose-200 dark:border-rose-800">
           <CardHeader className="text-center">
-            <CardTitle className="text-3xl font-bold text-rose-700 dark:text-rose-300">Premium Beauty Card</CardTitle>
+            <CardTitle className="text-3xl font-bold text-rose-700 dark:text-rose-300">Premium Membership Card</CardTitle>
             <CardDescription className="text-lg text-rose-600/80 dark:text-rose-400/80">
               Join our exclusive membership program and enjoy premium benefits
             </CardDescription>
@@ -42,8 +50,8 @@ export default function PremiumCard() {
               <div className="bg-white/80 dark:bg-black/20 p-6 rounded-lg text-center">
                 <h3 className="text-2xl font-bold mb-2 text-rose-700 dark:text-rose-300">Annual Membership</h3>
                 <div className="mb-4">
-                  <span className="text-4xl font-bold text-rose-600 dark:text-rose-400">₹15,000</span>
-                  <span className="text-rose-600/80 dark:text-rose-400/80">/year</span>
+                  <span className="text-4xl font-bold text-rose-600 dark:text-rose-400">15% Discount</span>
+                  <span className="text-rose-600/80 dark:text-rose-400/80">/2year</span>
                 </div>
                 <p className="mb-6 text-rose-700/90 dark:text-rose-300/90">
                   Save up to ₹30,000 annually with our premium membership benefits
@@ -56,11 +64,96 @@ export default function PremiumCard() {
           </CardContent>
           <CardFooter className="justify-center">
             <p className="text-sm text-rose-600/70 dark:text-rose-400/70">
-              Terms and conditions apply. Membership is valid for 12 months from the date of purchase.
+              Terms and conditions apply. Membership is valid for 24 months from the date of purchase.
             </p>
           </CardFooter>
         </Card>
       </div>
+
+      <div className="max-w-5xl mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-4">Our Product Partners</h2>
+        <p className="text-lg text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+          We use only the highest quality products from trusted brands to ensure exceptional results
+        </p>
+
+        <div className="relative overflow-hidden py-4">
+          {/* First row - moving from left to right */}
+          <div className="flex animate-marquee whitespace-nowrap">
+            {brandsRow1.map((brand, index) => (
+              <div key={index} className="mx-4 flex-shrink-0">
+                <BrandLogo name={brand} />
+              </div>
+            ))}
+            {brandsRow1.map((brand, index) => (
+              <div key={`${index}-duplicate`} className="mx-4 flex-shrink-0">
+                <BrandLogo name={brand} />
+              </div>
+            ))}
+          </div>
+
+          {/* Second row - moving from right to left (opposite direction) */}
+          <div className="flex animate-marquee-reverse whitespace-nowrap mt-8">
+            {brandsRow2.map((brand, index) => (
+              <div key={index} className="mx-4 flex-shrink-0">
+                <BrandLogo name={brand} />
+              </div>
+            ))}
+            {brandsRow2.map((brand, index) => (
+              <div key={`${index}-duplicate`} className="mx-4 flex-shrink-0">
+                <BrandLogo name={brand} />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <style jsx global>{`
+        @keyframes marquee {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+        
+        @keyframes marquee-reverse {
+          0% {
+            transform: translateX(-50%);
+          }
+          100% {
+            transform: translateX(0);
+          }
+        }
+        
+        .animate-marquee {
+          animation: marquee 30s linear infinite;
+        }
+        
+        .animate-marquee-reverse {
+          animation: marquee-reverse 30s linear infinite;
+        }
+      `}</style>
     </section>
+  )
+}
+
+function BrandLogo({ name }: { name: string }) {
+  return (
+    <div className="flex flex-col items-center justify-center p-4 bg-background rounded-lg border border-border hover:shadow-md transition-shadow w-40">
+      <div className="relative h-12 w-full mb-2">
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="w-full h-full flex items-center justify-center">
+            {/* This would be replaced with an actual logo image */}
+            <div className="w-full h-full bg-muted  flex items-center justify-center">
+              {/*<span className="text-xs font-medium text-muted-foreground">{name.charAt(0)}</span>*/}
+            {/*<img src="https://www.geetanjalisalon.com/wp-content/uploads/2023/09/brands-2-300x129.jpg"  />*/}
+            <img src="https://www.geetanjalisalon.com/wp-content/uploads/2023/09/brands-1-300x129.jpg"  />
+            </div>
+          </div>
+        </div>
+      </div>
+      <span className="text-xs text-center font-medium">{name}</span>
+    </div>
   )
 }

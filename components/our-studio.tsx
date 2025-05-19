@@ -58,16 +58,16 @@ export default function OurStudio() {
           <div className="text-4xl font-bold text-primary mb-2">13+</div>
           <p className="text-muted-foreground">Years of Experience</p>
         </div>
-        <div className="text-center">
+       {/* <div className="text-center">
           <div className="text-4xl font-bold text-primary mb-2">2+</div>
           <p className="text-muted-foreground">Professional Artists</p>
-        </div>
+        </div>*/}
         <div className="text-center">
           <div className="text-4xl font-bold text-primary mb-2">500+</div>
           <p className="text-muted-foreground">Happy Clients</p>
         </div>
         <div className="text-center">
-          <div className="text-4xl font-bold text-primary mb-2">50+</div>
+          <div className="text-4xl font-bold text-primary mb-2">500+</div>
           <p className="text-muted-foreground">Bridal Makeovers</p>
         </div>
       </div>

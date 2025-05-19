@@ -148,7 +148,7 @@ Special Requests: ${message || "None"}
                 <MapPin className="h-5 w-5 mr-3 mt-0.5 text-primary" />
                 <div>
                   <h3 className="font-medium">Address</h3>
-                  <p className="text-muted-foreground">Srusti Plaza, First Floor Infront of bharat petrol pump, Jatni - Sundarapada Rd, Kantilo</p>
+                  <p className="text-muted-foreground">Srusti Plaza, First Floor Infront of Bharat Petrol Pump, Sundarapada Rd, Kantilo</p>
                   <p className="text-muted-foreground">Bhubaneswar, Odisha 751002</p>
                 </div>
               </div>
@@ -173,8 +173,8 @@ Special Requests: ${message || "None"}
                 <Clock className="h-5 w-5 mr-3 mt-0.5 text-primary" />
                 <div>
                   <h3 className="font-medium">Hours</h3>
-                  <p className="text-muted-foreground">Monday - Saturday: 10:00 AM - 7:00 PM</p>
-                  <p className="text-muted-foreground">Sunday: 11:00 AM - 5:00 PM</p>
+                  <p className="text-muted-foreground">Monday - Sunday: 10:00 AM - 8:30 PM</p>
+                  {/*<p className="text-muted-foreground">Sunday: 11:00 AM - 8:30 PM</p>*/}
                 </div>
               </div>
             </div>
@@ -217,7 +217,7 @@ ${message}
 
               <div className="space-y-2">
                 <Label htmlFor="contact-email">Email</Label>
-                <Input id="contact-email" name="contact-email" type="email" placeholder="Enter your email" required />
+                <Input id="contact-email" name="contact-email" type="email" placeholder="Enter your email" />
               </div>
 
               <div className="space-y-2">

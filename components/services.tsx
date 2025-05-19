@@ -18,8 +18,8 @@ export default function Services() {
       link: "/services",
     },
     {
-      title: "Hair Styling",
-      description: "Cuts, colors, and styling by expert stylists",
+      title: "Hair Styling/Treatment",
+      description: "Cuts, colors, treatments and styling by expert stylists",
       image: "/placeholder.svg?height=300&width=400",
       link: "/services",
     },

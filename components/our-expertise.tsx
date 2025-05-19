@@ -36,7 +36,7 @@ export default function OurExpertise() {
         <ExpertiseCard
           icon={<Award className="h-10 w-10 text-primary" />}
           title="Premium Products"
-          description="We use only high-quality, cruelty-free products that deliver exceptional results."
+          description="We use only high-quality, premium and organic products that deliver exceptional results."
         />
         <ExpertiseCard
           icon={<Users className="h-10 w-10 text-primary" />}
