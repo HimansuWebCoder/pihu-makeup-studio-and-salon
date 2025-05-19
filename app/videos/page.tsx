@@ -692,7 +692,7 @@ export default function VideosPage() {
 
       {/* Platform filter */}
       <div className="flex justify-center mb-8">
-        <div className="inline-flex p-1 bg-muted rounded-lg">
+        <div className="inline-flex p-1 bg-bgtab rounded-lg">
           {platforms.map((platform) => (
             <button
               key={platform.id}

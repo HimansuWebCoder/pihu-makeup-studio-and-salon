@@ -91,7 +91,7 @@ export default function PremiumCard() {
 
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-4">Our Product Partners</h2>
-        <p className="text-lg text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+        <p className="text-lg text-center text-txtcol mb-12 max-w-3xl mx-auto">
           We use only the highest quality products from trusted brands to ensure exceptional results
         </p>
 

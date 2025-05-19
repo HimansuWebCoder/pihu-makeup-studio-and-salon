@@ -9,7 +9,7 @@ export default function Hero() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">Reveal Your Natural Beauty</h1>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-txtcol">
               Professional makeup and salon services to enhance your unique beauty. Experience the beauty and care at Pihu Makeup Studio and Salon.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">

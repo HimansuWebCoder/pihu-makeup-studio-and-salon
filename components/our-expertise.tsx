@@ -6,7 +6,7 @@ export default function OurExpertise() {
     <section className="container mx-auto px-4 py-16">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold mb-4">Our Expertise</h2>
-        <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+        <p className="text-lg text-txtcol max-w-3xl mx-auto">
           With years of experience and a passion for beauty, our team delivers exceptional services tailored to your
           unique style and preferences.
         </p>
@@ -61,7 +61,7 @@ function ExpertiseCard({
     <div className="bg-card rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
       <div className="mb-4">{icon}</div>
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
-      <p className="text-muted-foreground">{description}</p>
+      <p className="text-txtcol">{description}</p>
     </div>
   )
 }

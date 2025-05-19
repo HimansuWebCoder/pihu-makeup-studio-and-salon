@@ -5,7 +5,7 @@ import { Clock, MapPin, Phone, Mail } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className="bg-muted">
+    <footer className="bg-[#001C30]">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
@@ -17,16 +17,16 @@ export default function Footer() {
                 className="object-contain"
               />
             </div>
-            <p className="text-muted-foreground mb-4">
+            <p className="text-white mb-4">
               Enhancing your natural beauty with our professional makeup and salon services.
             </p>
             <div className="flex space-x-4">
               <Link href="#" className="text-muted-foreground hover:text-primary">
-                <Facebook className="h-5 w-5" />
+                <Facebook className="h-5 w-5 text-blue-300" />
                 <span className="sr-only">Facebook</span>
               </Link>
               <Link href="https://www.instagram.com/pihumakeupstudio2023" target="_blank" className="text-muted-foreground hover:text-primary">
-                <Instagram className="h-5 w-5" />
+                <Instagram className="h-5 w-5 text-blue-300" />
                 <span className="sr-only">Instagram</span>
               </Link>
               {/*<Link href="#" className="text-muted-foreground hover:text-primary">
@@ -34,14 +34,14 @@ export default function Footer() {
                 <span className="sr-only">Twitter</span>
               </Link>*/}
               <Link href="https://www.youtube.com/@PIHUMAKEUPSTUDIO" target="_blank" className="text-muted-foreground hover:text-primary">
-                <Youtube className="h-5 w-5" />
+                <Youtube className="h-5 w-5 text-blue-300" />
                 <span className="sr-only">YouTube</span>
               </Link>
             </div>
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-4 text-muted-foreground">Quick Links</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/" className="text-muted-foreground hover:text-primary">
@@ -82,7 +82,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
+            <h3 className="text-lg font-semibold mb-4 text-muted-foreground">Services</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/services" className="text-muted-foreground hover:text-primary">
@@ -118,7 +118,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+            <h3 className="text-lg font-semibold mb-4 text-muted-foreground">Contact Us</h3>
             {/*<address className="not-italic text-muted-foreground">
             <MapPin className="h-6 w-6 mr-3 mt-0.5 text-primary" />
               <p className="mb-2">Srusti Plaza, First Floor Infront of Bharat Petrol Pump, Sundarapada Rd, Kantilo
@@ -140,7 +140,7 @@ export default function Footer() {
               <div className="flex items-start">
                 <MapPin className="h-10 w-10 sm:h-10 sm:w-10 mr-3 mt-0.5 text-primary" />
                 <div>
-                  <h3 className="font-medium">Address</h3>
+                  <h3 className="font-medium text-muted-foreground">Address</h3>
                   <p className="text-muted-foreground">Srusti Plaza, First Floor Infront of Bharat Petrol Pump, Sundarapada Rd, Kantilo</p>
                   <p className="text-muted-foreground">Bhubaneswar, Odisha 751002</p>
                 </div>
@@ -149,7 +149,7 @@ export default function Footer() {
               <div className="flex items-start">
                 <Phone className="h-5 w-5 mr-3 mt-0.5 text-primary" />
                 <div>
-                  <h3 className="font-medium">Phone</h3>
+                  <h3 className="font-medium text-muted-foreground">Phone</h3>
                   <p className="text-muted-foreground">+91-9438222888</p>
                 </div>
               </div>
@@ -157,7 +157,7 @@ export default function Footer() {
               <div className="flex items-start">
                 <Mail className="h-5 w-5 mr-3 mt-0.5 text-primary" />
                 <div>
-                  <h3 className="font-medium">Email</h3>
+                  <h3 className="font-medium text-muted-foreground">Email</h3>
                   <p className="text-muted-foreground">info@pihumakeupstudio.com</p>
                 </div>
               </div>
@@ -165,7 +165,7 @@ export default function Footer() {
               <div className="flex items-start">
                 <Clock className="h-5 w-5 mr-3 mt-0.5 text-primary" />
                 <div>
-                  <h3 className="font-medium">Hours</h3>
+                  <h3 className="font-medium text-muted-foreground">Hours</h3>
                   <p className="text-muted-foreground">Monday - Sunday: 10:00 AM - 8:30 PM</p>
                   {/*<p className="text-muted-foreground">Sunday: 11:00 AM - 8:30 PM</p>*/}
                 </div>

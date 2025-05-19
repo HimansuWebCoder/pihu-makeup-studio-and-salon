@@ -53,6 +53,12 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        bgtab: {
+          DEFAULT: "hsl(var(--bgtab))",
+        },
+        txtcol: {
+          DEFAULT: "hsl(var(--txtcol))",
+        }
       },
       borderRadius: {
         lg: "var(--radius)",
