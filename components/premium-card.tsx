@@ -15,11 +15,30 @@ export default function PremiumCard() {
     "Personalized beauty plan",
   ]
 
+  // const productPartners = [
+  //   "https://www.geetanjalisalon.com/wp-content/uploads/2023/09/brands-1-300x129.jpg",
+  //   "https://www.geetanjalisalon.com/wp-content/uploads/2023/09/brands-2-300x129.jpg"
+  // ]
+
   // First row of brands
-  const brandsRow1 = ["MAC Cosmetics", "Estée Lauder", "L'Oréal Professional", "Kérastase", "Dermalogica", "OPI"]
+  // const brandsRow1 = ["MAC Cosmetics", "Estée Lauder", "L'Oréal Professional", "Kérastase", "Dermalogica", "OPI"]
+  const brandsRow1 = [
+    "https://www.geetanjalisalon.com/wp-content/uploads/2023/09/brands-1-300x129.jpg", 
+    "https://www.geetanjalisalon.com/wp-content/uploads/2023/09/brands-2-300x129.jpg",
+    "https://www.geetanjalisalon.com/wp-content/uploads/2023/09/brands-2-300x129.jpg",
+    "https://www.geetanjalisalon.com/wp-content/uploads/2023/09/brands-2-300x129.jpg",
+    "https://www.geetanjalisalon.com/wp-content/uploads/2023/09/brands-2-300x129.jpg",
+  ]
 
   // Second row of brands (for continuous animation effect)
-  const brandsRow2 = ["Wella", "Schwarzkopf", "Clinique", "Lakme", "Kryolan", "Forest Essentials"]
+  // const brandsRow2 = ["Wella", "Schwarzkopf", "Clinique", "Lakme", "Kryolan", "Forest Essentials"]
+  const brandsRow2 = [
+    "https://www.geetanjalisalon.com/wp-content/uploads/2023/09/brands-1-300x129.jpg", 
+    "https://www.geetanjalisalon.com/wp-content/uploads/2023/09/brands-2-300x129.jpg",
+    "https://www.geetanjalisalon.com/wp-content/uploads/2023/09/brands-2-300x129.jpg",
+    "https://www.geetanjalisalon.com/wp-content/uploads/2023/09/brands-2-300x129.jpg",
+    "https://www.geetanjalisalon.com/wp-content/uploads/2023/09/brands-2-300x129.jpg",
+  ]
 
   return (
     <section className="container mx-auto px-4 py-16">
@@ -81,28 +100,28 @@ export default function PremiumCard() {
           <div className="flex animate-marquee whitespace-nowrap">
             {brandsRow1.map((brand, index) => (
               <div key={index} className="mx-4 flex-shrink-0">
-                <BrandLogo name={brand} />
+                <BrandLogo  img={brand} />
               </div>
             ))}
-            {brandsRow1.map((brand, index) => (
+            {/*{brandsRow1.map((brand, index) => (
               <div key={`${index}-duplicate`} className="mx-4 flex-shrink-0">
                 <BrandLogo name={brand} />
               </div>
-            ))}
+            ))}*/}
           </div>
 
           {/* Second row - moving from right to left (opposite direction) */}
           <div className="flex animate-marquee-reverse whitespace-nowrap mt-8">
             {brandsRow2.map((brand, index) => (
               <div key={index} className="mx-4 flex-shrink-0">
-                <BrandLogo name={brand} />
+                <BrandLogo  img={brand} />
               </div>
             ))}
-            {brandsRow2.map((brand, index) => (
+            {/*{brandsRow2.map((brand, index) => (
               <div key={`${index}-duplicate`} className="mx-4 flex-shrink-0">
                 <BrandLogo name={brand} />
               </div>
-            ))}
+            ))}*/}
           </div>
         </div>
       </div>
@@ -138,22 +157,22 @@ export default function PremiumCard() {
   )
 }
 
-function BrandLogo({ name }: { name: string }) {
+function BrandLogo({ img }: { img: string }) {
   return (
     <div className="flex flex-col items-center justify-center p-4 bg-background rounded-lg border border-border hover:shadow-md transition-shadow w-40">
-      <div className="relative h-12 w-full mb-2">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="w-full h-full flex items-center justify-center">
+      {/*<div className="relative h-12 w-full mb-2">*/}
+        {/*<div className="absolute inset-0 flex items-center justify-center">*/}
+          {/*<div className="w-full h-full flex items-center justify-center">*/}
             {/* This would be replaced with an actual logo image */}
-            <div className="w-full h-full bg-muted  flex items-center justify-center">
+            {/*<div className="w-full h-full bg-muted  flex items-center justify-center">*/}
               {/*<span className="text-xs font-medium text-muted-foreground">{name.charAt(0)}</span>*/}
             {/*<img src="https://www.geetanjalisalon.com/wp-content/uploads/2023/09/brands-2-300x129.jpg"  />*/}
-            <img src="https://www.geetanjalisalon.com/wp-content/uploads/2023/09/brands-1-300x129.jpg"  />
-            </div>
-          </div>
-        </div>
-      </div>
-      <span className="text-xs text-center font-medium">{name}</span>
+            <img src={img} alt="brand partners image" />
+            {/*</div>*/}
+          {/*</div>*/}
+        {/*</div>*/}
+      {/*</div>*/}
+      {/*<span className="text-xs text-center font-medium">{name}</span>*/}
     </div>
   )
 }
