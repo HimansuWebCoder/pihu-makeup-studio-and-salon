@@ -46,9 +46,9 @@ export default function WelcomePopup() {
             As a welcome gift, enjoy <span className="font-bold text-primary">10% OFF</span> on your first appointment
             when you book online.
           </p>
-          <p className="text-sm text-muted-foreground">
+         {/* <p className="text-sm text-muted-foreground">
             Use code: <span className="font-bold">WELCOME10</span> at checkout.
-          </p>
+          </p>*/}
         </div>
         <DialogFooter className="flex flex-col sm:flex-row gap-2">
           <Button variant="outline" onClick={() => setIsOpen(false)}>

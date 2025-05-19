@@ -20,7 +20,7 @@ export default function ContactPage() {
       </p>
 
       <div className="grid md:grid-cols-2 gap-12 mb-16">
-        <Card>
+        <Card className="">
           <CardContent className="p-6">
             <h2 className="text-2xl font-semibold mb-6">Book an Appointment</h2>
             <form
