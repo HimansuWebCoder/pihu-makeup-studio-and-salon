@@ -145,7 +145,7 @@ export default function ContactPage() {
             <h2 className="text-2xl font-semibold mb-6">Contact Information</h2>
             <div className="space-y-4">
               <div className="flex items-start">
-                <MapPin className="h-6 w-6 mr-3 mt-0.5 text-primary" />
+                <MapPin className="h-10 w-10 sm:h-6 sm:w-6 mr-3 mt-0.5 text-primary" />
                 <div>
                   <h3 className="font-medium">Address</h3>
                   <p className="text-muted-foreground">Srusti Plaza, First Floor Infront of Bharat Petrol Pump, Sundarapada Rd, Kantilo</p>

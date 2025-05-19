@@ -5,7 +5,7 @@ import Link from "next/link"
 export default function AboutPage() {
   return (
     <div className="container mx-auto py-16 px-4">
-      <h1 className="text-4xl font-bold text-center mb-8">About Pihu Makeup Studio and Salon</h1>
+      <h1  className="text-4xl font-bold text-center mb-8">About Pihu Makeup Studio and Salon</h1>
 
       <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
         <div>

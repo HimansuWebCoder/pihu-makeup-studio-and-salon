@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react"
+import { Clock, MapPin, Phone, Mail } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -118,19 +119,58 @@ export default function Footer() {
 
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-            <address className="not-italic text-muted-foreground">
+            {/*<address className="not-italic text-muted-foreground">
+            <MapPin className="h-6 w-6 mr-3 mt-0.5 text-primary" />
               <p className="mb-2">Srusti Plaza, First Floor Infront of Bharat Petrol Pump, Sundarapada Rd, Kantilo
               </p>
               <p className="mb-2">Bhubaneswar, Odisha 751002</p>
+              <Phone className="h-5 w-5 mr-3 mt-0.5 text-primary" />
               <p className="mb-2">Phone: +91-9438222888</p>
+              <Mail className="h-5 w-5 mr-3 mt-0.5 text-primary" />
               <p className="mb-4">Email: info@pihumakeupstudio.com</p>
             </address>
             <p className="text-muted-foreground">
+             <Clock className="h-5 w-5 mr-3 mt-0.5 text-primary" />
               <span className="font-semibold">Hours:</span>
               <br />
               Monday - Sunday: 10:00 AM - 8:30 PM
               <br />
-            </p>
+            </p>*/}
+            <div className="space-y-4">
+              <div className="flex items-start">
+                <MapPin className="h-10 w-10 sm:h-10 sm:w-10 mr-3 mt-0.5 text-primary" />
+                <div>
+                  <h3 className="font-medium">Address</h3>
+                  <p className="text-muted-foreground">Srusti Plaza, First Floor Infront of Bharat Petrol Pump, Sundarapada Rd, Kantilo</p>
+                  <p className="text-muted-foreground">Bhubaneswar, Odisha 751002</p>
+                </div>
+              </div>
+
+              <div className="flex items-start">
+                <Phone className="h-5 w-5 mr-3 mt-0.5 text-primary" />
+                <div>
+                  <h3 className="font-medium">Phone</h3>
+                  <p className="text-muted-foreground">+91-9438222888</p>
+                </div>
+              </div>
+
+              <div className="flex items-start">
+                <Mail className="h-5 w-5 mr-3 mt-0.5 text-primary" />
+                <div>
+                  <h3 className="font-medium">Email</h3>
+                  <p className="text-muted-foreground">info@pihumakeupstudio.com</p>
+                </div>
+              </div>
+
+              <div className="flex items-start">
+                <Clock className="h-5 w-5 mr-3 mt-0.5 text-primary" />
+                <div>
+                  <h3 className="font-medium">Hours</h3>
+                  <p className="text-muted-foreground">Monday - Sunday: 10:00 AM - 8:30 PM</p>
+                  {/*<p className="text-muted-foreground">Sunday: 11:00 AM - 8:30 PM</p>*/}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
