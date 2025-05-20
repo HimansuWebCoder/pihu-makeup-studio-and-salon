@@ -105,7 +105,7 @@ export default function TermsPage() {
           </p>
         </section>
 
-        <p className="text-center mt-12">Last updated: May 3, 2024</p>
+        <p className="text-center mt-12">Last updated: May 20, 2025</p>
       </div>
     </div>
   )

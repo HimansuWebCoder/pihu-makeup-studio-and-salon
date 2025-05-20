@@ -70,7 +70,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/contact" className="text-muted-foreground hover:text-primary">
-                  Contact
+                  Contact Us
                 </Link>
               </li>
               <li>
