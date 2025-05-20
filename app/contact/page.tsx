@@ -15,7 +15,7 @@ export default function ContactPage() {
   return (
     <div className="container mx-auto py-16 px-4">
       <h1 className="text-4xl font-bold text-center mb-4">Contact Us</h1>
-      <p className="text-lg text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+      <p className="text-lg text-center text-txtcol mb-12 max-w-3xl mx-auto">
         We'd love to hear from you! Book an appointment or send us a message.
       </p>
 
@@ -102,7 +102,7 @@ export default function ContactPage() {
                   <input
                     type="date"
                     name="date"
-                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-txtcol focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                     required
                   />
                 </div>
@@ -148,8 +148,8 @@ export default function ContactPage() {
                 <MapPin className="h-10 w-10 sm:h-6 sm:w-6 mr-3 mt-0.5 text-primary" />
                 <div>
                   <h3 className="font-medium">Address</h3>
-                  <p className="text-muted-foreground">Srusti Plaza, First Floor Infront of Bharat Petrol Pump, Sundarapada Rd, Kantilo</p>
-                  <p className="text-muted-foreground">Bhubaneswar, Odisha 751002</p>
+                  <p className="text-txtcol">Srusti Plaza, First Floor Infront of Bharat Petrol Pump, Sundarapada Rd, Kantilo</p>
+                  <p className="text-txtcol">Bhubaneswar, Odisha 751002</p>
                 </div>
               </div>
 
@@ -157,7 +157,7 @@ export default function ContactPage() {
                 <Phone className="h-5 w-5 mr-3 mt-0.5 text-primary" />
                 <div>
                   <h3 className="font-medium">Phone</h3>
-                  <p className="text-muted-foreground">+91-9438222888</p>
+                  <p className="text-txtcol">+91-9438222888</p>
                 </div>
               </div>
 
@@ -165,7 +165,7 @@ export default function ContactPage() {
                 <Mail className="h-5 w-5 mr-3 mt-0.5 text-primary" />
                 <div>
                   <h3 className="font-medium">Email</h3>
-                  <p className="text-muted-foreground">info@pihumakeupstudio.com</p>
+                  <p className="text-txtcol">info@pihumakeupstudio.com</p>
                 </div>
               </div>
 
@@ -173,8 +173,8 @@ export default function ContactPage() {
                 <Clock className="h-5 w-5 mr-3 mt-0.5 text-primary" />
                 <div>
                   <h3 className="font-medium">Hours</h3>
-                  <p className="text-muted-foreground">Monday - Sunday: 10:00 AM - 8:30 PM</p>
-                  {/*<p className="text-muted-foreground">Sunday: 11:00 AM - 8:30 PM</p>*/}
+                  <p className="text-txtcol">Monday - Sunday: 10:00 AM - 8:30 PM</p>
+                  {/*<p className="text-txtcol">Sunday: 11:00 AM - 8:30 PM</p>*/}
                 </div>
               </div>
             </div>

@@ -58,6 +58,12 @@ const config = {
         },
         txtcol: {
           DEFAULT: "hsl(var(--txtcol))",
+        },
+        txtfooter: {
+          DEFAULT: "hsl(var(--txtfooter))",
+        },
+        bgtabactive: {
+          DEFAULT: "hsl(var(--bgtabactive))",
         }
       },
       borderRadius: {

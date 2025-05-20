@@ -43,7 +43,7 @@ export default function GalleryPage() {
   return (
     <div className="container mx-auto py-16 px-4">
       <h1 className="text-4xl font-bold text-center mb-4">Our Gallery</h1>
-      <p className="text-lg text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+      <p className="text-lg text-center text-txtcol mb-12 max-w-3xl mx-auto">
         Browse through our portfolio of stunning transformations and artistic creations
       </p>
 

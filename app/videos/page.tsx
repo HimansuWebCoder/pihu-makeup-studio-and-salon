@@ -686,7 +686,7 @@ export default function VideosPage() {
   return (
     <div className="container mx-auto py-16 px-4">
       <h1 className="text-4xl font-bold text-center mb-4">Our Videos</h1>
-      <p className="text-lg text-center text-muted-foreground mb-8 max-w-3xl mx-auto">
+      <p className="text-lg text-center text-txtcol mb-8 max-w-3xl mx-auto">
         Watch our latest makeup tutorials, transformations, and behind-the-scenes content
       </p>
 
@@ -699,7 +699,7 @@ export default function VideosPage() {
               onClick={() => setSelectedPlatform(platform.id)}
               className={`flex items-center px-4 py-2 rounded-md text-sm font-medium ${
                 selectedPlatform === platform.id
-                  ? "bg-background shadow-sm"
+                  ? "bg-bgtabactive shadow-sm"
                   : "text-muted-foreground hover:text-foreground"
               }`}
             >

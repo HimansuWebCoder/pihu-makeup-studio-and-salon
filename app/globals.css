@@ -26,7 +26,9 @@
     --ring: 346.8 77.2% 49.8%;
     --radius: 0.5rem;
     --bgtab:217 18% 15%;
-    --txtcol:202 36% 26%;
+    --txtcol:217 18% 15%;
+    --txtfooter:0 0% 0%;
+    --bgtabactive:68 90% 88%;
   }
 
   .dark {
@@ -53,6 +55,8 @@
     --ring: 346.8 77.2% 49.8%;
     --bgtab:197 76% 33%;
     --txtcol:30 50% 92%;
+    --txtfooter:0 0% 0%;
+    --bgtabactive:0 0% 0%;
   }
 }
 

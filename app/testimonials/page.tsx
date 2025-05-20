@@ -90,7 +90,7 @@ export default function TestimonialsPage() {
   return (
     <div className="container mx-auto py-16 px-4">
       <h1 className="text-4xl font-bold text-center mb-4">Client Testimonials</h1>
-      <p className="text-lg text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+      <p className="text-lg text-center text-txtcol mb-12 max-w-3xl mx-auto">
         Don't just take our word for it - hear from our satisfied clients about their experiences at Pihu Makeup Studio
         and Salon
       </p>
@@ -131,8 +131,8 @@ export default function TestimonialsPage() {
       </div>
 
       <div className="bg-muted p-8 rounded-lg text-center">
-        <h2 className="text-2xl font-semibold mb-4">Share Your Experience</h2>
-        <p className="mb-6 max-w-2xl mx-auto">
+        <h2 className="text-2xl text-muted-foreground font-semibold mb-4">Share Your Experience</h2>
+        <p className="mb-6 max-w-2xl text-muted-foreground mx-auto">
           We value your feedback! If you've recently visited Pihu Makeup Studio and Salon, we'd love to hear about your
           experience. Your testimonial helps us improve our services and helps others find the beauty services they
           need.
