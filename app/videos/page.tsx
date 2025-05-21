@@ -572,7 +572,7 @@ export default function VideosPage() {
     },
     {
       id: "5",
-      type: "tutorial",
+      type: "party",
       title: "Perfect Winged Eyeliner",
       description: "Master the winged eyeliner technique",
       platform: "instagram",
@@ -581,7 +581,7 @@ export default function VideosPage() {
     },
     {
       id: "6",
-      type: "tutorial",
+      type: "party",
       title: "Complete Makeup Tutorial for Beginners",
       description: "Detailed step-by-step makeup guide for beginners",
       platform: "youtube",
@@ -630,7 +630,7 @@ export default function VideosPage() {
     { id: "all", name: "All Videos" },
     { id: "bridal", name: "Bridal" },
     { id: "party", name: "Party Makeup" },
-    { id: "tutorial", name: "Tutorials" },
+    // { id: "tutorial", name: "Tutorials" },
     { id: "haircare", name: "Hair Care" },
     { id: "skincare", name: "Skin Care" },
   ]
@@ -727,7 +727,7 @@ export default function VideosPage() {
 
       {/* Videos grid */}
       <div className="space-y-8">
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-3 gap-6">
           {loading ? (
             Array.from({ length: 4 }).map((_, index) => <VideoSkeleton key={index} />)
           ) : filteredVideos.length > 0 ? (
