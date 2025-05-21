@@ -1,6 +1,12 @@
 import Link from "next/link"
 import Image from "next/image"
+import { Playfair_Display } from 'next/font/google';
 import { Button } from "@/components/ui/button"
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '700'], // optional: specify weights you want
+});
 
 export default function Hero() {
 
@@ -16,7 +22,7 @@ export default function Hero() {
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h1 style={{fontFamily: "Playfair Display"}} className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-wide">Enhance Your Natural Glow at Pihu Salon</h1>
+            <h1 className={`${playfair.className} text-4xl md:text-5xl lg:text-6xl font-bold tracking-wide`}>Enhance Your Natural Glow at Pihu Salon</h1>
             <p className="text-xl text-txtcol">
               Professional makeup and salon services to enhance your unique beauty. Experience the beauty and care at Pihu Makeup Studio and Salon.
             </p>

@@ -7,6 +7,19 @@ import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Menu, Phone } from "lucide-react"
 import { ModeToggle } from "@/components/mode-toggle"
+import { Poppins } from 'next/font/google';
+import { Montserrat } from 'next/font/google';
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['600', '700'], // specify weights you want
+});
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['600', '700'], // specify weights you want
+});
+
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -46,31 +59,31 @@ export default function Navbar() {
           </div>
 
           <nav className="hidden md:flex items-center space-x-6">
-            <Link href="/" className="text-sm font-medium transition-colors hover:text-primary">
+            <Link href="/" className={`${montserrat.className} text-sm font-medium transition-colors hover:text-primary`}>
               HOME
             </Link>
-            <Link href="/about" className="text-sm font-medium transition-colors hover:text-primary">
+            <Link href="/about" className={`${montserrat.className} text-sm font-medium transition-colors hover:text-primary`}>
               ABOUT
             </Link>
-            <Link href="/services" className="text-sm font-medium transition-colors hover:text-primary">
+            <Link href="/services" className={`${montserrat.className} text-sm font-medium transition-colors hover:text-primary`}>
               SERVICES
             </Link>
-            <Link href="/offers" className="text-sm font-medium transition-colors hover:text-primary">
+            <Link href="/offers" className={`${montserrat.className} text-sm font-medium transition-colors hover:text-primary`}>
               OFFERS
             </Link>
-            <Link href="/gallery" className="text-sm font-medium transition-colors hover:text-primary">
+            <Link href="/gallery" className={`${montserrat.className} text-sm font-medium transition-colors hover:text-primary`}>
               GALLERY
             </Link>
-            <Link href="/videos" className="text-sm font-medium transition-colors hover:text-primary">
+            <Link href="/videos" className={`${montserrat.className} text-sm font-medium transition-colors hover:text-primary`}>
               VIDEOS
             </Link>
-            <Link href="/testimonials" className="text-sm font-medium transition-colors hover:text-primary">
+            <Link href="/testimonials" className={`${montserrat.className} text-sm font-medium transition-colors hover:text-primary`}>
               TESTIMONIALS
             </Link>
-            <Link href="/faq" className="text-sm font-medium transition-colors hover:text-primary">
+            <Link href="/faq" className={`${montserrat.className} text-sm font-medium transition-colors hover:text-primary`}>
               FAQ
             </Link>
-            <Link href="/contact" className="text-sm font-medium transition-colors hover:text-primary">
+            <Link href="/contact" className={`${montserrat.className} text-sm font-medium transition-colors hover:text-primary`}>
               CONTACT US
             </Link>
           </nav>
@@ -95,31 +108,31 @@ export default function Navbar() {
             </SheetTrigger>
             <SheetContent side="right">
               <nav className="flex flex-col space-y-4 mt-8">
-                <Link href="/" className="text-lg font-medium transition-colors hover:text-primary">
+                <Link href="/" className={`${montserrat.className} text-lg font-medium transition-colors hover:text-primary`}>
                   HOME
                 </Link>
-                <Link href="/about" className="text-lg font-medium transition-colors hover:text-primary">
+                <Link href="/about" className={`${montserrat.className} text-lg font-medium transition-colors hover:text-primary`}>
                   ABOUT
                 </Link>
-                <Link href="/services" className="text-lg font-medium transition-colors hover:text-primary">
+                <Link href="/services" className={`${montserrat.className} text-lg font-medium transition-colors hover:text-primary`}>
                   SERVICES
                 </Link>
-                <Link href="/offers" className="text-lg font-medium transition-colors hover:text-primary">
+                <Link href="/offers" className={`${montserrat.className} text-lg font-medium transition-colors hover:text-primary`}>
                   OFFERS
                 </Link>
-                <Link href="/gallery" className="text-lg font-medium transition-colors hover:text-primary">
+                <Link href="/gallery" className={`${montserrat.className} text-lg font-medium transition-colors hover:text-primary`}>
                   GALLERY
                 </Link>
-                <Link href="/videos" className="text-lg font-medium transition-colors hover:text-primary">
+                <Link href="/videos" className={`${montserrat.className} text-lg font-medium transition-colors hover:text-primary`}>
                   VIDEOS
                 </Link>
-                <Link href="/testimonials" className="text-lg font-medium transition-colors hover:text-primary">
+                <Link href="/testimonials" className={`${montserrat.className} text-lg font-medium transition-colors hover:text-primary`}>
                   TESTIMONIALS
                 </Link>
-                <Link href="/faq" className="text-lg font-medium transition-colors hover:text-primary">
+                <Link href="/faq" className={`${montserrat.className} text-lg font-medium transition-colors hover:text-primary`}>
                   FAQ
                 </Link>
-                <Link href="/contact" className="text-lg font-medium transition-colors hover:text-primary">
+                <Link href="/contact" className={`${montserrat.className} text-lg font-medium transition-colors hover:text-primary`}>
                   CONTACT US
                 </Link>
                 <div className="pt-4">
