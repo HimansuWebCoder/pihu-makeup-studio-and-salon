@@ -3,29 +3,88 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import Link from "next/link"
 import Image from "next/image"
+import { Check } from "lucide-react"
 
 export default function ServicesPage() {
   return (
     <div className="container mx-auto py-16 px-4">
       <h1 className="text-4xl font-bold text-center mb-4">Our Services</h1>
-      <p className="text-lg text-center text-txtcol mb-12 max-w-3xl mx-auto">
+      <p className="text-lg text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
         Discover our comprehensive range of beauty and salon services designed to enhance your natural beauty
       </p>
 
       <Tabs defaultValue="makeup" className="w-full mb-16">
-        <TabsList className="grid w-full h-auto grid-cols-2 md:grid-cols-4 mb-8">
+        <TabsList className="grid w-full grid-cols-2 md:grid-cols-6 mb-8">
           <TabsTrigger value="makeup">Makeup</TabsTrigger>
           <TabsTrigger value="hair">Hair</TabsTrigger>
           <TabsTrigger value="skincare">Skincare</TabsTrigger>
           <TabsTrigger value="nails">Nails</TabsTrigger>
+          <TabsTrigger value="spa">Spa</TabsTrigger>
+          <TabsTrigger value="bridal">Bridal</TabsTrigger>
         </TabsList>
 
         <TabsContent value="makeup" className="space-y-8">
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="relative h-[400px] rounded-lg overflow-hidden">
+              <Image src="/placeholder.svg?height=400&width=600" alt="Makeup Services" fill className="object-cover" />
+            </div>
+            <div>
+              <h2 className="text-3xl font-bold mb-4">Makeup Services</h2>
+              <p className="text-muted-foreground mb-6">
+                Our professional makeup artists use high-quality products to create flawless looks for any occasion.
+                From natural everyday makeup to glamorous evening looks, we customize each service to enhance your
+                unique features.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <ServiceCategory
+                  title="Bridal Makeup"
+                  items={[
+                    "Traditional Bridal Makeup",
+                    "Modern Bridal Makeup",
+                    "Reception Makeup",
+                    "Trial Makeup",
+                    "Bridal Party Makeup",
+                  ]}
+                />
+                <ServiceCategory
+                  title="Party Makeup"
+                  items={[
+                    "Evening Glam Makeup",
+                    "Cocktail Party Makeup",
+                    "Festival Makeup",
+                    "Photoshoot Makeup",
+                    "Celebrity-inspired Looks",
+                  ]}
+                />
+                <ServiceCategory
+                  title="Everyday Makeup"
+                  items={[
+                    "Natural Everyday Look",
+                    "Office Makeup",
+                    "No-Makeup Makeup Look",
+                    "Makeup Lesson",
+                    "Teen Makeup",
+                  ]}
+                />
+                <ServiceCategory
+                  title="Special Techniques"
+                  items={[
+                    "Airbrush Makeup",
+                    "HD Makeup",
+                    "Waterproof Makeup",
+                    "Contouring & Highlighting",
+                    "Eye Makeup Only",
+                  ]}
+                />
+              </div>
+            </div>
+          </div>
+
           <div className="grid md:grid-cols-3 gap-6">
             <ServiceCard
               title="Bridal Makeup"
               description="Complete bridal makeup package including trials, day-of makeup, and touch-ups"
-              price="₹10,000-₹15,000"
+              price="₹15,000"
               image="/placeholder.svg?height=200&width=300"
             />
             <ServiceCard
@@ -62,6 +121,56 @@ export default function ServicesPage() {
         </TabsContent>
 
         <TabsContent value="hair" className="space-y-8">
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="relative h-[400px] rounded-lg overflow-hidden">
+              <Image src="/placeholder.svg?height=400&width=600" alt="Hair Services" fill className="object-cover" />
+            </div>
+            <div>
+              <h2 className="text-3xl font-bold mb-4">Hair Services</h2>
+              <p className="text-muted-foreground mb-6">
+                Our expert stylists provide a full range of hair services using premium products. Whether you're looking
+                for a simple trim or a complete transformation, our team will help you achieve the perfect look for your
+                hair type and lifestyle.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <ServiceCategory
+                  title="Haircuts & Styling"
+                  items={[
+                    "Women's Haircut",
+                    "Men's Haircut",
+                    "Children's Haircut",
+                    "Blowout & Styling",
+                    "Special Occasion Styling",
+                  ]}
+                />
+                <ServiceCategory
+                  title="Hair Coloring"
+                  items={["Full Color", "Highlights/Lowlights", "Balayage/Ombre", "Root Touch-up", "Fashion Colors"]}
+                />
+                <ServiceCategory
+                  title="Hair Treatments"
+                  items={[
+                    "Deep Conditioning",
+                    "Keratin Treatment",
+                    "Hair Spa",
+                    "Scalp Treatment",
+                    "Anti-Frizz Treatment",
+                  ]}
+                />
+                <ServiceCategory
+                  title="Hair Extensions"
+                  items={[
+                    "Clip-in Extensions",
+                    "Tape-in Extensions",
+                    "Fusion Extensions",
+                    "Micro-link Extensions",
+                    "Extension Maintenance",
+                  ]}
+                />
+              </div>
+            </div>
+          </div>
+
           <div className="grid md:grid-cols-3 gap-6">
             <ServiceCard
               title="Haircut & Styling"
@@ -103,6 +212,55 @@ export default function ServicesPage() {
         </TabsContent>
 
         <TabsContent value="skincare" className="space-y-8">
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="relative h-[400px] rounded-lg overflow-hidden">
+              <Image
+                src="/placeholder.svg?height=400&width=600"
+                alt="Skincare Services"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div>
+              <h2 className="text-3xl font-bold mb-4">Skincare Services</h2>
+              <p className="text-muted-foreground mb-6">
+                Our skincare experts provide personalized treatments to address your specific skin concerns. Using
+                premium products and advanced techniques, we help you achieve healthy, glowing skin that looks and feels
+                its best.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <ServiceCategory
+                  title="Facials"
+                  items={[
+                    "Classic Facial",
+                    "Deep Cleansing Facial",
+                    "Anti-Aging Facial",
+                    "Brightening Facial",
+                    "Hydrating Facial",
+                  ]}
+                />
+                <ServiceCategory
+                  title="Advanced Treatments"
+                  items={["Chemical Peels", "Microdermabrasion", "Hydrafacial", "LED Light Therapy", "Oxygen Facial"]}
+                />
+                <ServiceCategory
+                  title="Skin Concerns"
+                  items={[
+                    "Acne Treatment",
+                    "Pigmentation Treatment",
+                    "Sensitive Skin Treatment",
+                    "Rosacea Treatment",
+                    "Anti-Aging Treatment",
+                  ]}
+                />
+                <ServiceCategory
+                  title="Body Treatments"
+                  items={["Body Polishing", "Back Facial", "Body Scrub", "Skin Brightening", "De-Tan Treatment"]}
+                />
+              </div>
+            </div>
+          </div>
+
           <div className="grid md:grid-cols-3 gap-6">
             <ServiceCard
               title="Facial"
@@ -144,6 +302,49 @@ export default function ServicesPage() {
         </TabsContent>
 
         <TabsContent value="nails" className="space-y-8">
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="relative h-[400px] rounded-lg overflow-hidden">
+              <Image src="/placeholder.svg?height=400&width=600" alt="Nail Services" fill className="object-cover" />
+            </div>
+            <div>
+              <h2 className="text-3xl font-bold mb-4">Nail Services</h2>
+              <p className="text-muted-foreground mb-6">
+                Our nail technicians provide a range of services to keep your hands and feet looking their best. From
+                basic manicures and pedicures to elaborate nail art, we use quality products for long-lasting results.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <ServiceCategory
+                  title="Manicures"
+                  items={[
+                    "Express Manicure",
+                    "Classic Manicure",
+                    "Spa Manicure",
+                    "Paraffin Manicure",
+                    "Men's Manicure",
+                  ]}
+                />
+                <ServiceCategory
+                  title="Pedicures"
+                  items={[
+                    "Express Pedicure",
+                    "Classic Pedicure",
+                    "Spa Pedicure",
+                    "Paraffin Pedicure",
+                    "Men's Pedicure",
+                  ]}
+                />
+                <ServiceCategory
+                  title="Nail Enhancements"
+                  items={["Gel Polish", "Acrylic Extensions", "Gel Extensions", "Dip Powder", "Nail Repair"]}
+                />
+                <ServiceCategory
+                  title="Nail Art"
+                  items={["Simple Nail Art", "3D Nail Art", "French Tips", "Chrome/Holographic", "Bridal Nail Art"]}
+                />
+              </div>
+            </div>
+          </div>
+
           <div className="grid md:grid-cols-3 gap-6">
             <ServiceCard
               title="Manicure"
@@ -176,9 +377,191 @@ export default function ServicesPage() {
               image="/placeholder.svg?height=200&width=300"
             />
             <ServiceCard
-              title="Bridal Nail Package"
-              description="Complete nail preparation for bride and bridal party"
-              price="₹5,000"
+              title="Mani-Pedi Combo"
+              description="Complete manicure and pedicure package"
+              price="₹1,800"
+              image="/placeholder.svg?height=200&width=300"
+            />
+          </div>
+        </TabsContent>
+
+        <TabsContent value="spa" className="space-y-8">
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="relative h-[400px] rounded-lg overflow-hidden">
+              <Image src="/placeholder.svg?height=400&width=600" alt="Spa Services" fill className="object-cover" />
+            </div>
+            <div>
+              <h2 className="text-3xl font-bold mb-4">Spa Services</h2>
+              <p className="text-muted-foreground mb-6">
+                Indulge in our luxurious spa services designed to relax, rejuvenate, and restore balance to your body
+                and mind. Our skilled therapists use premium products and techniques to provide a truly pampering
+                experience.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <ServiceCategory
+                  title="Massages"
+                  items={[
+                    "Swedish Massage",
+                    "Deep Tissue Massage",
+                    "Aromatherapy Massage",
+                    "Hot Stone Massage",
+                    "Head & Shoulder Massage",
+                  ]}
+                />
+                <ServiceCategory
+                  title="Body Treatments"
+                  items={["Body Scrub", "Body Wrap", "Body Polishing", "Detox Treatment", "Slimming Treatment"]}
+                />
+                <ServiceCategory
+                  title="Wellness Therapies"
+                  items={[
+                    "Reflexology",
+                    "Ayurvedic Treatments",
+                    "Stress Relief Therapy",
+                    "Prenatal Massage",
+                    "Couple's Massage",
+                  ]}
+                />
+                <ServiceCategory
+                  title="Spa Packages"
+                  items={[
+                    "Half-Day Spa Package",
+                    "Full-Day Spa Package",
+                    "Bridal Spa Package",
+                    "Couple's Spa Package",
+                    "Detox Spa Package",
+                  ]}
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            <ServiceCard
+              title="Swedish Massage"
+              description="Relaxing full-body massage to release tension"
+              price="₹2,500"
+              image="/placeholder.svg?height=200&width=300"
+            />
+            <ServiceCard
+              title="Aromatherapy Massage"
+              description="Therapeutic massage with essential oils"
+              price="₹3,000"
+              image="/placeholder.svg?height=200&width=300"
+            />
+            <ServiceCard
+              title="Body Scrub & Wrap"
+              description="Exfoliating scrub followed by a nourishing body wrap"
+              price="₹3,500"
+              image="/placeholder.svg?height=200&width=300"
+            />
+            <ServiceCard
+              title="Hot Stone Massage"
+              description="Deep relaxation massage using heated stones"
+              price="₹3,200"
+              image="/placeholder.svg?height=200&width=300"
+            />
+            <ServiceCard
+              title="Foot Reflexology"
+              description="Pressure point massage focusing on the feet"
+              price="₹1,800"
+              image="/placeholder.svg?height=200&width=300"
+            />
+            <ServiceCard
+              title="Spa Day Package"
+              description="Complete spa experience with multiple treatments"
+              price="₹7,500"
+              image="/placeholder.svg?height=200&width=300"
+            />
+          </div>
+        </TabsContent>
+
+        <TabsContent value="bridal" className="space-y-8">
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="relative h-[400px] rounded-lg overflow-hidden">
+              <Image src="/placeholder.svg?height=400&width=600" alt="Bridal Services" fill className="object-cover" />
+            </div>
+            <div>
+              <h2 className="text-3xl font-bold mb-4">Bridal Services</h2>
+              <p className="text-muted-foreground mb-6">
+                Make your special day even more memorable with our comprehensive bridal services. Our experienced team
+                will work closely with you to create the perfect look that complements your style, outfit, and wedding
+                theme.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <ServiceCategory
+                  title="Bridal Makeup"
+                  items={[
+                    "Traditional Bridal Makeup",
+                    "Modern Bridal Makeup",
+                    "Reception Makeup",
+                    "Engagement Makeup",
+                    "Trial Makeup Session",
+                  ]}
+                />
+                <ServiceCategory
+                  title="Bridal Hair"
+                  items={["Bridal Updo", "Half-Up Styles", "Braided Styles", "Hair Extensions", "Trial Hair Session"]}
+                />
+                <ServiceCategory
+                  title="Pre-Wedding Services"
+                  items={[
+                    "Skincare Packages",
+                    "Hair Treatments",
+                    "Body Polishing",
+                    "Nail Services",
+                    "Waxing & Threading",
+                  ]}
+                />
+                <ServiceCategory
+                  title="Wedding Party"
+                  items={[
+                    "Mother of Bride/Groom",
+                    "Bridesmaid Makeup",
+                    "Bridesmaid Hair",
+                    "Flower Girl Services",
+                    "Groom Grooming",
+                  ]}
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            <ServiceCard
+              title="Complete Bridal Package"
+              description="Comprehensive package including pre-wedding treatments, trial, and day-of services"
+              price="₹35,000"
+              image="/placeholder.svg?height=200&width=300"
+            />
+            <ServiceCard
+              title="Bridal Makeup & Hair"
+              description="Professional makeup and hairstyling for your wedding day"
+              price="₹20,000"
+              image="/placeholder.svg?height=200&width=300"
+            />
+            <ServiceCard
+              title="Pre-Bridal Package"
+              description="Series of treatments to prepare for your wedding day"
+              price="₹15,000"
+              image="/placeholder.svg?height=200&width=300"
+            />
+            <ServiceCard
+              title="Reception Look"
+              description="Makeup and hair styling for your reception"
+              price="₹15,000"
+              image="/placeholder.svg?height=200&width=300"
+            />
+            <ServiceCard
+              title="Engagement Package"
+              description="Makeup and hair for your engagement ceremony"
+              price="₹12,000"
+              image="/placeholder.svg?height=200&width=300"
+            />
+            <ServiceCard
+              title="Bridal Party Package"
+              description="Services for bridesmaids and family members"
+              price="₹8,000/person"
               image="/placeholder.svg?height=200&width=300"
             />
           </div>
@@ -186,15 +569,14 @@ export default function ServicesPage() {
       </Tabs>
 
       <div className="bg-muted p-8 rounded-lg text-center mb-16">
-        <h2 className="text-2xl font-semibold text-muted-foreground mb-4">Looking for a Custom Package?</h2>
-        <p className="mb-6 max-w-2xl text-muted-foreground mx-auto">
+        <h2 className="text-2xl font-semibold mb-4">Looking for a Custom Package?</h2>
+        <p className="mb-6 max-w-2xl mx-auto">
           We offer personalized service packages tailored to your specific needs and preferences. Contact us to discuss
           your requirements and create your perfect beauty package.
         </p>
-        {/*<Link href="/contact">
+        <Link href="/contact">
           <Button size="lg">Contact Us</Button>
-        </Link>*/}
-        <a size="lg" href="tel:+919861749625"><Button size="lg">Contact Us</Button></a>
+        </Link>
       </div>
 
       <div className="text-center">
@@ -239,5 +621,21 @@ function ServiceCard({
         </Link>
       </CardFooter>
     </Card>
+  )
+}
+
+function ServiceCategory({ title, items }: { title: string; items: string[] }) {
+  return (
+    <div className="mb-4">
+      <h3 className="font-semibold text-lg mb-2">{title}</h3>
+      <ul className="space-y-1">
+        {items.map((item, index) => (
+          <li key={index} className="flex items-start text-sm">
+            <Check className="h-4 w-4 mr-2 text-primary shrink-0 mt-0.5" />
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
   )
 }
