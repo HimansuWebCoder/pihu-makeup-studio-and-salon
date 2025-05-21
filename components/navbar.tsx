@@ -63,7 +63,7 @@ export default function Navbar() {
               HOME
             </Link>
             <Link href="/about" className={`${montserrat.className} text-sm font-medium transition-colors hover:text-primary`}>
-              ABOUT
+              ABOUT US
             </Link>
             <Link href="/services" className={`${montserrat.className} text-sm font-medium transition-colors hover:text-primary`}>
               SERVICES
@@ -112,7 +112,7 @@ export default function Navbar() {
                   HOME
                 </Link>
                 <Link href="/about" className={`${montserrat.className} text-lg font-medium transition-colors hover:text-primary`}>
-                  ABOUT
+                  ABOUT US
                 </Link>
                 <Link href="/services" className={`${montserrat.className} text-lg font-medium transition-colors hover:text-primary`}>
                   SERVICES
