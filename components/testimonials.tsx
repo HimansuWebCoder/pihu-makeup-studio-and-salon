@@ -1,5 +1,7 @@
 import Image from "next/image"
+import Link from "next/link"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
 import { Star } from "lucide-react"
 
 export default function Testimonials() {
@@ -34,7 +36,7 @@ export default function Testimonials() {
     <section className="container mx-auto px-4 py-16">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold mb-4">What Our Clients Say</h2>
-        <p className="text-lg text-txtcol max-w-3xl mx-auto">
+        <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
           Don't just take our word for it - hear from our satisfied clients
         </p>
       </div>
@@ -69,6 +71,12 @@ export default function Testimonials() {
             </CardFooter>
           </Card>
         ))}
+      </div>
+
+      <div className="text-center mt-12">
+        <Link href="/testimonials">
+          <Button size="lg">More Testimonials</Button>
+        </Link>
       </div>
     </section>
   )
