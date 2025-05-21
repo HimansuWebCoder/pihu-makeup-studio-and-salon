@@ -54,7 +54,7 @@ export default function PremiumCard() {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <p className="mb-6 text-rose-700/90 dark:text-rose-300/90">
-                  Our Premium Beauty Card gives you access to exclusive benefits and significant savings on our
+                  Our Premium Membership Card gives you access to exclusive benefits and significant savings on our
                   services. Perfect for clients who regularly enjoy our beauty treatments.
                 </p>
                 <ul className="space-y-3">

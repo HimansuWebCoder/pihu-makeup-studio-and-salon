@@ -116,7 +116,7 @@ export default function Navbar() {
                 <Link href="/testimonials" className="text-lg font-medium transition-colors hover:text-primary">
                   Testimonials
                 </Link>
-                <Link href="/faq" className="text-sm font-medium transition-colors hover:text-primary">
+                <Link href="/faq" className="text-lg font-medium transition-colors hover:text-primary">
                   FAQ
                 </Link>
                 <Link href="/contact" className="text-lg font-medium transition-colors hover:text-primary">

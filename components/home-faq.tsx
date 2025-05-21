@@ -7,7 +7,7 @@ export default function HomeFAQ() {
     {
       question: "What are your salon hours?",
       answer:
-        "Our salon is open Monday to Saturday from 10:00 AM to 7:00 PM, and on Sundays from 11:00 AM to 5:00 PM. We recommend booking appointments in advance, especially for weekends and holidays.",
+        "Our salon is open Monday to Sunday from 10:00 AM to 8:30 PM. We recommend booking appointments in advance, especially for weekends and holidays.",
     },
     {
       question: "How far in advance should I book my bridal makeup?",
