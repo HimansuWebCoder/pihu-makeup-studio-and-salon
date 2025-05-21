@@ -104,6 +104,9 @@ export default function Navbar() {
                 <Link href="/services" className="text-lg font-medium transition-colors hover:text-primary">
                   Services
                 </Link>
+                <Link href="/offers" className="text-sm font-medium transition-colors hover:text-primary">
+                  Offers
+                </Link>
                 <Link href="/gallery" className="text-lg font-medium transition-colors hover:text-primary">
                   Gallery
                 </Link>
@@ -112,6 +115,9 @@ export default function Navbar() {
                 </Link>
                 <Link href="/testimonials" className="text-lg font-medium transition-colors hover:text-primary">
                   Testimonials
+                </Link>
+                <Link href="/faq" className="text-sm font-medium transition-colors hover:text-primary">
+                  FAQ
                 </Link>
                 <Link href="/contact" className="text-lg font-medium transition-colors hover:text-primary">
                   Contact Us
