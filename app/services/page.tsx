@@ -26,7 +26,7 @@ export default function ServicesPage() {
         <TabsContent value="makeup" className="space-y-8">
           <div className="grid md:grid-cols-2 gap-8">
             <div className="relative h-[400px] rounded-lg overflow-hidden">
-              <Image src="/placeholder.svg?height=400&width=600" alt="Makeup Services" fill className="object-cover" />
+              <Image src="/images/hair-styling.jpg" alt="Makeup Services" fill className="object-cover" />
             </div>
             <div>
               <h2 className="text-3xl font-bold mb-4">Makeup Services</h2>
@@ -85,37 +85,37 @@ export default function ServicesPage() {
               title="Bridal Makeup"
               description="Complete bridal makeup package including trials, day-of makeup, and touch-ups"
               price="₹15,000"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
             <ServiceCard
               title="Party Makeup"
               description="Glamorous makeup for special events and parties"
               price="₹3,500"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
             <ServiceCard
               title="Natural Everyday Look"
               description="Subtle enhancement for a polished everyday appearance"
               price="₹2,000"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
             <ServiceCard
               title="HD Makeup"
               description="Camera-ready makeup using HD techniques and products"
               price="₹4,500"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
             <ServiceCard
               title="Airbrush Makeup"
               description="Flawless, long-lasting makeup application using airbrush technology"
               price="₹5,000"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
             <ServiceCard
               title="Eye Makeup"
               description="Focused eye makeup service including lashes"
               price="₹1,500"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
           </div>
         </TabsContent>
@@ -123,7 +123,7 @@ export default function ServicesPage() {
         <TabsContent value="hair" className="space-y-8">
           <div className="grid md:grid-cols-2 gap-8">
             <div className="relative h-[400px] rounded-lg overflow-hidden">
-              <Image src="/placeholder.svg?height=400&width=600" alt="Hair Services" fill className="object-cover" />
+              <Image src="/images/hair-styling.jpg" alt="Hair Services" fill className="object-cover" />
             </div>
             <div>
               <h2 className="text-3xl font-bold mb-4">Hair Services</h2>
@@ -176,37 +176,37 @@ export default function ServicesPage() {
               title="Haircut & Styling"
               description="Professional haircut and styling tailored to your face shape and preferences"
               price="₹1,200"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
             <ServiceCard
               title="Hair Coloring"
               description="Full hair coloring services including highlights, balayage, and ombre"
               price="₹3,500"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
             <ServiceCard
               title="Bridal Hair"
               description="Elaborate bridal hairstyling including trials"
               price="₹8,000"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
             <ServiceCard
               title="Hair Treatments"
               description="Nourishing treatments for damaged hair"
               price="₹2,500"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
             <ServiceCard
               title="Hair Extensions"
               description="Professional application of high-quality hair extensions"
               price="₹10,000"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
             <ServiceCard
               title="Blowout"
               description="Professional blow dry and styling"
               price="₹800"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
           </div>
         </TabsContent>
@@ -215,7 +215,7 @@ export default function ServicesPage() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="relative h-[400px] rounded-lg overflow-hidden">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/images/hair-styling.jpg"
                 alt="Skincare Services"
                 fill
                 className="object-cover"
@@ -266,37 +266,37 @@ export default function ServicesPage() {
               title="Facial"
               description="Deep cleansing facial customized for your skin type"
               price="₹2,000"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
             <ServiceCard
               title="Chemical Peel"
               description="Exfoliating treatment to improve skin texture and tone"
               price="₹3,500"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
             <ServiceCard
               title="Microdermabrasion"
               description="Non-invasive exfoliation for smoother, brighter skin"
               price="₹3,000"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
             <ServiceCard
               title="Hydrafacial"
               description="Multi-step treatment for deep hydration and cleansing"
               price="₹4,500"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
             <ServiceCard
               title="Anti-Aging Treatment"
               description="Specialized treatment targeting fine lines and wrinkles"
               price="₹5,000"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
             <ServiceCard
               title="Bridal Skincare Package"
               description="Series of treatments to prepare skin for the big day"
               price="₹12,000"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
           </div>
         </TabsContent>
@@ -304,7 +304,7 @@ export default function ServicesPage() {
         <TabsContent value="nails" className="space-y-8">
           <div className="grid md:grid-cols-2 gap-8">
             <div className="relative h-[400px] rounded-lg overflow-hidden">
-              <Image src="/placeholder.svg?height=400&width=600" alt="Nail Services" fill className="object-cover" />
+              <Image src="/images/hair-styling.jpg" alt="Nail Services" fill className="object-cover" />
             </div>
             <div>
               <h2 className="text-3xl font-bold mb-4">Nail Services</h2>
@@ -350,37 +350,37 @@ export default function ServicesPage() {
               title="Manicure"
               description="Classic manicure with nail shaping, cuticle care, and polish"
               price="₹800"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
             <ServiceCard
               title="Pedicure"
               description="Relaxing pedicure with foot soak, exfoliation, and polish"
               price="₹1,200"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
             <ServiceCard
               title="Gel Nails"
               description="Long-lasting gel nail application"
               price="₹1,500"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
             <ServiceCard
               title="Nail Art"
               description="Creative nail designs and embellishments"
               price="₹500+"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
             <ServiceCard
               title="Acrylic Extensions"
               description="Full set of acrylic nail extensions"
               price="₹2,500"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
             <ServiceCard
               title="Mani-Pedi Combo"
               description="Complete manicure and pedicure package"
               price="₹1,800"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
           </div>
         </TabsContent>
@@ -388,7 +388,7 @@ export default function ServicesPage() {
         <TabsContent value="spa" className="space-y-8">
           <div className="grid md:grid-cols-2 gap-8">
             <div className="relative h-[400px] rounded-lg overflow-hidden">
-              <Image src="/placeholder.svg?height=400&width=600" alt="Spa Services" fill className="object-cover" />
+              <Image src="/images/hair-styling.jpg" alt="Spa Services" fill className="object-cover" />
             </div>
             <div>
               <h2 className="text-3xl font-bold mb-4">Spa Services</h2>
@@ -441,37 +441,37 @@ export default function ServicesPage() {
               title="Swedish Massage"
               description="Relaxing full-body massage to release tension"
               price="₹2,500"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
             <ServiceCard
               title="Aromatherapy Massage"
               description="Therapeutic massage with essential oils"
               price="₹3,000"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
             <ServiceCard
               title="Body Scrub & Wrap"
               description="Exfoliating scrub followed by a nourishing body wrap"
               price="₹3,500"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
             <ServiceCard
               title="Hot Stone Massage"
               description="Deep relaxation massage using heated stones"
               price="₹3,200"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
             <ServiceCard
               title="Foot Reflexology"
               description="Pressure point massage focusing on the feet"
               price="₹1,800"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
             <ServiceCard
               title="Spa Day Package"
               description="Complete spa experience with multiple treatments"
               price="₹7,500"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
           </div>
         </TabsContent>
@@ -479,7 +479,7 @@ export default function ServicesPage() {
         <TabsContent value="bridal" className="space-y-8">
           <div className="grid md:grid-cols-2 gap-8">
             <div className="relative h-[400px] rounded-lg overflow-hidden">
-              <Image src="/placeholder.svg?height=400&width=600" alt="Bridal Services" fill className="object-cover" />
+              <Image src="/images/hair-styling.jpg" alt="Bridal Services" fill className="object-cover" />
             </div>
             <div>
               <h2 className="text-3xl font-bold mb-4">Bridal Services</h2>
@@ -532,37 +532,37 @@ export default function ServicesPage() {
               title="Complete Bridal Package"
               description="Comprehensive package including pre-wedding treatments, trial, and day-of services"
               price="₹35,000"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
             <ServiceCard
               title="Bridal Makeup & Hair"
               description="Professional makeup and hairstyling for your wedding day"
               price="₹20,000"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
             <ServiceCard
               title="Pre-Bridal Package"
               description="Series of treatments to prepare for your wedding day"
               price="₹15,000"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
             <ServiceCard
               title="Reception Look"
               description="Makeup and hair styling for your reception"
               price="₹15,000"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
             <ServiceCard
               title="Engagement Package"
               description="Makeup and hair for your engagement ceremony"
               price="₹12,000"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
             <ServiceCard
               title="Bridal Party Package"
               description="Services for bridesmaids and family members"
               price="₹8,000/person"
-              image="/placeholder.svg?height=200&width=300"
+              image="/images/hair-styling.jpg"
             />
           </div>
         </TabsContent>

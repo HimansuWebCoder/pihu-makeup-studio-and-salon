@@ -26,7 +26,7 @@ export default function AboutPage() {
           </Link>
         </div>
         <div className="relative h-[500px] rounded-lg overflow-hidden">
-          <Image src="/placeholder.svg?height=500&width=600" alt="Pihu Makeup Studio" fill className="object-cover" />
+          <Image src="/images/studio.png" alt="Pihu Makeup Studio" fill className="object-cover" />
         </div>
       </div>
 
