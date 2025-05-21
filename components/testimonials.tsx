@@ -7,28 +7,34 @@ import { Star } from "lucide-react"
 export default function Testimonials() {
   const testimonials = [
     {
-      name: "Priya Sharma",
-      role: "Bride",
+      name: "Mysti Fy",
+      role: "",
       content:
-        "Pihu and her team did an amazing job for my wedding. My makeup lasted the entire day and looked flawless in photos. Highly recommend their bridal services!",
-      avatar: "/placeholder.svg?height=100&width=100",
+        "Got a pedicure and i must say. I had a great experience. The massage. The thorough focus on each foot. The cleanups and scrubbing did an amazing job. I totally recommend.",
+      avatar: "/images/feedbackuser.png",
       rating: 5,
+      service: "Pedicure",
     },
     {
-      name: "Neha Gupta",
-      role: "Regular Client",
+      name: "Prakash Chandra Dash",
+      role: "",
       content:
-        "I've been coming to Pihu Makeup Studio for over a year now. Their hair stylists are incredibly talented and always give me exactly what I want. The atmosphere is welcoming and professional.",
-      avatar: "/placeholder.svg?height=100&width=100",
+        `Very nice makeup studio& salon .👌
+Behavior 👌price is also👍 good . Affordable price of packages for all service 👍😊 .
+Madam and her team also very nice .😎 Owoo Outstanding 👌👍 result 👍 specialist in all services .
+Thank you so much madam ji 😎`,
+      avatar: "/images/feedbackuser2.png",
       rating: 5,
+      service: "Makeup",
     },
     {
-      name: "Anjali Patel",
-      role: "Event Attendee",
+      name: "Shriti Singh",
+      role: "",
       content:
-        "Got my makeup done for a friend's wedding and received so many compliments! The makeup artist understood exactly what I wanted and executed it perfectly.",
-      avatar: "/placeholder.svg?height=100&width=100",
-      rating: 4,
+        "Went for this salon before some days for hair cut and I must say one of the best salon of the area..👍👏 highly recommended 😊😊",
+      avatar: "/images/feedbackuser3.png",
+      rating: 5,
+      service: "Hair Styling",
     },
   ]
 

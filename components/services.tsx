@@ -9,7 +9,7 @@ export default function Services() {
     {
       title: "Bridal Makeup",
       description: "Complete bridal packages for your special day",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/images/bridal-makeup.jpg",
       link: "/services",
       features: [
         "Traditional & Modern Bridal Makeup",
@@ -22,7 +22,7 @@ export default function Services() {
     {
       title: "Party Makeup",
       description: "Glamorous looks for any event or celebration",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/images/party-makeup.jpg",
       link: "/services",
       features: [
         "Evening & Cocktail Makeup",
@@ -35,7 +35,7 @@ export default function Services() {
     {
       title: "Hair Styling",
       description: "Cuts, colors, and styling by expert stylists",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/images/hair-styling.jpg",
       link: "/services",
       features: [
         "Precision Haircuts",
@@ -48,7 +48,7 @@ export default function Services() {
     {
       title: "Skincare",
       description: "Facials and treatments for radiant skin",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/images/skincare.jpg",
       link: "/services",
       features: [
         "Customized Facials",

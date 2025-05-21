@@ -3,6 +3,14 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
 export default function Hero() {
+
+  const users = [
+    "/images/feedbackuser.png",
+    "/images/feedbackuser4.png",
+    "/images/feedbackuser2.png",
+    "/images/feedbackuser3.png",
+  ]
+
   return (
     <div className="relative">
       <div className="container mx-auto px-4 py-16 md:py-24">
@@ -24,10 +32,11 @@ export default function Hero() {
             </div>
             <div className="flex items-center gap-4 pt-4">
               <div className="flex -space-x-4">
-                {[1, 2, 3, 4].map((i) => (
+                {users.map((user, i) => (
                   <div key={i} className="relative w-10 h-10 rounded-full overflow-hidden border-2 border-background">
                     <Image
-                      src={`/placeholder.svg?height=40&width=40&text=${i}`}
+                      // src={`/placeholder.svg?height=40&width=40&text=${i}`}
+                      src={`${user}`}
                       alt={`Customer ${i}`}
                       fill
                       className="object-cover"

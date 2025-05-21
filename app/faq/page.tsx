@@ -155,7 +155,7 @@ export default function FAQPage() {
     {
       question: "Are the products you use and sell ethical?",
       answer:
-        "Many of our products are cruelty-free, and we're continuously expanding our range of ethical and sustainable beauty products. Please ask our staff about specific brands if this is important to you.",
+        "Many of our products are high-quality, and we're continuously expanding our range of ethical and sustainable beauty products. Please ask our staff about specific brands if this is important to you.",
     },
     {
       question: "Do you offer samples of products before purchasing?",

@@ -15,7 +15,7 @@ export default function OffersPage() {
       discount: "20% OFF",
       originalPrice: "₹30,000",
       discountedPrice: "₹24,000",
-      validUntil: "June 30, 2024",
+      validUntil: "June 30, 2025",
       image: "/placeholder.svg?height=300&width=600",
       features: [
         "Pre-wedding consultation",
@@ -34,7 +34,7 @@ export default function OffersPage() {
       discount: "15% OFF",
       originalPrice: "₹3,500",
       discountedPrice: "₹2,975",
-      validUntil: "July 15, 2024",
+      validUntil: "July 15, 2025",
       image: "/placeholder.svg?height=300&width=600",
       features: [
         "Deep conditioning treatment",
@@ -52,7 +52,7 @@ export default function OffersPage() {
       discount: "25% OFF",
       originalPrice: "₹6,500",
       discountedPrice: "₹4,875",
-      validUntil: "May 31, 2024",
+      validUntil: "May 31, 2025",
       image: "/placeholder.svg?height=300&width=600",
       features: [
         "Professional makeup",
@@ -70,7 +70,7 @@ export default function OffersPage() {
       discount: "10% OFF",
       originalPrice: "₹2,500",
       discountedPrice: "₹2,250",
-      validUntil: "June 15, 2024",
+      validUntil: "June 15, 2025",
       image: "/placeholder.svg?height=300&width=600",
       features: ["Deep cleansing", "Exfoliation", "Hydrating mask", "Vitamin C serum application", "SPF protection"],
       popular: false,
@@ -99,7 +99,7 @@ export default function OffersPage() {
       discount: "15% OFF",
       originalPrice: "₹2,000",
       discountedPrice: "₹1,700",
-      validUntil: "June 30, 2024",
+      validUntil: "June 30, 2025",
       image: "/placeholder.svg?height=300&width=600",
       features: [
         "Classic manicure",
@@ -153,7 +153,7 @@ export default function OffersPage() {
     },
   ]
 
-  // Premium Beauty Card benefits
+  // Premium Membership Card benefits
   const benefits = [
     "Priority booking for all services",
     "Exclusive access to new products and services",
@@ -170,7 +170,7 @@ export default function OffersPage() {
         Take advantage of our limited-time offers and exclusive deals to save on your favorite beauty services
       </p>
 
-      {/* Premium Beauty Card */}
+      {/* Premium Membership Card */}
       <div className="max-w-4xl mx-auto mb-20">
         <Card className="overflow-hidden bg-gradient-to-br from-rose-50 to-pink-50 dark:from-rose-950/30 dark:to-pink-950/30 border-rose-200 dark:border-rose-800">
           <CardHeader className="text-center">
@@ -362,7 +362,7 @@ export default function OffersPage() {
               </div>
               <div className="flex items-center mb-6">
                 <Clock className="h-5 w-5 mr-2 text-primary" />
-                <span>Valid until June 30, 2024</span>
+                <span>Valid until June 30, 2025</span>
               </div>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-start">

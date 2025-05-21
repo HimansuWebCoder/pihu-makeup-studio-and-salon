@@ -30,23 +30,23 @@ export default function OurStudio() {
         <div className="order-1 md:order-2 grid grid-cols-2 gap-4">
           <div className="space-y-4">
             <div className="relative h-48 rounded-lg overflow-hidden">
-              <Image src="/placeholder.svg?height=200&width=300" alt="Studio interior" fill className="object-cover" />
+              <Image src="/images/studio.png" alt="Studio interior" fill className="object-cover" />
             </div>
             <div className="relative h-64 rounded-lg overflow-hidden">
-              <Image src="/placeholder.svg?height=300&width=300" alt="Makeup station" fill className="object-cover" />
+              <Image src="/images/studio.png" alt="Makeup station" fill className="object-cover" />
             </div>
           </div>
           <div className="space-y-4 pt-8">
             <div className="relative h-64 rounded-lg overflow-hidden">
               <Image
-                src="/placeholder.svg?height=300&width=300"
+                src="/images/studio.png"
                 alt="Hair styling area"
                 fill
                 className="object-cover"
               />
             </div>
             <div className="relative h-48 rounded-lg overflow-hidden">
-              <Image src="/placeholder.svg?height=200&width=300" alt="Reception area" fill className="object-cover" />
+              <Image src="/images/studio.png" alt="Reception area" fill className="object-cover" />
             </div>
           </div>
         </div>

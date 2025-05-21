@@ -22,11 +22,11 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <Link href="#" className="text-muted-foreground hover:text-primary">
-                <Facebook className="h-5 w-5 text-blue-300" />
+                <Facebook className="h-5 w-5 text-blue-200" />
                 <span className="sr-only">Facebook</span>
               </Link>
               <Link href="https://www.instagram.com/pihumakeupstudio2023" target="_blank" className="text-muted-foreground hover:text-primary">
-                <Instagram className="h-5 w-5 text-blue-300" />
+                <Instagram className="h-5 w-5 text-blue-200" />
                 <span className="sr-only">Instagram</span>
               </Link>
               {/*<Link href="#" className="text-muted-foreground hover:text-primary">
@@ -34,7 +34,7 @@ export default function Footer() {
                 <span className="sr-only">Twitter</span>
               </Link>*/}
               <Link href="https://www.youtube.com/@PIHUMAKEUPSTUDIO" target="_blank" className="text-muted-foreground hover:text-primary">
-                <Youtube className="h-5 w-5 text-blue-300" />
+                <Youtube className="h-5 w-5 text-blue-200" />
                 <span className="sr-only">YouTube</span>
               </Link>
             </div>

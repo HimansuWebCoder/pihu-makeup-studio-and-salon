@@ -5,85 +5,88 @@ import { Star } from "lucide-react"
 export default function TestimonialsPage() {
   const testimonials = [
     {
-      name: "Priya Sharma",
-      role: "Bride",
+      name: "Mysti Fy",
+      role: "",
       content:
-        "Pihu and her team did an amazing job for my wedding. My makeup lasted the entire day and looked flawless in photos. Highly recommend their bridal services!",
-      avatar: "/placeholder.svg?height=100&width=100",
+        "Got a pedicure and i must say. I had a great experience. The massage. The thorough focus on each foot. The cleanups and scrubbing did an amazing job. I totally recommend.",
+      avatar: "/images/feedbackuser.png",
       rating: 5,
-      service: "Bridal Makeup",
+      service: "Pedicure",
     },
     {
-      name: "Neha Gupta",
-      role: "Regular Client",
+      name: "Prakash Chandra Dash",
+      role: "",
       content:
-        "I've been coming to Pihu Makeup Studio for over a year now. Their hair stylists are incredibly talented and always give me exactly what I want. The atmosphere is welcoming and professional.",
-      avatar: "/placeholder.svg?height=100&width=100",
+        `Very nice makeup studio& salon .👌
+Behavior 👌price is also👍 good . Affordable price of packages for all service 👍😊 .
+Madam and her team also very nice .😎 Owoo Outstanding 👌👍 result 👍 specialist in all services .
+Thank you so much madam ji 😎`,
+      avatar: "/images/feedbackuser2.png",
+      rating: 5,
+      service: "Makeup",
+    },
+    {
+      name: "Shriti Singh",
+      role: "",
+      content:
+        "Went for this salon before some days for hair cut and I must say one of the best salon of the area..👍👏 highly recommended 😊😊",
+      avatar: "/images/feedbackuser3.png",
       rating: 5,
       service: "Hair Styling",
     },
     {
-      name: "Anjali Patel",
-      role: "Event Attendee",
+      name: "Mousumi Jena",
+      role: "",
       content:
-        "Got my makeup done for a friend's wedding and received so many compliments! The makeup artist understood exactly what I wanted and executed it perfectly.",
-      avatar: "/placeholder.svg?height=100&width=100",
-      rating: 4,
-      service: "Party Makeup",
-    },
-    {
-      name: "Ritu Desai",
-      role: "Regular Client",
-      content:
-        "The skincare treatments at Pihu Makeup Studio have transformed my skin. I've struggled with acne for years, and after just a few sessions, I've seen a dramatic improvement. The staff is knowledgeable and caring.",
-      avatar: "/placeholder.svg?height=100&width=100",
+        "Wowooo extremely grateful for the best service providing . I am so happy now... 😍😍 & a thank you so much pihu makeup studio....♥️",
+      avatar: "/images/feedbackuser4.png",
       rating: 5,
-      service: "Skincare",
+      service: "Facial, Eyebrow Threading",
     },
     {
-      name: "Meera Kapoor",
-      role: "Bride's Mother",
+      name: "Renubala Pradhan",
+      role: "",
       content:
-        "As the mother of the bride, I wanted to look my best without overshadowing my daughter. The team understood this perfectly and created an elegant, age-appropriate look that made me feel beautiful and confident.",
-      avatar: "/placeholder.svg?height=100&width=100",
+        "Best salon in sundarpada bhubaneswar great haircut thank u pihu makeup studio and salon",
+      avatar: "/images/feedbackuser5.png",
       rating: 5,
-      service: "Bridal Party Makeup",
+      service: "Hair Cut",
     },
     {
-      name: "Sanya Malhotra",
-      role: "Model",
+      name: "Saraswati Das",
+      role: "",
       content:
-        "I've worked with many makeup artists throughout my modeling career, and Pihu's team stands out for their creativity and precision. They understand lighting and photography needs perfectly.",
-      avatar: "/placeholder.svg?height=100&width=100",
+        "VERY GOOD sarvice thank u pihu make up studio & salon",
+      avatar: "/images/feedbackuser6.png",
       rating: 5,
-      service: "Professional Makeup",
+      service: "All Services",
     },
     {
-      name: "Divya Joshi",
-      role: "Student",
+      name: "Binay Kumar Sahoo",
+      role: "",
       content:
-        "I came in for a simple haircut and got the best style I've ever had! They really listened to what I wanted and gave suggestions that worked perfectly for my face shape and lifestyle.",
-      avatar: "/placeholder.svg?height=100&width=100",
-      rating: 4,
-      service: "Haircut & Styling",
-    },
-    {
-      name: "Kavita Singh",
-      role: "Business Professional",
-      content:
-        "Their nail services are exceptional. The nail art is creative and lasts much longer than any other salon I've tried. Perfect for when I need to look polished for important meetings.",
-      avatar: "/placeholder.svg?height=100&width=100",
+        "All service was very good. It's awesome 🥰",
+      avatar: "/images/feedbackuser7.png",
       rating: 5,
-      service: "Nail Art",
+      service: "All Services",
     },
     {
-      name: "Tanvi Mehta",
+      name: "Soumyasudha Behera",
+      role: "",
+      content:
+        "Good service 👍 U must come for good services",
+      avatar: "/images/feedbackuser8.png",
+      rating: 5,
+      service: "All Services",
+    },
+    {
+      name: "Sarmistha Mishra",
       role: "Bride",
       content:
-        "From the trial to the wedding day, the entire experience was perfect. They were punctual, professional, and created exactly the look I had envisioned. My makeup stayed flawless through tears and dancing!",
-      avatar: "/placeholder.svg?height=100&width=100",
+        "",
+      avatar: "/images/feedbackuser9.png",
       rating: 5,
-      service: "Bridal Makeup",
+      service: "",
     },
   ]
 
