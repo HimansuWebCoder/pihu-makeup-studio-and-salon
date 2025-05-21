@@ -137,7 +137,6 @@ export default function ServicesPage() {
                   title="Haircuts & Styling"
                   items={[
                     "Women's Haircut",
-                    "Men's Haircut",
                     "Children's Haircut",
                     "Blowout & Styling",
                     "Special Occasion Styling",
