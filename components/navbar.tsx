@@ -47,31 +47,31 @@ export default function Navbar() {
 
           <nav className="hidden md:flex items-center space-x-6">
             <Link href="/" className="text-sm font-medium transition-colors hover:text-primary">
-              Home
+              HOME
             </Link>
             <Link href="/about" className="text-sm font-medium transition-colors hover:text-primary">
-              About
+              ABOUT
             </Link>
             <Link href="/services" className="text-sm font-medium transition-colors hover:text-primary">
-              Services
+              SERVICES
             </Link>
             <Link href="/offers" className="text-sm font-medium transition-colors hover:text-primary">
-              Offers
+              OFFERS
             </Link>
             <Link href="/gallery" className="text-sm font-medium transition-colors hover:text-primary">
-              Gallery
+              GALLERY
             </Link>
             <Link href="/videos" className="text-sm font-medium transition-colors hover:text-primary">
-              Videos
+              VIDEOS
             </Link>
             <Link href="/testimonials" className="text-sm font-medium transition-colors hover:text-primary">
-              Testimonials
+              TESTIMONIALS
             </Link>
             <Link href="/faq" className="text-sm font-medium transition-colors hover:text-primary">
               FAQ
             </Link>
             <Link href="/contact" className="text-sm font-medium transition-colors hover:text-primary">
-              Contact Us
+              CONTACT US
             </Link>
           </nav>
 
@@ -96,31 +96,31 @@ export default function Navbar() {
             <SheetContent side="right">
               <nav className="flex flex-col space-y-4 mt-8">
                 <Link href="/" className="text-lg font-medium transition-colors hover:text-primary">
-                  Home
+                  HOME
                 </Link>
                 <Link href="/about" className="text-lg font-medium transition-colors hover:text-primary">
-                  About
+                  ABOUT
                 </Link>
                 <Link href="/services" className="text-lg font-medium transition-colors hover:text-primary">
-                  Services
+                  SERVICES
                 </Link>
                 <Link href="/offers" className="text-lg font-medium transition-colors hover:text-primary">
-                  Offers
+                  OFFERS
                 </Link>
                 <Link href="/gallery" className="text-lg font-medium transition-colors hover:text-primary">
-                  Gallery
+                  GALLERY
                 </Link>
                 <Link href="/videos" className="text-lg font-medium transition-colors hover:text-primary">
-                  Videos
+                  VIDEOS
                 </Link>
                 <Link href="/testimonials" className="text-lg font-medium transition-colors hover:text-primary">
-                  Testimonials
+                  TESTIMONIALS
                 </Link>
                 <Link href="/faq" className="text-lg font-medium transition-colors hover:text-primary">
                   FAQ
                 </Link>
                 <Link href="/contact" className="text-lg font-medium transition-colors hover:text-primary">
-                  Contact Us
+                  CONTACT US
                 </Link>
                 <div className="pt-4">
                   <div className="flex justify-center mb-4">

@@ -1,11 +1,14 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import { Courgette } from 'next/font/google';
 import Link from "next/link"
+
+const courgette = Courgette({ subsets: ['latin'], weight: '400' });
 
 export default function AboutPage() {
   return (
     <div className="container mx-auto py-16 px-4">
-      <h1 style={{fontFamily: "Courgette"}} className="text-4xl font-bold text-center mb-8">About Pihu Makeup Studio and Salon</h1>
+      <h1  className={`${courgette.className} text-4xl font-bold text-center mb-8`}>About Pihu Makeup Studio and Salon</h1>
 
       <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
         <div>
