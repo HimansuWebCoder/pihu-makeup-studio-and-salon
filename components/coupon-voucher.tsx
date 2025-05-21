@@ -130,7 +130,7 @@ export default function CouponVoucher() {
                     <div className="flex items-center text-sm text-txtcol mb-2">
                       <Tag className="h-4 w-4 mr-2" />
                       <span>Code: </span>
-                      <span className="font-mono bg-muted px-2 py-0.5 rounded ml-1">{coupon.code}</span>
+                      <span className="font-mono bg-muted text-white px-2 py-0.5 rounded ml-1">{coupon.code}</span>
                     </div>
                     <div className="flex items-center text-sm text-txtcol mb-2">
                       <CalendarDays className="h-4 w-4 mr-2" />
