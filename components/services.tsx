@@ -48,7 +48,7 @@ export default function Services() {
     {
       title: "Skincare",
       description: "Facials and treatments for radiant skin",
-      image: "/images/skincare.jpg",
+      image: "/images/skincare1.jpg",
       link: "/services",
       features: [
         "Customized Facials",

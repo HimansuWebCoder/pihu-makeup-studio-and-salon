@@ -23,21 +23,22 @@ export default function GalleryPage() {
   const generateImages = (category: string, count: number) => {
     return Array.from({ length: count }, (_, i) => ({
       id: `${category}-${i}`,
-      src: `/images/${category}${i + 1}.jpeg`,
+      src: `/images/${category}${i + 1}.jpg`,
       alt: `${category} image ${i + 1}`,
       category,
     }))
   }
 
+
   const allImages = [
-    ...generateImages("bridal", 9),
+    ...generateImages("bridal", 8),
     ...generateImages("party", 6),
     ...generateImages("hair", 6),
-    ...generateImages("skincare", 6),
-    ...generateImages("nails", 6),
-    ...generateImages("pedicure", 6),
-    ...generateImages("manicure", 4),
-    ...generateImages("facial", 4),
+    ...generateImages("skincare", 1),
+    ...generateImages("nails", 1),
+    ...generateImages("pedicure", 1),
+    ...generateImages("manicure", 1),
+    ...generateImages("facial", 1),
   ]
 
   return (

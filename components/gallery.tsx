@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button"
 
 export default function Gallery() {
   const images = [
-    "/images/pedicure.jpg",
-    "/images/manicure.jpg",
+    "/images/pedicure1.jpg",
+    "/images/manicure1.jpg",
     "/images/engagement.jpg",
-    "/images/pedicure.jpg",
+    "/images/party-makeup.jpg",
     "/img.png",
     "/images/bridal-makeup.jpg",
   ]

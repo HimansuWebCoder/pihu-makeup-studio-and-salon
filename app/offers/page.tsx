@@ -16,7 +16,7 @@ export default function OffersPage() {
       originalPrice: "₹30,000",
       discountedPrice: "₹24,000",
       validUntil: "June 30, 2025",
-      image: "/placeholder.svg?height=300&width=600",
+      image: "/images/bridal2.jpg",
       features: [
         "Pre-wedding consultation",
         "Trial makeup session",
@@ -35,7 +35,7 @@ export default function OffersPage() {
       originalPrice: "₹3,500",
       discountedPrice: "₹2,975",
       validUntil: "July 15, 2025",
-      image: "/placeholder.svg?height=300&width=600",
+      image: "/images/hair-styling.jpg",
       features: [
         "Deep conditioning treatment",
         "Scalp massage",
@@ -53,7 +53,7 @@ export default function OffersPage() {
       originalPrice: "₹6,500",
       discountedPrice: "₹4,875",
       validUntil: "May 31, 2025",
-      image: "/placeholder.svg?height=300&width=600",
+      image: "/images/party-makeup.jpg",
       features: [
         "Professional makeup",
         "Hairstyling",
@@ -71,7 +71,7 @@ export default function OffersPage() {
       originalPrice: "₹2,500",
       discountedPrice: "₹2,250",
       validUntil: "June 15, 2025",
-      image: "/placeholder.svg?height=300&width=600",
+      image: "/images/skincare1.jpg",
       features: ["Deep cleansing", "Exfoliation", "Hydrating mask", "Vitamin C serum application", "SPF protection"],
       popular: false,
     },
@@ -83,7 +83,7 @@ export default function OffersPage() {
       originalPrice: "Varies",
       discountedPrice: "30% off any service",
       validUntil: "Ongoing",
-      image: "/placeholder.svg?height=300&width=600",
+      image: "/images/party2.jpg",
       features: [
         "Valid on any service",
         "One-time use only",
@@ -100,7 +100,7 @@ export default function OffersPage() {
       originalPrice: "₹2,000",
       discountedPrice: "₹1,700",
       validUntil: "June 30, 2025",
-      image: "/placeholder.svg?height=300&width=600",
+      image: "/images/manicure1.jpg",
       features: [
         "Classic manicure",
         "Classic pedicure",
@@ -439,7 +439,7 @@ export default function OffersPage() {
             <div className="md:w-1/2">
               <div className="relative h-80 w-full rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/images/hair-styling.jpg"
                   alt="Summer Special Package"
                   fill
                   className="object-cover"
