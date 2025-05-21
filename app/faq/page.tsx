@@ -140,7 +140,7 @@ export default function FAQPage() {
     {
       question: "Do you sell the products you use in the salon?",
       answer:
-        "Yes, we retail many of the professional products we use in our services. This includes haircare, skincare, and makeup products from brands like L'Oréal Professional, Kérastase, Dermalogica, MAC, and more.",
+        "No, we do not currently retail the professional products used during our services. However, our team is happy to recommend the best products for your hair, skin, or makeup needs, so you can maintain your look at home with confidence.",
     },
     {
       question: "Can I return products if they don't work for me?",

@@ -16,7 +16,7 @@ export default function Hero() {
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">Enhance Your Natural Glow at Pihu Salon</h1>
+            <h1 style={{fontFamily: "Playfair Display"}} className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">Enhance Your Natural Glow at Pihu Salon</h1>
             <p className="text-xl text-txtcol">
               Professional makeup and salon services to enhance your unique beauty. Experience the beauty and care at Pihu Makeup Studio and Salon.
             </p>

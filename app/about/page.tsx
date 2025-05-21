@@ -5,11 +5,11 @@ import Link from "next/link"
 export default function AboutPage() {
   return (
     <div className="container mx-auto py-16 px-4">
-      <h1  className="text-4xl font-bold text-center mb-8">About Pihu Makeup Studio and Salon</h1>
+      <h1 style={{fontFamily: "Courgette"}} className="text-4xl font-bold text-center mb-8">About Pihu Makeup Studio and Salon</h1>
 
       <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
         <div>
-          <h2 className="text-3xl font-semibold mb-4">Our Story</h2>
+          <h2 style={{fontFamily: ""}} className="text-3xl font-semibold mb-4">Our Story</h2>
           <p className="text-lg mb-4">
             Since 2023, Pihu Makeup Studio and Salon has been committed to delivering high-quality, luxurious beauty experiences that are safe, long-lasting, and enhance your natural elegance — all with no side effects. Step into a world of peace, care, and timeless beauty.
           </p>
@@ -30,7 +30,7 @@ export default function AboutPage() {
       <div className="bg p-8 rounded-lg mb-16">
         <h2 className="text-3xl text-txtcol font-semibold text-center mb-8">Our Mission</h2>
         <p className="text-xl text-center text-txtcol max-w-3xl mx-auto">
-          "At Pihu Makeup Studio and Salon, we believe beauty should be timeless. Our mission is to offer premium, gentle, and transformative services that make you feel confidently beautiful inside and out."
+          "Pihu Makeup Studio and Salon exists to celebrate your natural beauty. We’re committed to delivering high-quality, caring services that help you shine with confidence—because beauty begins with feeling good in your own skin."
         </p>
       </div>
 

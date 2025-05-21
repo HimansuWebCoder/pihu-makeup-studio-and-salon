@@ -65,11 +65,6 @@ export default function ServicesList() {
           price: "₹8,000 - ₹15,000",
           description: "Premium quality hair extensions application",
         },
-        {
-          name: "Men's Haircut & Styling",
-          price: "₹500 - ₹1,000",
-          description: "Specialized cuts and styling for men",
-        },
       ],
     },
     {
