@@ -37,7 +37,7 @@ export default function Hero() {
               </div>
               <div>
                 <div className="font-medium">Trusted by 1000+ clients</div>
-                <div className="text-sm text-muted-foreground">5-star rated services</div>
+                <div className="text-sm text-txtcol">5-star rated services</div>
               </div>
             </div>
           </div>

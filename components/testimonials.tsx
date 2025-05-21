@@ -36,7 +36,7 @@ export default function Testimonials() {
     <section className="container mx-auto px-4 py-16">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold mb-4">What Our Clients Say</h2>
-        <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+        <p className="text-lg text-txtcol max-w-3xl mx-auto">
           Don't just take our word for it - hear from our satisfied clients
         </p>
       </div>
@@ -66,7 +66,7 @@ export default function Testimonials() {
               </div>
               <div className="text-center">
                 <h4 className="font-semibold">{testimonial.name}</h4>
-                <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                <p className="text-sm text-txtcol">{testimonial.role}</p>
               </div>
             </CardFooter>
           </Card>

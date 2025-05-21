@@ -200,22 +200,22 @@ export default function CouponVoucher() {
                 <div className="grid grid-cols-2 gap-4 mb-4">
                   <div className="border rounded-md p-4 text-center">
                     <div className="text-lg font-semibold">₹1,000</div>
-                    <div className="text-sm text-muted-foreground">Basic Voucher</div>
+                    <div className="text-sm text-txtcol">Basic Voucher</div>
                   </div>
                   <div className="border rounded-md p-4 text-center">
                     <div className="text-lg font-semibold">₹2,500</div>
-                    <div className="text-sm text-muted-foreground">Silver Voucher</div>
+                    <div className="text-sm text-txtcol">Silver Voucher</div>
                   </div>
                   <div className="border rounded-md p-4 text-center">
                     <div className="text-lg font-semibold">₹5,000</div>
-                    <div className="text-sm text-muted-foreground">Gold Voucher</div>
+                    <div className="text-sm text-txtcol">Gold Voucher</div>
                   </div>
                   <div className="border rounded-md p-4 text-center">
                     <div className="text-lg font-semibold">₹10,000</div>
-                    <div className="text-sm text-muted-foreground">Platinum Voucher</div>
+                    <div className="text-sm text-txtcol">Platinum Voucher</div>
                   </div>
                 </div>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-txtcol">
                   Gift vouchers are valid for 6 months from the date of purchase.
                 </p>
               </CardContent>

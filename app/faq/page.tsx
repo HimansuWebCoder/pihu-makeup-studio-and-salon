@@ -276,7 +276,7 @@ export default function FAQPage() {
         </TabsContent>
       </Tabs>
 
-      <div className="bg p-8 rounded-lg text-center mb-16">
+      <div className="p-8 rounded-lg text-center mb-16">
         <h2 className="text-2xl font-semibold mb-4">Still Have Questions?</h2>
         <p className="mb-6 max-w-2xl mx-auto">
           If you couldn't find the answer to your question, please don't hesitate to reach out to us directly. Our team

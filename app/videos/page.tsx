@@ -700,7 +700,7 @@ export default function VideosPage() {
               className={`flex items-center px-4 py-2 rounded-md text-sm font-medium ${
                 selectedPlatform === platform.id
                   ? "bg-bgtabactive shadow-sm"
-                  : "text-muted-foreground hover:text-foreground"
+                  : "text-muted-foreground hover:text-muted-foreground"
               }`}
             >
               {platform.icon}
@@ -734,7 +734,7 @@ export default function VideosPage() {
             filteredVideos.map((video) => <VideoCard key={video.id} video={video} />)
           ) : (
             <div className="col-span-2 text-center py-12">
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-txtcol">
                 No videos found matching your filters. Try changing your selection.
               </p>
             </div>
@@ -800,7 +800,7 @@ function VideoCard({ video }: { video: any }) {
           )}
           <h3 className="font-semibold text-xl">{video.title}</h3>
         </div>
-        <p className="text-muted-foreground mb-4">{video.description}</p>
+        <p className="text-txtcol mb-4">{video.description}</p>
         <div
           className={video.platform === "instagram" ? "instagram-embed" : "youtube-embed"}
           dangerouslySetInnerHTML={{ __html: video.embedCode }}

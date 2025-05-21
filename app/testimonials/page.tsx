@@ -123,7 +123,7 @@ export default function TestimonialsPage() {
               </div>
               <div className="text-center">
                 <h4 className="font-semibold">{testimonial.name}</h4>
-                <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                <p className="text-sm text-txtcol">{testimonial.role}</p>
               </div>
             </CardFooter>
           </Card>
