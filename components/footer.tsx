@@ -59,6 +59,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/offers" className="text-muted-foreground hover:text-primary">
+                  Offers
+                </Link>
+              </li>
+              <li>
                 <Link href="/gallery" className="text-muted-foreground hover:text-primary">
                   Gallery
                 </Link>
@@ -66,6 +71,11 @@ export default function Footer() {
               <li>
                 <Link href="/testimonials" className="text-muted-foreground hover:text-primary">
                   Testimonials
+                </Link>
+              </li>
+               <li>
+                <Link href="/faq" className="text-muted-foreground hover:text-primary">
+                  FAQ
                 </Link>
               </li>
               <li>

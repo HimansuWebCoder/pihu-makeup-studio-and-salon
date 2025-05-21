@@ -2,6 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Check } from "lucide-react"
 
 export default function Services() {
   const services = [
@@ -10,24 +11,52 @@ export default function Services() {
       description: "Complete bridal packages for your special day",
       image: "/placeholder.svg?height=300&width=400",
       link: "/services",
+      features: [
+        "Traditional & Modern Bridal Makeup",
+        "Pre-Bridal Skincare",
+        "Trial Makeup Session",
+        "Family & Bridal Party Makeup",
+        "On-location Services Available",
+      ],
     },
     {
       title: "Party Makeup",
       description: "Glamorous looks for any event or celebration",
       image: "/placeholder.svg?height=300&width=400",
       link: "/services",
+      features: [
+        "Evening & Cocktail Makeup",
+        "HD & Airbrush Makeup",
+        "Celebrity-inspired Looks",
+        "Hairstyling Included",
+        "Long-lasting Products",
+      ],
     },
     {
-      title: "Hair Styling/Treatment",
-      description: "Cuts, colors, treatments and styling by expert stylists",
+      title: "Hair Styling",
+      description: "Cuts, colors, and styling by expert stylists",
       image: "/placeholder.svg?height=300&width=400",
       link: "/services",
+      features: [
+        "Precision Haircuts",
+        "Color & Highlights",
+        "Balayage & Ombre",
+        "Hair Treatments & Spa",
+        "Bridal & Party Hairstyling",
+      ],
     },
     {
       title: "Skincare",
       description: "Facials and treatments for radiant skin",
       image: "/placeholder.svg?height=300&width=400",
       link: "/services",
+      features: [
+        "Customized Facials",
+        "Chemical Peels",
+        "Anti-Aging Treatments",
+        "Acne & Pigmentation Care",
+        "Hydrating Treatments",
+      ],
     },
   ]
 
@@ -35,7 +64,7 @@ export default function Services() {
     <section className="container mx-auto px-4 py-16">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold mb-4">Our Services</h2>
-        <p className="text-lg text-txtcol max-w-3xl mx-auto">
+        <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
           Discover our range of professional beauty services designed to enhance your natural beauty
         </p>
       </div>
@@ -50,6 +79,16 @@ export default function Services() {
               <CardTitle>{service.title}</CardTitle>
               <CardDescription>{service.description}</CardDescription>
             </CardHeader>
+            <div className="px-6 pb-4">
+              <ul className="space-y-1 mb-4">
+                {service.features.map((feature, idx) => (
+                  <li key={idx} className="flex items-start text-sm">
+                    <Check className="h-4 w-4 mr-2 text-primary shrink-0 mt-0.5" />
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
             <CardFooter>
               <Link href={service.link} className="w-full">
                 <Button variant="outline" className="w-full">
