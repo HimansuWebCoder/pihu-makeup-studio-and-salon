@@ -166,7 +166,7 @@ export default function OffersPage() {
   return (
     <div className="container mx-auto py-16 px-4">
       <h1 className="text-4xl font-bold text-center mb-4">Special Offers</h1>
-      <p className="text-lg text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+      <p className="text-lg text-center text-txtcol mb-12 max-w-3xl mx-auto">
         Take advantage of our limited-time offers and exclusive deals to save on your favorite beauty services
       </p>
 
@@ -246,15 +246,15 @@ export default function OffersPage() {
               </CardHeader>
               <CardContent>
                 <div className="flex items-center mb-4">
-                  <Tag className="h-4 w-4 mr-2 text-muted-foreground" />
+                  <Tag className="h-4 w-4 mr-2 text-txtcol" />
                   <div>
                     <span className="text-2xl font-bold">{offer.discountedPrice}</span>
-                    <span className="text-muted-foreground line-through ml-2">{offer.originalPrice}</span>
+                    <span className="text-txtcol line-through ml-2">{offer.originalPrice}</span>
                   </div>
                 </div>
                 <div className="flex items-center mb-4">
-                  <CalendarDays className="h-4 w-4 mr-2 text-muted-foreground" />
-                  <span className="text-sm text-muted-foreground">Valid until: {offer.validUntil}</span>
+                  <CalendarDays className="h-4 w-4 mr-2 text-txtcol" />
+                  <span className="text-sm text-txtcol">Valid until: {offer.validUntil}</span>
                 </div>
                 <div className="mt-4">
                   <h4 className="font-medium mb-2">What's Included:</h4>
@@ -348,11 +348,11 @@ export default function OffersPage() {
 
       {/* Seasonal Offers */}
       <div className="mb-20">
-        <div className="bg-muted rounded-lg p-8 md:p-12">
+        <div className="bg rounded-lg p-8 md:p-12">
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-1/2">
               <h2 className="text-3xl font-bold mb-4">Summer Special Package</h2>
-              <p className="text-muted-foreground mb-6">
+              <p className="text-txtcol mb-6">
                 Get ready for summer with our special package designed to give you that perfect summer glow. Limited
                 time offer!
               </p>
@@ -428,7 +428,7 @@ export default function OffersPage() {
               </ul>
               <div className="flex items-center">
                 <span className="text-2xl font-bold mr-4">₹7,999</span>
-                <span className="text-xl text-muted-foreground line-through">₹13,500</span>
+                <span className="text-xl text-txtcol line-through">₹13,500</span>
               </div>
               <div className="mt-6">
                 <Link href="/contact">

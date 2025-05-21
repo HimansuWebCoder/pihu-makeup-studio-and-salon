@@ -104,7 +104,7 @@ export default function Navbar() {
                 <Link href="/services" className="text-lg font-medium transition-colors hover:text-primary">
                   Services
                 </Link>
-                <Link href="/offers" className="text-sm font-medium transition-colors hover:text-primary">
+                <Link href="/offers" className="text-lg font-medium transition-colors hover:text-primary">
                   Offers
                 </Link>
                 <Link href="/gallery" className="text-lg font-medium transition-colors hover:text-primary">

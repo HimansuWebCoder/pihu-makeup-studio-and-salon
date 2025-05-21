@@ -92,7 +92,7 @@ export default function CouponVoucher() {
     <section className="container mx-auto px-4 py-16">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold mb-4">Coupon Codes & Vouchers</h2>
-        <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+        <p className="text-lg text-txtcol max-w-3xl mx-auto">
           Use these special codes to save on your favorite beauty services
         </p>
       </div>
@@ -127,16 +127,16 @@ export default function CouponVoucher() {
                         <Copy className="h-4 w-4" />
                       </Button>
                     </div>
-                    <div className="flex items-center text-sm text-muted-foreground mb-2">
+                    <div className="flex items-center text-sm text-txtcol mb-2">
                       <Tag className="h-4 w-4 mr-2" />
                       <span>Code: </span>
                       <span className="font-mono bg-muted px-2 py-0.5 rounded ml-1">{coupon.code}</span>
                     </div>
-                    <div className="flex items-center text-sm text-muted-foreground mb-2">
+                    <div className="flex items-center text-sm text-txtcol mb-2">
                       <CalendarDays className="h-4 w-4 mr-2" />
                       <span>Valid until: {coupon.validUntil}</span>
                     </div>
-                    <div className="text-sm text-muted-foreground">{coupon.minPurchase}</div>
+                    <div className="text-sm text-txtcol">{coupon.minPurchase}</div>
                   </div>
                 </div>
               </Card>
@@ -172,13 +172,13 @@ export default function CouponVoucher() {
             </CardContent>
             <CardFooter className="flex flex-col items-start">
               <h4 className="font-semibold mb-2">How to use coupon codes:</h4>
-              <ol className="list-decimal list-inside space-y-1 text-sm text-muted-foreground">
+              <ol className="list-decimal list-inside space-y-1 text-sm text-txtcol">
                 <li>Copy the coupon code you want to use</li>
                 <li>Mention the code when booking your appointment</li>
                 <li>Show the code to our staff before payment</li>
                 <li>Enjoy your discount!</li>
               </ol>
-              <p className="text-sm text-muted-foreground mt-4">
+              <p className="text-sm text-txtcol mt-4">
                 Note: Coupon codes cannot be combined with other offers unless specified.
               </p>
             </CardFooter>

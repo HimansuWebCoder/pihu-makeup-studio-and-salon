@@ -9,12 +9,12 @@ export default function ServicesPage() {
   return (
     <div className="container mx-auto py-16 px-4">
       <h1 className="text-4xl font-bold text-center mb-4">Our Services</h1>
-      <p className="text-lg text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+      <p className="text-lg text-center text-txtcol mb-12 max-w-3xl mx-auto">
         Discover our comprehensive range of beauty and salon services designed to enhance your natural beauty
       </p>
 
       <Tabs defaultValue="makeup" className="w-full mb-16">
-        <TabsList className="grid w-full grid-cols-2 md:grid-cols-6 mb-8">
+        <TabsList className="grid w-full grid-cols-2 h-auto md:grid-cols-6 mb-8">
           <TabsTrigger value="makeup">Makeup</TabsTrigger>
           <TabsTrigger value="hair">Hair</TabsTrigger>
           <TabsTrigger value="skincare">Skincare</TabsTrigger>
@@ -30,7 +30,7 @@ export default function ServicesPage() {
             </div>
             <div>
               <h2 className="text-3xl font-bold mb-4">Makeup Services</h2>
-              <p className="text-muted-foreground mb-6">
+              <p className="text-txtcol mb-6">
                 Our professional makeup artists use high-quality products to create flawless looks for any occasion.
                 From natural everyday makeup to glamorous evening looks, we customize each service to enhance your
                 unique features.
@@ -127,7 +127,7 @@ export default function ServicesPage() {
             </div>
             <div>
               <h2 className="text-3xl font-bold mb-4">Hair Services</h2>
-              <p className="text-muted-foreground mb-6">
+              <p className="text-txtcol mb-6">
                 Our expert stylists provide a full range of hair services using premium products. Whether you're looking
                 for a simple trim or a complete transformation, our team will help you achieve the perfect look for your
                 hair type and lifestyle.
@@ -223,7 +223,7 @@ export default function ServicesPage() {
             </div>
             <div>
               <h2 className="text-3xl font-bold mb-4">Skincare Services</h2>
-              <p className="text-muted-foreground mb-6">
+              <p className="text-txtcol mb-6">
                 Our skincare experts provide personalized treatments to address your specific skin concerns. Using
                 premium products and advanced techniques, we help you achieve healthy, glowing skin that looks and feels
                 its best.
@@ -308,7 +308,7 @@ export default function ServicesPage() {
             </div>
             <div>
               <h2 className="text-3xl font-bold mb-4">Nail Services</h2>
-              <p className="text-muted-foreground mb-6">
+              <p className="text-txtcol mb-6">
                 Our nail technicians provide a range of services to keep your hands and feet looking their best. From
                 basic manicures and pedicures to elaborate nail art, we use quality products for long-lasting results.
               </p>
@@ -392,7 +392,7 @@ export default function ServicesPage() {
             </div>
             <div>
               <h2 className="text-3xl font-bold mb-4">Spa Services</h2>
-              <p className="text-muted-foreground mb-6">
+              <p className="text-txtcol mb-6">
                 Indulge in our luxurious spa services designed to relax, rejuvenate, and restore balance to your body
                 and mind. Our skilled therapists use premium products and techniques to provide a truly pampering
                 experience.
@@ -483,7 +483,7 @@ export default function ServicesPage() {
             </div>
             <div>
               <h2 className="text-3xl font-bold mb-4">Bridal Services</h2>
-              <p className="text-muted-foreground mb-6">
+              <p className="text-txtcol mb-6">
                 Make your special day even more memorable with our comprehensive bridal services. Our experienced team
                 will work closely with you to create the perfect look that complements your style, outfit, and wedding
                 theme.
@@ -568,9 +568,9 @@ export default function ServicesPage() {
         </TabsContent>
       </Tabs>
 
-      <div className="bg-muted p-8 rounded-lg text-center mb-16">
+      <div className=" p-8 rounded-lg text-center mb-16">
         <h2 className="text-2xl font-semibold mb-4">Looking for a Custom Package?</h2>
-        <p className="mb-6 max-w-2xl mx-auto">
+        <p className="mb-6 max-w-2xl mx-auto text-txtcol">
           We offer personalized service packages tailored to your specific needs and preferences. Contact us to discuss
           your requirements and create your perfect beauty package.
         </p>

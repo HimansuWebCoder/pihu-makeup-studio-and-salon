@@ -8,7 +8,7 @@ export default function FAQPage() {
     {
       question: "What are your salon hours?",
       answer:
-        "Our salon is open Monday to Saturday from 10:00 AM to 7:00 PM, and on Sundays from 11:00 AM to 5:00 PM. We recommend booking appointments in advance, especially for weekends and holidays.",
+        "Our salon is open Monday to Sunday from 10:00 AM to 8:30 PM. We recommend booking appointments in advance, especially for weekends and holidays.",
     },
     {
       question: "Do I need to book an appointment or can I walk in?",
@@ -30,11 +30,11 @@ export default function FAQPage() {
       answer:
         "Yes, we require at least 24 hours' notice for cancellations or rescheduling. Late cancellations or no-shows may result in a cancellation fee of 50% of the service price. For bridal bookings, the advance payment is non-refundable if cancelled within 7 days of the appointment.",
     },
-    {
-      question: "Is there parking available?",
-      answer:
-        "Yes, we have dedicated parking spaces available for our clients. Additionally, there is public parking available within walking distance of our salon.",
-    },
+    // {
+    //   question: "Is there parking available?",
+    //   answer:
+    //     "Yes, we have dedicated parking spaces available for our clients. Additionally, there is public parking available within walking distance of our salon.",
+    // },
   ]
 
   const servicesFaqs = [
@@ -153,7 +153,7 @@ export default function FAQPage() {
         "Our stylists and technicians are trained to recommend appropriate products for maintaining your look at home. We believe in educating our clients on proper home care to extend the benefits of our salon services.",
     },
     {
-      question: "Are the products you use and sell cruelty-free?",
+      question: "Are the products you use and sell ethical?",
       answer:
         "Many of our products are cruelty-free, and we're continuously expanding our range of ethical and sustainable beauty products. Please ask our staff about specific brands if this is important to you.",
     },
@@ -194,13 +194,13 @@ export default function FAQPage() {
   return (
     <div className="container mx-auto py-16 px-4">
       <h1 className="text-4xl font-bold text-center mb-4">Frequently Asked Questions</h1>
-      <p className="text-lg text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+      <p className="text-lg text-center text-txtcol mb-12 max-w-3xl mx-auto">
         Find answers to common questions about our services, policies, and more. If you don't see your question here,
         feel free to contact us.
       </p>
 
       <Tabs defaultValue="general" className="w-full mb-16">
-        <TabsList className="grid w-full grid-cols-2 md:grid-cols-6 mb-8">
+        <TabsList className="grid w-full h-auto grid-cols-2 md:grid-cols-6 mb-8">
           <TabsTrigger value="general">General</TabsTrigger>
           <TabsTrigger value="services">Services</TabsTrigger>
           <TabsTrigger value="bridal">Bridal</TabsTrigger>
@@ -276,7 +276,7 @@ export default function FAQPage() {
         </TabsContent>
       </Tabs>
 
-      <div className="bg-muted p-8 rounded-lg text-center mb-16">
+      <div className="bg p-8 rounded-lg text-center mb-16">
         <h2 className="text-2xl font-semibold mb-4">Still Have Questions?</h2>
         <p className="mb-6 max-w-2xl mx-auto">
           If you couldn't find the answer to your question, please don't hesitate to reach out to us directly. Our team

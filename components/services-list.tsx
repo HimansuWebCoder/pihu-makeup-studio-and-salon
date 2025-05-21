@@ -145,10 +145,10 @@ export default function ServicesList() {
   ]
 
   return (
-    <section className="container mx-auto px-4 py-16 bg-muted/30 rounded-lg">
+    <section className="container mx-auto px-4 py-16 bg-muted/10 rounded-lg">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold mb-4">Our Complete Service Menu</h2>
-        <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+        <p className="text-lg text-txtcol max-w-3xl mx-auto">
           Explore our comprehensive range of beauty and salon services with transparent pricing
         </p>
       </div>
@@ -164,7 +164,7 @@ export default function ServicesList() {
                     <Check className="h-5 w-5 mr-2 text-primary shrink-0 mt-0.5" />
                     <div>
                       <div className="font-medium">{service.name}</div>
-                      <div className="text-sm text-muted-foreground">{service.description}</div>
+                      <div className="text-sm text-txtcol">{service.description}</div>
                     </div>
                   </div>
                   <div className="font-semibold text-right">{service.price}</div>
@@ -175,7 +175,7 @@ export default function ServicesList() {
         ))}
       </div>
 
-      <div className="text-center mt-8 text-sm text-muted-foreground">
+      <div className="text-center mt-8 text-sm text-txtcol">
         <p>* Prices may vary based on hair length, thickness, or service complexity.</p>
         <p>* Please consult with our stylists for a personalized quote.</p>
       </div>
