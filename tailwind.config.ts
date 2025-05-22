@@ -19,6 +19,13 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        playfair: ["var(--font-playfair)", "serif"],
+        cormorant: ["var(--font-cormorant)", "serif"],
+        montserrat: ["var(--font-montserrat)", "sans-serif"],
+        sans: ["var(--font-montserrat)", "sans-serif"],
+        serif: ["var(--font-playfair)", "serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
