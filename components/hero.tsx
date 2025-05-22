@@ -58,7 +58,7 @@ export default function Hero() {
           </div>
           <div className="relative h-[500px] rounded-lg overflow-hidden">
             <Image
-              src="/pihu.webp?height=500&width=600"
+              src="/images/studio.jpg"
               alt="Makeup artist at work"
               fill
               className="object-cover"

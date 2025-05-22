@@ -37,16 +37,16 @@ export default function OurStudio() {
         <div className="order-1 md:order-2 grid grid-cols-2 gap-4">
           <div className="space-y-4">
             <div className="relative h-48 rounded-lg overflow-hidden">
-              <Image src="/images/studio.png" alt="Studio interior" fill className="object-cover" />
+              <Image src="/images/studio.jpg" alt="Studio interior" fill className="object-cover" />
             </div>
             <div className="relative h-64 rounded-lg overflow-hidden">
-              <Image src="/images/studio.png" alt="Makeup station" fill className="object-cover" />
+              <Image src="/images/studio2.jpg" alt="Makeup station" fill className="object-cover" />
             </div>
           </div>
           <div className="space-y-4 pt-8">
             <div className="relative h-64 rounded-lg overflow-hidden">
               <Image
-                src="/images/studio.png"
+                src="/images/studio1.jpg"
                 alt="Hair styling area"
                 fill
                 className="object-cover"
