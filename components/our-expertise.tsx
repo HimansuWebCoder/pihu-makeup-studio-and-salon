@@ -1,12 +1,19 @@
 import type React from "react"
 import { Award, Gem, Heart, Sparkles, Star, Users } from "lucide-react"
 import { Check } from "lucide-react"
+import { Playfair_Display } from 'next/font/google';
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '700'], // optional: specify weights you want
+});
+
 
 export default function OurExpertise() {
   return (
     <section className="container mx-auto px-4 py-16">
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold mb-4">Our Expertise</h2>
+        <h2 className={`${playfair.className} text-3xl font-bold mb-4`}>Our Expertise</h2>
         <p className="text-lg text-txtcol max-w-3xl mx-auto">
           With years of experience and a passion for beauty, our team delivers exceptional services tailored to your
           unique style and preferences.
@@ -105,7 +112,7 @@ function ExpertiseCard({
   return (
     <div className="bg-card rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
       <div className="mb-4">{icon}</div>
-      <h3 className="text-xl font-semibold mb-2">{title}</h3>
+      <h3 className={`${playfair.className} text-xl font-semibold mb-2`}>{title}</h3>
       <p className="text-txtcol mb-4">{description}</p>
       <div className="mt-4">
         <h4 className="font-medium mb-2 text-sm uppercase tracking-wide">Services Include:</h4>

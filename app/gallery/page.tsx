@@ -4,6 +4,12 @@ import { useState } from "react"
 import Image from "next/image"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
+import { Playfair_Display } from 'next/font/google';
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '700'], // optional: specify weights you want
+});
 
 export default function GalleryPage() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
@@ -43,7 +49,7 @@ export default function GalleryPage() {
 
   return (
     <div className="container mx-auto py-16 px-4">
-      <h1 className="text-4xl font-bold text-center mb-4">Our Gallery</h1>
+      <h1 className={`${playfair.className} text-4xl font-bold text-center mb-4`}>Our Gallery</h1>
       <p className="text-lg text-center text-txtcol mb-12 max-w-3xl mx-auto">
         Browse through our portfolio of stunning transformations and artistic creations
       </p>

@@ -1,4 +1,10 @@
 import { Check } from "lucide-react"
+import { Playfair_Display } from 'next/font/google';
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '700'], // optional: specify weights you want
+});
 
 export default function ServicesList() {
   const serviceCategories = [
@@ -142,7 +148,7 @@ export default function ServicesList() {
   return (
     <section className="container mx-auto px-4 py-16 bg-muted/10 rounded-lg">
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold mb-4">Our Complete Service Menu</h2>
+        <h2 className={`${playfair.className} text-3xl font-bold mb-4`}>Our Complete Service Menu</h2>
         <p className="text-lg text-txtcol max-w-3xl mx-auto">
           Explore our comprehensive range of beauty and salon services with transparent pricing
         </p>
@@ -151,7 +157,7 @@ export default function ServicesList() {
       <div className="grid md:grid-cols-2 gap-8">
         {serviceCategories.map((category, index) => (
           <div key={index} className="bg-card rounded-lg p-6 shadow-sm">
-            <h3 className="text-xl font-bold mb-6 text-primary border-b pb-2">{category.category}</h3>
+            <h3 className={`${playfair.className} text-xl font-bold mb-6 text-primary border-b pb-2`}>{category.category}</h3>
             <div className="space-y-4">
               {category.services.map((service, idx) => (
                 <div key={idx} className="flex justify-between items-start">

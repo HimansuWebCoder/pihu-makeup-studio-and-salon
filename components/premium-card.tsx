@@ -4,6 +4,12 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Check } from "lucide-react"
+import { Playfair_Display } from 'next/font/google';
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '700'], // optional: specify weights you want
+});
 
 export default function PremiumCard() {
   const benefits = [
@@ -90,7 +96,7 @@ export default function PremiumCard() {
       </div>
 
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-4">Our Product Partners</h2>
+        <h2 className={`${playfair.className} text-3xl font-bold text-center mb-4`}>Our Product Partners</h2>
         <p className="text-lg text-center text-txtcol mb-12 max-w-3xl mx-auto">
           We use only the highest quality products from trusted brands to ensure exceptional results
         </p>

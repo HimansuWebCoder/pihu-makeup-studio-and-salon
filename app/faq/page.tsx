@@ -2,6 +2,12 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Playfair_Display } from 'next/font/google';
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '700'], // optional: specify weights you want
+});
 
 export default function FAQPage() {
   const generalFaqs = [
@@ -193,7 +199,7 @@ export default function FAQPage() {
 
   return (
     <div className="container mx-auto py-16 px-4">
-      <h1 className="text-4xl font-bold text-center mb-4">Frequently Asked Questions</h1>
+      <h1 className={`${playfair.className} text-4xl font-bold text-center mb-4`}>Frequently Asked Questions</h1>
       <p className="text-lg text-center text-txtcol mb-12 max-w-3xl mx-auto">
         Find answers to common questions about our services, policies, and more. If you don't see your question here,
         feel free to contact us.
@@ -277,7 +283,7 @@ export default function FAQPage() {
       </Tabs>
 
       <div className="p-8 rounded-lg text-center mb-16">
-        <h2 className="text-2xl font-semibold mb-4">Still Have Questions?</h2>
+        <h2 className={`${playfair.className} text-2xl font-semibold mb-4`}>Still Have Questions?</h2>
         <p className="mb-6 max-w-2xl mx-auto">
           If you couldn't find the answer to your question, please don't hesitate to reach out to us directly. Our team
           is always happy to help.

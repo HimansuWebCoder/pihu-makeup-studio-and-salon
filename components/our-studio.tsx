@@ -1,12 +1,19 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import { Playfair_Display } from 'next/font/google';
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '700'], // optional: specify weights you want
+});
+
 
 export default function OurStudio() {
   return (
     <section className="container mx-auto px-4 py-16">
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold mb-4">Our Studio</h2>
+        <h2 className={`${playfair.className} text-3xl font-bold mb-4`}>Our Studio</h2>
         <p className="text-lg text-txtcol max-w-3xl mx-auto">
           Experience beauty in our elegant and comfortable studio environment
         </p>
@@ -14,7 +21,7 @@ export default function OurStudio() {
 
       <div className="grid md:grid-cols-2 gap-12 items-center">
         <div className="order-2 md:order-1">
-          <h3 className="text-2xl font-semibold mb-4">A Space Designed for Beauty</h3>
+          <h3 className={`${playfair.className} text-2xl font-semibold mb-4`}>A Space Designed for Beauty</h3>
           <p className="text-txtcol mb-4">
             Our studio is designed to provide a relaxing and luxurious experience.
             At Pihu Makeup Studio and Salon, we want you to feel relaxed and special.

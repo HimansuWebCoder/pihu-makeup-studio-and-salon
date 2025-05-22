@@ -2,6 +2,12 @@ import Link from "next/link"
 import Image from "next/image"
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react"
 import { Clock, MapPin, Phone, Mail } from "lucide-react"
+import { Playfair_Display } from 'next/font/google';
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '700'], // optional: specify weights you want
+});
 
 export default function Footer() {
   return (
@@ -41,7 +47,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-muted-foreground">Quick Links</h3>
+            <h3 className={`${playfair.className} text-lg font-semibold mb-4 text-muted-foreground`}>Quick Links</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/" className="text-muted-foreground hover:text-primary">
@@ -97,7 +103,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-muted-foreground">Services</h3>
+            <h3 className={`${playfair.className} text-lg font-semibold mb-4 text-muted-foreground`}>Services</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/services" className="text-muted-foreground hover:text-primary">
@@ -133,7 +139,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-muted-foreground">Contact Us</h3>
+            <h3 className={`${playfair.className} text-lg font-semibold mb-4 text-muted-foreground`}>Contact Us</h3>
             {/*<address className="not-italic text-muted-foreground">
             <MapPin className="h-6 w-6 mr-3 mt-0.5 text-primary" />
               <p className="mb-2">Srusti Plaza, First Floor Infront of Bharat Petrol Pump, Sundarapada Rd, Kantilo

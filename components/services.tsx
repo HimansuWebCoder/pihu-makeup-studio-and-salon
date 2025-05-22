@@ -3,6 +3,12 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Check } from "lucide-react"
+import { Playfair_Display } from 'next/font/google';
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '700'], // optional: specify weights you want
+});
 
 export default function Services() {
   const services = [
@@ -63,7 +69,7 @@ export default function Services() {
   return (
     <section className="container mx-auto px-4 py-16">
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold mb-4">Our Services</h2>
+        <h2 className={`${playfair.className} text-3xl font-bold mb-4`}>Our Services</h2>
         <p className="text-lg text-txtcol max-w-3xl mx-auto">
           Discover our range of professional beauty services designed to enhance your natural beauty
         </p>

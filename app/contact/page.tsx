@@ -8,13 +8,19 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Clock, MapPin, Phone, Mail } from "lucide-react"
+import { Playfair_Display } from 'next/font/google';
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '700'], // optional: specify weights you want
+});
 
 export default function ContactPage() {
   const [date, setDate] = useState<Date>()
 
   return (
     <div className="container mx-auto py-16 px-4">
-      <h1 className="text-4xl font-bold text-center mb-4">Contact Us</h1>
+      <h1 className={`${playfair.className} text-4xl font-bold text-center mb-4`}>Contact Us</h1>
       <p className="text-lg text-center text-txtcol mb-12 max-w-3xl mx-auto">
         We'd love to hear from you! Book an appointment or send us a message.
       </p>
@@ -22,7 +28,7 @@ export default function ContactPage() {
       <div className="grid md:grid-cols-2 gap-12 mb-16">
         <Card>
           <CardContent className="p-6">
-            <h2 className="text-2xl font-semibold mb-6">Book an Appointment</h2>
+            <h2 className={`${playfair.className} text-2xl font-semibold mb-6`}>Book an Appointment</h2>
             <form
               className="space-y-4"
               onSubmit={(e) => {
@@ -142,7 +148,7 @@ export default function ContactPage() {
 
         <div className="space-y-8">
           <div>
-            <h2 className="text-2xl font-semibold mb-6">Contact Information</h2>
+            <h2 className={`${playfair.className} text-2xl font-semibold mb-6`}>Contact Information</h2>
             <div className="space-y-4">
               <div className="flex items-start">
                 <MapPin className="h-10 w-10 sm:h-6 sm:w-6 mr-3 mt-0.5 text-primary" />
@@ -181,7 +187,7 @@ export default function ContactPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold mb-6">Send Us a Message</h2>
+            <h2 className={`${playfair.className} text-2xl font-semibold mb-6`}>Send Us a Message</h2>
             <form
               className="space-y-4"
               onSubmit={(e) => {

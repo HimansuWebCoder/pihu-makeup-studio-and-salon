@@ -1,5 +1,11 @@
 import Image from "next/image"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
+import { Playfair_Display } from 'next/font/google';
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '700'], // optional: specify weights you want
+});
 import { Star } from "lucide-react"
 
 export default function TestimonialsPage() {
@@ -92,7 +98,7 @@ Thank you so much madam ji 😎`,
 
   return (
     <div className="container mx-auto py-16 px-4">
-      <h1 className="text-4xl font-bold text-center mb-4">Client Testimonials</h1>
+      <h1 className={`${playfair.className} text-4xl font-bold text-center mb-4`}>Client Testimonials</h1>
       <p className="text-lg text-center text-txtcol mb-12 max-w-3xl mx-auto">
         Don't just take our word for it - hear from our satisfied clients about their experiences at Pihu Makeup Studio
         and Salon
@@ -134,7 +140,7 @@ Thank you so much madam ji 😎`,
       </div>
 
       <div className="bg-muted p-8 rounded-lg text-center">
-        <h2 className="text-2xl text-muted-foreground font-semibold mb-4">Share Your Experience</h2>
+        <h2 className={`${playfair.className} text-2xl text-muted-foreground font-semibold mb-4`}>Share Your Experience</h2>
         <p className="mb-6 max-w-2xl text-muted-foreground mx-auto">
           We value your feedback! If you've recently visited Pihu Makeup Studio and Salon, we'd love to hear about your
           experience. Your testimonial helps us improve our services and helps others find the beauty services they

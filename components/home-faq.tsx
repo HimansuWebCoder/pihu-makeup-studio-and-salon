@@ -1,6 +1,12 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import { Playfair_Display } from 'next/font/google';
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '700'], // optional: specify weights you want
+});
 
 export default function HomeFAQ() {
   const faqs = [
@@ -34,7 +40,7 @@ export default function HomeFAQ() {
   return (
     <section className="container mx-auto px-4 py-16">
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+        <h2 className={`${playfair.className} text-3xl font-bold mb-4`}>Frequently Asked Questions</h2>
         <p className="text-lg text-txtcol max-w-3xl mx-auto">
           Find answers to common questions about our services, policies, and more
         </p>

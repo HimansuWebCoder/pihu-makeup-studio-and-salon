@@ -9,6 +9,12 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Badge } from "@/components/ui/badge"
 import { Copy, Scissors, Tag, CalendarDays } from "lucide-react"
 import { useToast } from "@/components/ui/use-toast"
+import { Playfair_Display } from 'next/font/google';
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '700'], // optional: specify weights you want
+});
 
 export default function CouponVoucher() {
   const { toast } = useToast()
@@ -91,7 +97,7 @@ export default function CouponVoucher() {
   return (
     <section className="container mx-auto px-4 py-16">
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold mb-4">Coupon Codes & Vouchers</h2>
+        <h2 className={`${playfair.className} text-3xl font-bold mb-4`}>Coupon Codes & Vouchers</h2>
         <p className="text-lg text-txtcol max-w-3xl mx-auto">
           Use these special codes to save on your favorite beauty services
         </p>
@@ -99,7 +105,7 @@ export default function CouponVoucher() {
 
       <div className="grid md:grid-cols-2 gap-8 mb-12">
         <div>
-          <h3 className="text-2xl font-semibold mb-6 text-primary">Available Coupons</h3>
+          <h3 className={`${playfair.className} text-2xl font-semibold mb-6 text-primary`}>Available Coupons</h3>
           <div className="space-y-4">
             {availableCoupons.map((coupon, index) => (
               <Card key={index} className="overflow-hidden border-dashed">
@@ -145,7 +151,7 @@ export default function CouponVoucher() {
         </div>
 
         <div>
-          <h3 className="text-2xl font-semibold mb-6 text-primary">Check Coupon Validity</h3>
+          <h3 className={`${playfair.className} text-2xl font-semibold mb-6 text-primary`}>Check Coupon Validity</h3>
           <Card>
             <CardHeader>
               <CardTitle>Have a coupon code?</CardTitle>
@@ -185,7 +191,7 @@ export default function CouponVoucher() {
           </Card>
 
           <div className="mt-8">
-            <h3 className="text-2xl font-semibold mb-6 text-primary">Gift Vouchers</h3>
+            <h3 className={`${playfair.className} text-2xl font-semibold mb-6 text-primary`}>Gift Vouchers</h3>
             <Card>
               <CardHeader>
                 <CardTitle>Give the Gift of Beauty</CardTitle>

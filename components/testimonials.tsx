@@ -3,6 +3,18 @@ import Link from "next/link"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Star } from "lucide-react"
+import { Poppins } from 'next/font/google';
+import { Playfair_Display } from 'next/font/google';
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '700'], // optional: specify weights you want
+});
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '400'], // specify weights you want
+});
 
 export default function Testimonials() {
   const testimonials = [
@@ -41,7 +53,7 @@ Thank you so much madam ji 😎`,
   return (
     <section className="container mx-auto px-4 py-16">
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold mb-4">What Our Clients Say</h2>
+        <h2 className={`${playfair.className} text-3xl font-bold mb-4`}>What Our Clients Say</h2>
         <p className="text-lg text-txtcol max-w-3xl mx-auto">
           Don't just take our word for it - hear from our satisfied clients
         </p>
@@ -59,7 +71,7 @@ Thank you so much madam ji 😎`,
                   />
                 ))}
               </div>
-              <p className="text-center mb-6">"{testimonial.content}"</p>
+              <p className={`${poppins.className} text-center mb-6`}>"{testimonial.content}"</p>
             </CardContent>
             <CardFooter className="flex flex-col items-center pb-6">
               <div className="relative h-16 w-16 rounded-full overflow-hidden mb-2">

@@ -5,6 +5,12 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Badge } from "@/components/ui/badge"
 import { CalendarDays, Clock, Percent, Tag, Check } from "lucide-react"
 import CouponVoucher from "@/components/coupon-voucher"
+import { Playfair_Display } from 'next/font/google';
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '700'], // optional: specify weights you want
+});
 
 export default function OffersPage() {
   const currentOffers = [
@@ -165,7 +171,7 @@ export default function OffersPage() {
 
   return (
     <div className="container mx-auto py-16 px-4">
-      <h1 className="text-4xl font-bold text-center mb-4">Special Offers</h1>
+      <h1 className={`${playfair.className} text-4xl font-bold text-center mb-4`}>Special Offers</h1>
       <p className="text-lg text-center text-txtcol mb-12 max-w-3xl mx-auto">
         Take advantage of our limited-time offers and exclusive deals to save on your favorite beauty services
       </p>
@@ -223,7 +229,7 @@ export default function OffersPage() {
 
       {/* Current Offers */}
       <div className="mb-20">
-        <h2 className="text-3xl font-bold mb-8 text-center">Current Promotions</h2>
+        <h2 className={`${playfair.className} text-3xl font-bold mb-8 text-center`}>Current Promotions</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {currentOffers.map((offer) => (
             <Card key={offer.id} className={`overflow-hidden ${offer.popular ? "border-primary" : ""}`}>
@@ -291,7 +297,7 @@ export default function OffersPage() {
 
       {/* Membership Offers */}
       <div className="mb-20">
-        <h2 className="text-3xl font-bold mb-8 text-center">Membership Plans</h2>
+        <h2 className={`${playfair.className} text-3xl font-bold mb-8 text-center`}>Membership Plans</h2>
         <div className="grid md:grid-cols-3 gap-6">
           {membershipOffers.map((membership) => (
             <Card key={membership.id} className="overflow-hidden">
@@ -351,7 +357,7 @@ export default function OffersPage() {
         <div className="bg rounded-lg p-8 md:p-12">
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-1/2">
-              <h2 className="text-3xl font-bold mb-4">Summer Special Package</h2>
+              <h2 className={`${playfair.className} text-3xl font-bold mb-4`}>Summer Special Package</h2>
               <p className="text-txtcol mb-6">
                 Get ready for summer with our special package designed to give you that perfect summer glow. Limited
                 time offer!
@@ -452,9 +458,9 @@ export default function OffersPage() {
 
       {/* Referral Program */}
       <div className="mb-20">
-        <h2 className="text-3xl font-bold mb-8 text-center">Refer a Friend</h2>
+        <h2 className={`${playfair.className} text-3xl font-bold mb-8 text-center`}>Refer a Friend</h2>
         <div className="bg-gradient-to-r from-rose-50 to-pink-50 dark:from-rose-950/30 dark:to-pink-950/30 rounded-lg p-8 md:p-12 text-center">
-          <h3 className="text-2xl font-bold mb-4 text-rose-700 dark:text-rose-300">
+          <h3 className={`${playfair.className} text-2xl font-bold mb-4 text-rose-700 dark:text-rose-300`}>
             Refer a Friend and Both Get 20% OFF
           </h3>
           <p className="text-lg mb-6 max-w-2xl mx-auto text-rose-700/90 dark:text-rose-300/90">
@@ -486,7 +492,7 @@ export default function OffersPage() {
 
       {/* CTA */}
       <div className="text-center">
-        <h2 className="text-2xl font-semibold mb-4">Ready to Book Your Appointment?</h2>
+        <h2 className={`${playfair.className} text-2xl font-semibold mb-4`}>Ready to Book Your Appointment?</h2>
         <p className="mb-6 max-w-2xl mx-auto">
           Don't miss out on these limited-time offers. Contact us today to book your appointment and take advantage of
           these special deals.
