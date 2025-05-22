@@ -5,6 +5,8 @@ import "./globals.css"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import WelcomePopup from "@/components/welcome-popup"
+import CallButton from "@/components/call-button"
+import LoadingScreen from "@/components/loading-screen"
 import WhatsAppButton from "@/components/whatsapp-button"
 import { ThemeProvider } from "@/components/theme-provider"
 
@@ -25,10 +27,12 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+         <LoadingScreen />
           <Navbar />
           <main className="min-h-screen">{children}</main>
           <Footer />
           <WelcomePopup />
+          <CallButton />
           <WhatsAppButton />
         </ThemeProvider>
       </body>
