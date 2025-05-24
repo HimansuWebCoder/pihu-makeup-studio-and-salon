@@ -225,10 +225,10 @@ export default function OffersPage() {
       </div>
 
       {/* Coupon Voucher Section */}
-      <CouponVoucher />
+      {/*<CouponVoucher />*/}
 
       {/* Current Offers */}
-      <div className="mb-20">
+      {/*<div className="mb-20">
         <h2 className={`${playfair.className} text-3xl font-bold mb-8 text-center`}>Current Promotions</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {currentOffers.map((offer) => (
@@ -293,10 +293,10 @@ export default function OffersPage() {
             </Card>
           ))}
         </div>
-      </div>
+      </div>*/}
 
       {/* Membership Offers */}
-      <div className="mb-20">
+     {/* <div className="mb-20">
         <h2 className={`${playfair.className} text-3xl font-bold mb-8 text-center`}>Membership Plans</h2>
         <div className="grid md:grid-cols-3 gap-6">
           {membershipOffers.map((membership) => (
@@ -351,9 +351,9 @@ export default function OffersPage() {
           ))}
         </div>
       </div>
-
+*/}
       {/* Seasonal Offers */}
-      <div className="mb-20">
+      {/*<div className="mb-20">
         <div className="bg rounded-lg p-8 md:p-12">
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-1/2">
@@ -455,9 +455,9 @@ export default function OffersPage() {
           </div>
         </div>
       </div>
-
+*/}
       {/* Referral Program */}
-      <div className="mb-20">
+      {/*<div className="mb-20">
         <h2 className={`${playfair.className} text-3xl font-bold mb-8 text-center`}>Refer a Friend</h2>
         <div className="bg-gradient-to-r from-rose-50 to-pink-50 dark:from-rose-950/30 dark:to-pink-950/30 rounded-lg p-8 md:p-12 text-center">
           <h3 className={`${playfair.className} text-2xl font-bold mb-4 text-rose-700 dark:text-rose-300`}>
@@ -488,7 +488,7 @@ export default function OffersPage() {
             <Button className="bg-rose-600 hover:bg-rose-700 text-white">Get Your Referral Code</Button>
           </Link>
         </div>
-      </div>
+      </div>*/}
 
       {/* CTA */}
       <div className="text-center">

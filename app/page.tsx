@@ -20,8 +20,8 @@ export default function Home() {
       <ServicesList />
       <Gallery />
       <OurStudio />
-      <SpecialOffers />
-      <CouponVoucher />
+      {/*<SpecialOffers />*/}
+      {/*<CouponVoucher />*/}
       <PremiumCard />
       <Testimonials />
       <HomeFAQ />
