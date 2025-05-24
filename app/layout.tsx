@@ -8,6 +8,7 @@ import Footer from "@/components/footer"
 import WelcomePopup from "@/components/welcome-popup"
 import CallButton from "@/components/call-button"
 import LoadingScreen from "@/components/loading-screen"
+import ParticlesBackground from "@/components/particles-background"
 import WhatsAppButton from "@/components/whatsapp-button"
 import { ThemeProvider } from "@/components/theme-provider"
 
@@ -49,6 +50,7 @@ export default function RootLayout({
       <body className={`${playfair.variable} ${cormorant.variable} ${montserrat.variable}`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
          <LoadingScreen />
+         <ParticlesBackground />
           <Navbar />
           <main className="min-h-screen">{children}</main>
           <Footer />

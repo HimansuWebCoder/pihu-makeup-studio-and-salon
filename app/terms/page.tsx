@@ -44,7 +44,7 @@ export default function TermsPage() {
           </p>
         </section>
 
-        <section className="mb-8">
+{/*        <section className="mb-8">
           <h2 className={`${playfair.className} text-2xl font-bold text-primary mb-4`}>3. Voucher & Coupon Terms</h2>
           <h3 className={`${playfair.className} text-xl font-semibold text-rose-600 dark:text-rose-400 mt-4 mb-2`}>3.1 Gift Vouchers</h3>
           <p>
@@ -70,10 +70,10 @@ export default function TermsPage() {
             next service after the new client's first appointment. Referrals must be verified by providing the
             referrer's name or code at the time of booking.
           </p>
-        </section>
+        </section>*/}
 
         <section className="mb-8">
-          <h2 className={`${playfair.className} text-2xl font-bold text-primary mb-4`}>4. Premium Beauty Card Terms</h2>
+          <h2 className={`${playfair.className} text-2xl font-bold text-primary mb-4`}>3. Premium Membership Card Terms</h2>
           <h3 className={`${playfair.className} text-xl font-semibold text-rose-600 dark:text-rose-400 mt-4 mb-2`}>4.1 Membership</h3>
           <p>
             The Premium Beauty Card is valid for 12 months from the date of purchase. Membership is non-transferable and
@@ -94,7 +94,7 @@ export default function TermsPage() {
         </section>
 
         <section className="mb-8">
-          <h2 className={`${playfair.className} text-2xl font-bold text-primary mb-4`}>5. Health and Safety</h2>
+          <h2 className={`${playfair.className} text-2xl font-bold text-primary mb-4`}>4. Health and Safety</h2>
           <p>
             Clients are required to inform us of any allergies, skin conditions, or health issues that may affect the
             service. We reserve the right to refuse service if we believe it may cause harm or discomfort to the client.
@@ -102,7 +102,7 @@ export default function TermsPage() {
         </section>
 
         <section className="mb-8">
-          <h2 className={`${playfair.className} text-2xl font-bold text-primary mb-4`}>6. Privacy Policy</h2>
+          <h2 className={`${playfair.className} text-2xl font-bold text-primary mb-4`}>5. Privacy Policy</h2>
           <p>
             We collect personal information for appointment booking and service customization. This information is kept
             confidential and is not shared with third parties without your consent. For more details, please refer to
@@ -111,7 +111,7 @@ export default function TermsPage() {
         </section>
 
         <section className="mb-8">
-          <h2 className={`${playfair.className} text-2xl font-bold text-primary mb-4`}>7. Intellectual Property</h2>
+          <h2 className={`${playfair.className} text-2xl font-bold text-primary mb-4`}>6. Intellectual Property</h2>
           <p>
             All content on our website, including text, graphics, logos, and images, is the property of Pihu Makeup
             Studio and Salon and is protected by copyright laws. We may use before and after photos of clients for
@@ -120,7 +120,7 @@ export default function TermsPage() {
         </section>
 
         <section className="mb-8">
-          <h2 className={`${playfair.className} text-2xl font-bold text-primary mb-4`}>8. Liability</h2>
+          <h2 className={`${playfair.className} text-2xl font-bold text-primary mb-4`}>7. Liability</h2>
           <p>
             Pihu Makeup Studio and Salon is not liable for any damage to personal belongings while on our premises. We
             take all reasonable precautions to ensure the safety and satisfaction of our clients.
@@ -128,7 +128,7 @@ export default function TermsPage() {
         </section>
 
         <section className="mb-8">
-          <h2 className={`${playfair.className} text-2xl font-bold text-primary mb-4`}>9. Service-Specific Terms</h2>
+          <h2 className={`${playfair.className} text-2xl font-bold text-primary mb-4`}>8. Service-Specific Terms</h2>
           <h3 className={`${playfair.className} text-xl font-semibold text-rose-600 dark:text-rose-400 mt-4 mb-2`}>9.1 Bridal Services</h3>
           <p>
             Bridal packages require booking at least 3 months in advance. A 30% non-refundable deposit is required to
@@ -149,7 +149,7 @@ export default function TermsPage() {
         </section>
 
         <section className="mb-8">
-          <h2 className={`${playfair.className} text-2xl font-bold text-primary mb-4`}>10. Changes to Terms and Conditions</h2>
+          <h2 className={`${playfair.className} text-2xl font-bold text-primary mb-4`}>9. Changes to Terms and Conditions</h2>
           <p>
             We reserve the right to modify these Terms and Conditions at any time. Changes will be effective immediately
             upon posting on our website. Continued use of our services after any modifications constitutes acceptance of
@@ -158,7 +158,7 @@ export default function TermsPage() {
         </section>
 
         <section className="mb-8">
-          <h2 className={`${playfair.className} text-2xl font-bold text-primary mb-4`}>11. Contact Information</h2>
+          <h2 className={`${playfair.className} text-2xl font-bold text-primary mb-4`}>10. Contact Information</h2>
           <p>If you have any questions about these Terms and Conditions, please contact us at:</p>
           <p>
             Pihu Makeup Studio and Salon
@@ -173,7 +173,7 @@ export default function TermsPage() {
           </p>
         </section>
 
-        <p className="text-center mt-12">Last updated: May 21, 2025</p>
+        <p className="text-center mt-12">Last updated: May 25, 2025</p>
       </div>
     </div>
   )
