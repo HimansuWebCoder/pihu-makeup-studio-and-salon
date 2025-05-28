@@ -37,9 +37,9 @@ export default function GalleryPage() {
 
 
   const allImages = [
-    ...generateImages("bridal", 50),
-    ...generateImages("party", 50),
-    ...generateImages("hair", 100),
+    ...generateImages("bridal", 14),
+    ...generateImages("party", 7),
+    ...generateImages("hair", 36),
     ...generateImages("skincare", 1),
     ...generateImages("nails", 1),
     ...generateImages("pedicure", 1),
