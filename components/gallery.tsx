@@ -12,10 +12,10 @@ export default function Gallery() {
   const images = [
     "/images/pedicure1.jpg",
     "/images/manicure1.jpg",
-    "/images/engagement.jpg",
-    "/images/party-makeup.jpg",
-    "/img.png",
-    "/images/bridal-makeup.jpg",
+    "/images/party1.jpg",
+    "/images/bridal12.jpg",
+    "/images/hair8.jpg",
+    "/images/bridal4.jpg",
   ]
 
   return (

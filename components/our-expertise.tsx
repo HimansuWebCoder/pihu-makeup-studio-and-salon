@@ -38,11 +38,14 @@ export default function OurExpertise() {
           title="Hair Styling / Treatments"
           description="Expert cuts, colors, and styling that enhance your natural beauty and reflect your personal style."
           services={[
-            "Precision Haircuts",
-            "Color & Highlights",
-            "Balayage & Ombre",
-            "Bridal Hairstyling",
-            "Hair Treatments & Spa",
+            "Global Color & Highlights",
+            "Hair Fall Control & Repair",
+            "Hair Growth Treatments",
+            "Root Touch-Up",
+            "Botox",
+            "Neoplex Treatments",
+            "Keratin",
+            "Ironing / Curls",
           ]}
         />
         <ExpertiseCard
@@ -51,7 +54,7 @@ export default function OurExpertise() {
           description="Comprehensive bridal packages to ensure you look and feel your best on your special day."
           services={[
             "Complete Bridal Packages",
-            "Pre-Bridal Treatments",
+            "Pre-Wedding Bridal Makeup",
             "Engagement Makeup",
             "Reception Looks",
             "Family & Bridal Party Services",

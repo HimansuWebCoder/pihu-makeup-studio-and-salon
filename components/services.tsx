@@ -15,7 +15,7 @@ export default function Services() {
     {
       title: "Bridal Makeup",
       description: "Complete bridal packages for your special day",
-      image: "/images/bridal-makeup.jpg",
+      image: "/images/bridal6.jpg",
       link: "/services",
       features: [
         "Traditional & Modern Bridal Makeup",
@@ -28,7 +28,7 @@ export default function Services() {
     {
       title: "Party Makeup",
       description: "Glamorous looks for any event or celebration",
-      image: "/images/party-makeup.jpg",
+      image: "/images/party4.jpg",
       link: "/services",
       features: [
         "Evening & Cocktail Makeup",
@@ -41,14 +41,17 @@ export default function Services() {
     {
       title: "Hair Styling",
       description: "Cuts, colors, and styling by expert stylists",
-      image: "/images/hair-styling.jpg",
+      image: "/images/hair16.jpg",
       link: "/services",
       features: [
-        "Precision Haircuts",
-        "Color & Highlights",
-        "Balayage & Ombre",
-        "Hair Treatments & Spa",
-        "Bridal & Party Hairstyling",
+            "Global Color & Highlights",
+            "Hair Fall Control & Repair",
+            "Hair Growth Treatments",
+            "Root Touch-Up",
+            "Botox",
+            "Neoplex Treatments",
+            "Keratin",
+            "Ironing / Curls",
       ],
     },
     {
