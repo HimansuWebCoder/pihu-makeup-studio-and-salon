@@ -35,7 +35,7 @@ export default function OurExpertise() {
         />
         <ExpertiseCard
           icon={<Heart className="h-10 w-10 text-primary" />}
-          title="Hair Styling"
+          title="Hair Styling / Treatments"
           description="Expert cuts, colors, and styling that enhance your natural beauty and reflect your personal style."
           services={[
             "Precision Haircuts",
@@ -60,7 +60,7 @@ export default function OurExpertise() {
         <ExpertiseCard
           icon={<Gem className="h-10 w-10 text-primary" />}
           title="Skincare Treatments"
-          description="Rejuvenating facials and treatments that nourish your skin and create a radiant complexion."
+          description="Refreshing facials and treatments that nourish your skin and create a radiant complexion."
           services={[
             "Customized Facials",
             "Chemical Peels",
@@ -84,7 +84,7 @@ export default function OurExpertise() {
         <ExpertiseCard
           icon={<Users className="h-10 w-10 text-primary" />}
           title="Spa & Wellness"
-          description="Relaxing and rejuvenating spa services to pamper your body and calm your mind."
+          description="Relaxing and Refreshing spa services to pamper your body and calm your mind."
           services={[
             "Massage Therapy",
             "Body Scrubs & Wraps",

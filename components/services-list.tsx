@@ -1,5 +1,7 @@
 import { Check } from "lucide-react"
 import { Playfair_Display } from 'next/font/google';
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -13,32 +15,32 @@ export default function ServicesList() {
       services: [
         {
           name: "Bridal Makeup",
-          price: "₹15,000 - ₹25,000",
+          price: "₹7,000 - ₹25,000",
           description: "Complete bridal makeup with trials and touch-ups",
         },
         {
           name: "Party Makeup",
-          price: "₹3,500 - ₹5,000",
+          price: "₹2,500 - ₹5,000",
           description: "Glamorous makeup for special events and parties",
         },
         {
           name: "HD Makeup",
-          price: "₹4,500",
+          price: "₹2,500-₹3,000",
           description: "High-definition makeup for photoshoots and special occasions",
         },
         {
           name: "Airbrush Makeup",
-          price: "₹5,000",
+          price: "₹3,000-₹5000",
           description: "Lightweight, long-lasting makeup application using airbrush technology",
         },
         {
           name: "Engagement Makeup",
-          price: "₹8,000",
+          price: "₹4,000-₹7,000",
           description: "Special makeup for engagement ceremonies",
         },
         {
           name: "Reception Makeup",
-          price: "₹10,000",
+          price: "₹2,000-₹5000",
           description: "Elegant makeup for wedding receptions",
         },
       ],
@@ -78,32 +80,32 @@ export default function ServicesList() {
       services: [
         {
           name: "Basic Facial",
-          price: "₹1,200",
+          price: "₹1,200-₹3,000",
           description: "Cleansing, exfoliation, and hydration for all skin types",
         },
         {
           name: "Advanced Facial",
-          price: "₹2,500",
+          price: "₹2,500-₹4,000",
           description: "Targeted treatment for specific skin concerns",
         },
         {
           name: "Chemical Peel",
-          price: "₹3,500",
+          price: "₹3,500-8,000",
           description: "Exfoliating treatment to improve skin texture and tone",
         },
         {
           name: "Hydrafacial",
-          price: "₹4,500",
+          price: "₹4,500-₹8,500",
           description: "Multi-step treatment for deep hydration and cleansing",
         },
         {
           name: "Anti-Aging Treatment",
-          price: "₹5,000",
+          price: "₹5,000-₹6,000",
           description: "Specialized treatment targeting fine lines and wrinkles",
         },
         {
           name: "Acne Treatment",
-          price: "₹2,800",
+          price: "₹500-₹1,000",
           description: "Targeted treatment for acne-prone skin",
         },
       ],
@@ -113,32 +115,32 @@ export default function ServicesList() {
       services: [
         {
           name: "Manicure",
-          price: "₹800",
+          price: "₹800-₹1000",
           description: "Classic manicure with nail shaping, cuticle care, and polish",
         },
         {
           name: "Pedicure",
-          price: "₹1,200",
+          price: "₹800-₹1,500",
           description: "Relaxing pedicure with foot soak, exfoliation, and polish",
         },
         {
           name: "Gel Nails",
-          price: "₹1,500",
+          price: "₹1,500-₹3,000",
           description: "Long-lasting gel nail application",
         },
         {
           name: "Nail Art",
-          price: "₹500+",
+          price: "₹500-₹600",
           description: "Creative nail designs and embellishments",
         },
         {
           name: "Acrylic Extensions",
-          price: "₹2,500",
+          price: "₹1,500-₹2,000",
           description: "Full set of acrylic nail extensions",
         },
         {
           name: "Mani-Pedi Combo",
-          price: "₹1,800",
+          price: "₹1,800-3,000",
           description: "Complete manicure and pedicure package",
         },
       ],
@@ -168,7 +170,10 @@ export default function ServicesList() {
                       <div className="text-sm text-txtcol">{service.description}</div>
                     </div>
                   </div>
-                  <div className="font-semibold text-right">{service.price}</div>
+                  {/*<div className="font-semibold text-right">{service.price}</div>*/}
+                  <Link href="/contact">
+                    <Button className="w-full">Book Now</Button>
+                  </Link>
                 </div>
               ))}
             </div>
@@ -183,3 +188,7 @@ export default function ServicesList() {
     </section>
   )
 }
+
+
+
+
