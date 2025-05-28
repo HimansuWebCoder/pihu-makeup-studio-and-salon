@@ -32,7 +32,7 @@ export default function AboutPage() {
           </Link>
         </div>
         <div className="relative h-[500px] rounded-lg overflow-hidden">
-          <Image src="/images/studio.png" alt="Pihu Makeup Studio" fill className="object-cover" />
+          <Image src="/images/studio2.jpg" alt="Pihu Makeup Studio" fill className="object-cover" />
         </div>
       </div>
 
