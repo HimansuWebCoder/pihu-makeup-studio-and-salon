@@ -132,7 +132,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/services" className="text-muted-foreground hover:text-primary">
-                  Nail Art
+                  Nail Services
                 </Link>
               </li>
             </ul>

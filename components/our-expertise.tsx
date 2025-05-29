@@ -66,9 +66,9 @@ export default function OurExpertise() {
           description="Refreshing facials and treatments that nourish your skin and create a radiant complexion."
           services={[
             "Customized Facials",
-            "Chemical Peels",
-            "Microdermabrasion",
-            "Anti-Aging Treatments",
+            "Waxing (Face, Bikini)",
+            "Hydra Facial",
+            "D-Tan & Bleach",
             "Acne & Pigmentation Treatments",
           ]}
         />
@@ -78,8 +78,7 @@ export default function OurExpertise() {
           description="Meticulous nail services from basic manicures to elaborate nail art designs."
           services={[
             "Manicures & Pedicures",
-            "Gel & Acrylic Extensions",
-            "Nail Art & Design",
+            "Gel Extensions",
             "Spa Treatments for Hands & Feet",
             "Bridal Nail Packages",
           ]}
@@ -90,9 +89,9 @@ export default function OurExpertise() {
           description="Relaxing and Refreshing spa services to pamper your body and calm your mind."
           services={[
             "Massage Therapy",
+            "Body Polishing",
             "Body Scrubs & Wraps",
             "Aromatherapy Treatments",
-            "Reflexology",
             "Wellness Packages",
           ]}
         />

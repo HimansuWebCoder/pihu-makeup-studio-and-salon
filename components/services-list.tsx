@@ -129,12 +129,7 @@ export default function ServicesList() {
           description: "Long-lasting gel nail application",
         },
         {
-          name: "Nail Art",
-          price: "₹500-₹600",
-          description: "Creative nail designs and embellishments",
-        },
-        {
-          name: "Acrylic Extensions",
+          name: "Gel Extensions",
           price: "₹1,500-₹2,000",
           description: "Full set of acrylic nail extensions",
         },

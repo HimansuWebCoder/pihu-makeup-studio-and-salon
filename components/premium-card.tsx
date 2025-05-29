@@ -79,7 +79,7 @@ export default function PremiumCard() {
                   <span className="text-rose-600/80 dark:text-rose-400/80">/2year</span>
                 </div>
                 <p className="mb-6 text-rose-700/90 dark:text-rose-300/90">
-                  Save up to 15% annually with our premium membership benefits
+                  Save up to 7% annually with our premium membership benefits
                 </p>
                 <Link href="/contact">
                   <Button className="w-full bg-rose-600 hover:bg-rose-700 text-white">Join Now</Button>

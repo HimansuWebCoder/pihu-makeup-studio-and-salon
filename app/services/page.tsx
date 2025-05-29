@@ -32,7 +32,7 @@ export default function ServicesPage() {
         <TabsContent value="makeup" className="space-y-8">
           <div className="grid md:grid-cols-2 gap-8">
             <div className="relative h-[400px] rounded-lg overflow-hidden">
-              <Image src="/images/hair-styling.jpg" alt="Makeup Services" fill className="object-cover" />
+              <Image src="/images/party4.jpg" alt="Makeup Services" fill className="object-cover" />
             </div>
             <div>
               <h2 className={`${playfair.className} text-3xl font-bold mb-4`}>Makeup Services</h2>
@@ -45,41 +45,45 @@ export default function ServicesPage() {
                 <ServiceCategory
                   title="Bridal Makeup"
                   items={[
-                    "Traditional Bridal Makeup",
+                    "Classic Bridal Makeup",
                     "Modern Bridal Makeup",
                     "Reception Makeup",
-                    "Trial Makeup",
+                    "HD Bridal Makeup",
+                    "HD Pro Bridal Makeup",
+                    "Airbrush Bridal Makeup",
+                    "HD Airbrush Bridal Makeup",
                     "Bridal Party Makeup",
                   ]}
                 />
                 <ServiceCategory
                   title="Party Makeup"
                   items={[
-                    "Evening Glam Makeup",
-                    "Cocktail Party Makeup",
+                    "Basic Party Makeup (Basic Makeup & Hair Do)",
+                    "Classic Party Makeup",
+                    "HD Party Makeup",
+                    "HD Pro Party Makeup",
+                    "Airbrush Party Makeup",
                     "Festival Makeup",
                     "Photoshoot Makeup",
                     "Celebrity-inspired Looks",
                   ]}
                 />
                 <ServiceCategory
-                  title="Everyday Makeup"
+                  title="Engagement Makeup"
                   items={[
-                    "Natural Everyday Look",
-                    "Office Makeup",
-                    "No-Makeup Makeup Look",
-                    "Makeup Lesson",
-                    "Teen Makeup",
+                    "Classic Engagement Makeup",
+                    "HD Engagement Makeup",
+                    "HD Pro Engagement Makeup",
+                    "Airbrush Engagement Makeup",
+                    "HD Airbrush Engagement Makeup",
                   ]}
                 />
                 <ServiceCategory
-                  title="Special Techniques"
+                  title="Groom Makeup"
                   items={[
-                    "Airbrush Makeup",
-                    "HD Makeup",
-                    "Waterproof Makeup",
-                    "Contouring & Highlighting",
-                    "Eye Makeup Only",
+                    "Classic Groom Makeup",
+                    "HD Groom Makeup",
+                    "Airbrush Groom Makeup",
                   ]}
                 />
               </div>
@@ -91,19 +95,19 @@ export default function ServicesPage() {
               title="Bridal Makeup"
               description="Complete bridal makeup package including trials, day-of makeup, and touch-ups"
               price="₹15,000"
-              image="/images/hair-styling.jpg"
+              image="/images/bridal12.jpg"
             />
             <ServiceCard
               title="Party Makeup"
               description="Glamorous makeup for special events and parties"
               price="₹3,500"
-              image="/images/hair-styling.jpg"
+              image="/images/party3.jpg"
             />
             <ServiceCard
               title="Natural Everyday Look"
               description="Subtle enhancement for a polished everyday appearance"
               price="₹2,000"
-              image="/images/hair-styling.jpg"
+              image="/images/party2.jpg"
             />
             <ServiceCard
               title="HD Makeup"
@@ -142,15 +146,15 @@ export default function ServicesPage() {
                 <ServiceCategory
                   title="Haircuts & Styling"
                   items={[
-                    "Women's Haircut",
-                    "Children's Haircut",
-                    "Blowout & Styling",
+                    "Ironing / Curls (With Wash & Conditioning)",
+                    "Advanced Protein Styling",
+                    "Dandruff Wash",
                     "Special Occasion Styling",
                   ]}
                 />
                 <ServiceCategory
                   title="Hair Coloring"
-                  items={["Full Color", "Highlights/Lowlights", "Balayage/Ombre", "Root Touch-up", "Fashion Colors"]}
+                  items={["Full Color", "Highlights/Lowlights", "Root Touch-up", "Fashion Colors"]}
                 />
                 <ServiceCategory
                   title="Hair Treatments"
@@ -158,11 +162,11 @@ export default function ServicesPage() {
                     "Deep Conditioning",
                     "Keratin Treatment",
                     "Hair Spa",
-                    "Scalp Treatment",
+                    "Hairfall Treatment",
                     "Anti-Frizz Treatment",
                   ]}
                 />
-                <ServiceCategory
+                {/*<ServiceCategory
                   title="Hair Extensions"
                   items={[
                     "Clip-in Extensions",
@@ -171,7 +175,7 @@ export default function ServicesPage() {
                     "Micro-link Extensions",
                     "Extension Maintenance",
                   ]}
-                />
+                />*/}
               </div>
             </div>
           </div>
@@ -325,7 +329,6 @@ export default function ServicesPage() {
                     "Classic Manicure",
                     "Spa Manicure",
                     "Paraffin Manicure",
-                    "Men's Manicure",
                   ]}
                 />
                 <ServiceCategory
@@ -335,17 +338,16 @@ export default function ServicesPage() {
                     "Classic Pedicure",
                     "Spa Pedicure",
                     "Paraffin Pedicure",
-                    "Men's Pedicure",
                   ]}
                 />
                 <ServiceCategory
                   title="Nail Enhancements"
                   items={["Gel Polish", "Acrylic Extensions", "Gel Extensions", "Dip Powder", "Nail Repair"]}
                 />
-                <ServiceCategory
-                  title="Nail Art"
-                  items={["Simple Nail Art", "3D Nail Art", "French Tips", "Chrome/Holographic", "Bridal Nail Art"]}
-                />
+              {/*  <ServiceCategory
+                  title="Nail Services"
+                  items={["Simple Nail Art", "French Tips", "Chrome/Holographic", "Bridal Nail Art"]}
+                />*/}
               </div>
             </div>
           </div>

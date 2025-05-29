@@ -19,7 +19,7 @@ export default function GalleryPage() {
     { id: "party", name: "Party Makeup" },
     { id: "hair", name: "Hair Styling" },
     { id: "skincare", name: "Skincare" },
-    { id: "nails", name: "Nail Art" },
+    // { id: "nails", name: "Nail Art" },
     { id: "pedicure", name: "Pedicure" },
     { id: "manicure", name: "Manicure" },
     { id: "facial", name: "Facial Makeup" },

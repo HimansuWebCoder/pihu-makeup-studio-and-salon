@@ -19,8 +19,9 @@ export default function Services() {
       link: "/services",
       features: [
         "Traditional & Modern Bridal Makeup",
-        "Pre-Bridal Skincare",
-        "Trial Makeup Session",
+        "Pre-Wedding Makeup",
+        "Reception Makeup",
+        "Engagement Looks",
         "Family & Bridal Party Makeup",
         "On-location Services Available",
       ],
@@ -61,8 +62,8 @@ export default function Services() {
       link: "/services",
       features: [
         "Customized Facials",
-        "Chemical Peels",
-        "Anti-Aging Treatments",
+        "Hydra Facial",
+        "D-Tan & Bleach",
         "Acne & Pigmentation Care",
         "Hydrating Treatments",
       ],
