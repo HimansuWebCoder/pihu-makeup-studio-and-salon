@@ -10,11 +10,11 @@ const playfair = Playfair_Display({
 
 export default function Gallery() {
   const images = [
-    "/images/pedicure1.jpg",
-    "/images/manicure1.jpg",
-    "/images/party1.jpg",
+    "/images/party6.jpg",
+    "/images/hair17.jpg",
+    "/images/hd-makeup.jpeg",
     "/images/bridal12.jpg",
-    "/images/hair8.jpg",
+    "/images/hair28.jpg",
     "/images/bridal4.jpg",
   ]
 

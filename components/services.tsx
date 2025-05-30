@@ -42,7 +42,7 @@ export default function Services() {
     {
       title: "Hair Styling",
       description: "Cuts, colors, and styling by expert stylists",
-      image: "/images/hair16.jpg",
+      image: "/images/hair34.jpg",
       link: "/services",
       features: [
             "Global Color & Highlights",

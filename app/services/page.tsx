@@ -25,7 +25,7 @@ export default function ServicesPage() {
           <TabsTrigger value="hair">Hair</TabsTrigger>
           <TabsTrigger value="skincare">Skincare</TabsTrigger>
           <TabsTrigger value="nails">Nails</TabsTrigger>
-          <TabsTrigger value="spa">Spa</TabsTrigger>
+          {/*<TabsTrigger value="spa">Spa</TabsTrigger>*/}
           <TabsTrigger value="bridal">Bridal</TabsTrigger>
         </TabsList>
 
@@ -133,7 +133,7 @@ export default function ServicesPage() {
         <TabsContent value="hair" className="space-y-8">
           <div className="grid md:grid-cols-2 gap-8">
             <div className="relative h-[400px] rounded-lg overflow-hidden">
-              <Image src="/images/hair-styling.jpg" alt="Hair Services" fill className="object-cover" />
+              <Image src="/images/hair34.jpg" alt="Hair Services" fill className="object-cover" />
             </div>
             <div>
               <h2 className={`${playfair.className} text-3xl font-bold mb-4`}>Hair Services</h2>
@@ -185,38 +185,38 @@ export default function ServicesPage() {
               title="Haircut & Styling"
               description="Professional haircut and styling tailored to your face shape and preferences"
               price="₹1,200"
-              image="/images/hair-styling.jpg"
+              image="/images/hair28.jpg"
             />
             <ServiceCard
               title="Hair Coloring"
               description="Full hair coloring services including highlights, balayage, and ombre"
               price="₹3,500"
-              image="/images/hair-styling.jpg"
+              image="/images/hair5.jpg"
             />
             <ServiceCard
               title="Bridal Hair"
               description="Elaborate bridal hairstyling including trials"
               price="₹8,000"
-              image="/images/hair-styling.jpg"
+              image="/images/hair17.jpg"
             />
             <ServiceCard
               title="Hair Treatments"
               description="Nourishing treatments for damaged hair"
               price="₹2,500"
-              image="/images/hair-styling.jpg"
+              image="/images/hair18.jpg"
             />
             <ServiceCard
               title="Hair Extensions"
               description="Professional application of high-quality hair extensions"
               price="₹10,000"
-              image="/images/hair-styling.jpg"
+              image="/images/hair1.jpg"
             />
-            <ServiceCard
+            {/*<ServiceCard
               title="Blowout"
               description="Professional blow dry and styling"
               price="₹800"
               image="/images/hair-styling.jpg"
-            />
+            />*/}
           </div>
         </TabsContent>
 
@@ -224,7 +224,7 @@ export default function ServicesPage() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="relative h-[400px] rounded-lg overflow-hidden">
               <Image
-                src="/images/hair-styling.jpg"
+                src="/images/skincare1.jpg"
                 alt="Skincare Services"
                 fill
                 className="object-cover"
@@ -486,7 +486,7 @@ export default function ServicesPage() {
         <TabsContent value="bridal" className="space-y-8">
           <div className="grid md:grid-cols-2 gap-8">
             <div className="relative h-[400px] rounded-lg overflow-hidden">
-              <Image src="/images/hair-styling.jpg" alt="Bridal Services" fill className="object-cover" />
+              <Image src="/images/bridal6.jpg" alt="Bridal Services" fill className="object-cover" />
             </div>
             <div>
               <h2 className={`${playfair.className} text-3xl font-bold mb-4`}>Bridal Services</h2>
@@ -539,37 +539,37 @@ export default function ServicesPage() {
               title="Complete Bridal Package"
               description="Comprehensive package including pre-wedding treatments, trial, and day-of services"
               price="₹35,000"
-              image="/images/hair-styling.jpg"
+              image="/images/bridal12.jpg"
             />
             <ServiceCard
               title="Bridal Makeup & Hair"
               description="Professional makeup and hairstyling for your wedding day"
               price="₹20,000"
-              image="/images/hair-styling.jpg"
+              image="/images/bridal8.jpg"
             />
             <ServiceCard
               title="Pre-Bridal Package"
               description="Series of treatments to prepare for your wedding day"
               price="₹15,000"
-              image="/images/hair-styling.jpg"
+              image="/images/bridal5.jpg"
             />
             <ServiceCard
               title="Reception Look"
               description="Makeup and hair styling for your reception"
               price="₹15,000"
-              image="/images/hair-styling.jpg"
+              image="/images/party3.jpg"
             />
             <ServiceCard
               title="Engagement Package"
               description="Makeup and hair for your engagement ceremony"
               price="₹12,000"
-              image="/images/hair-styling.jpg"
+              image="/images/bridal1.jpg"
             />
             <ServiceCard
               title="Bridal Party Package"
               description="Services for bridesmaids and family members"
               price="₹8,000/person"
-              image="/images/hair-styling.jpg"
+              image="/images/party4.jpg"
             />
           </div>
         </TabsContent>

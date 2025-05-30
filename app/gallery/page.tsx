@@ -22,7 +22,7 @@ export default function GalleryPage() {
     // { id: "nails", name: "Nail Art" },
     { id: "pedicure", name: "Pedicure" },
     { id: "manicure", name: "Manicure" },
-    { id: "facial", name: "Facial Makeup" },
+    // { id: "facial", name: "Facial Makeup" },
   ]
 
   // Generate placeholder images for each category
