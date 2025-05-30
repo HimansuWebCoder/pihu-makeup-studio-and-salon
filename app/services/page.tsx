@@ -371,12 +371,12 @@ export default function ServicesPage() {
               price="₹1,500"
               image="/images/hair-styling.jpg"
             />
-            <ServiceCard
+           {/* <ServiceCard
               title="Nail Art"
               description="Creative nail designs and embellishments"
               price="₹500+"
               image="/images/hair-styling.jpg"
-            />
+            />*/}
             <ServiceCard
               title="Acrylic Extensions"
               description="Full set of acrylic nail extensions"
