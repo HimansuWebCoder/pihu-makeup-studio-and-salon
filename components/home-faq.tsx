@@ -23,7 +23,7 @@ export default function HomeFAQ() {
     {
       question: "What brands of makeup and skincare products do you use?",
       answer:
-        "We use premium, internationally recognized brands including MAC, Estée Lauder, Kryolan, Dermalogica, L'Oréal Professional, and Kérastase, among others. We select products based on quality, performance, and suitability for Indian skin tones and hair types.",
+        "We use premium, internationally recognized brands including CVPro, GK Hair Professional, CABELO CHAVE Professional, TEMPTU, L'Oréal Professional, Aroma Magic, Streax Professional, RICHFEEL NATURALS and Kérastase, among others. We select products based on quality, performance, and suitability for Indian skin tones and hair types.",
     },
     {
       question: "Do you offer any discounts or packages?",

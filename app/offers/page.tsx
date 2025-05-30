@@ -208,7 +208,7 @@ export default function OffersPage() {
                   <span className="text-rose-600/80 dark:text-rose-400/80">2/year</span>
                 </div>
                 <p className="mb-6 text-rose-700/90 dark:text-rose-300/90">
-                  Save up to ₹30,000 annually with our premium membership benefits
+                  Save up to 7% annually with our premium membership benefits
                 </p>
                 <Link href="/contact">
                   <Button className="w-full bg-rose-600 hover:bg-rose-700 text-white">Join Now</Button>
@@ -457,7 +457,7 @@ export default function OffersPage() {
       </div>
 */}
       {/* Referral Program */}
-      {/*<div className="mb-20">
+      <div className="mb-20">
         <h2 className={`${playfair.className} text-3xl font-bold mb-8 text-center`}>Refer a Friend</h2>
         <div className="bg-gradient-to-r from-rose-50 to-pink-50 dark:from-rose-950/30 dark:to-pink-950/30 rounded-lg p-8 md:p-12 text-center">
           <h3 className={`${playfair.className} text-2xl font-bold mb-4 text-rose-700 dark:text-rose-300`}>
@@ -488,7 +488,7 @@ export default function OffersPage() {
             <Button className="bg-rose-600 hover:bg-rose-700 text-white">Get Your Referral Code</Button>
           </Link>
         </div>
-      </div>*/}
+      </div>
 
       {/* CTA */}
       <div className="text-center">

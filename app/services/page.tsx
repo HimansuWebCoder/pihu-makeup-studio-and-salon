@@ -250,7 +250,7 @@ export default function ServicesPage() {
                 />
                 <ServiceCategory
                   title="Advanced Treatments"
-                  items={["Chemical Peels", "Microdermabrasion", "Hydrafacial", "LED Light Therapy", "Oxygen Facial"]}
+                  items={["Chemical Peels","Hydrafacial", "Oxygen Facial"]}
                 />
                 <ServiceCategory
                   title="Skin Concerns"
@@ -277,18 +277,18 @@ export default function ServicesPage() {
               price="₹2,000"
               image="/images/hair-styling.jpg"
             />
-            <ServiceCard
+           {/* <ServiceCard
               title="Chemical Peel"
               description="Exfoliating treatment to improve skin texture and tone"
               price="₹3,500"
               image="/images/hair-styling.jpg"
-            />
-            <ServiceCard
+            />*/}
+            {/*<ServiceCard
               title="Microdermabrasion"
               description="Non-invasive exfoliation for smoother, brighter skin"
               price="₹3,000"
               image="/images/hair-styling.jpg"
-            />
+            />*/}
             <ServiceCard
               title="Hydrafacial"
               description="Multi-step treatment for deep hydration and cleansing"
@@ -620,7 +620,7 @@ function ServiceCard({
         <CardDescription>{description}</CardDescription>
       </CardHeader>
       <CardContent>
-        <p className="text-2xl font-bold">{price}</p>
+        {/*<p className="text-2xl font-bold">{price}</p>*/}
       </CardContent>
       <CardFooter>
         <Link href="/contact" className="w-full">

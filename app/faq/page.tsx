@@ -47,7 +47,7 @@ export default function FAQPage() {
     {
       question: "What brands of makeup and skincare products do you use?",
       answer:
-        "We use premium, internationally recognized brands including MAC, Estée Lauder, Kryolan, Dermalogica, L'Oréal Professional, and Kérastase, among others. We select products based on quality, performance, and suitability for Indian skin tones and hair types.",
+        "We use premium, internationally recognized brands including CVPro, GK Hair Professional, CABELO CHAVE Professional, TEMPTU, L'Oréal Professional, Aroma Magic, Streax Professional, RICHFEEL NATURALS and Kérastase, among others. We select products based on quality, performance, and suitability for Indian skin tones and hair types.",
     },
     {
       question: "How long do makeup services typically take?",
@@ -148,11 +148,11 @@ export default function FAQPage() {
       answer:
         "No, we do not currently retail the professional products used during our services. However, our team is happy to recommend the best products for your hair, skin, or makeup needs, so you can maintain your look at home with confidence.",
     },
-    {
-      question: "Can I return products if they don't work for me?",
-      answer:
-        "Unopened products in their original packaging can be returned within 7 days with receipt for a full refund or exchange. Opened products cannot be returned but our experts are happy to help you find alternatives that might work better for you.",
-    },
+    // {
+    //   question: "Can I return products if they don't work for me?",
+    //   answer:
+    //     "Unopened products in their original packaging can be returned within 7 days with receipt for a full refund or exchange. Opened products cannot be returned but our experts are happy to help you find alternatives that might work better for you.",
+    // },
     {
       question: "Do you offer product recommendations for home care?",
       answer:

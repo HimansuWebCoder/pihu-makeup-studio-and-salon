@@ -23,7 +23,7 @@ export default function VideosPage() {
   // Videos data with both Instagram and YouTube embeds
   const videosData = [
     {
-      id: "1",
+      id: "1",  
       type: "bridal",
       title: "Bridal Makeup Transformation",
       description: "Complete bridal makeup look for a traditional wedding",

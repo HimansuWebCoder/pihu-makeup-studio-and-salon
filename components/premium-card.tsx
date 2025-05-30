@@ -30,20 +30,20 @@ export default function PremiumCard() {
   // const brandsRow1 = ["MAC Cosmetics", "Estée Lauder", "L'Oréal Professional", "Kérastase", "Dermalogica", "OPI"]
   const brandsRow1 = [
     "https://www.geetanjalisalon.com/wp-content/uploads/2023/09/brands-1-300x129.jpg", 
-    "https://www.geetanjalisalon.com/wp-content/uploads/2023/09/brands-2-300x129.jpg",
-    "https://www.geetanjalisalon.com/wp-content/uploads/2023/09/brands-2-300x129.jpg",
-    "https://www.geetanjalisalon.com/wp-content/uploads/2023/09/brands-2-300x129.jpg",
-    "https://www.geetanjalisalon.com/wp-content/uploads/2023/09/brands-2-300x129.jpg",
+    "images/cabelochave-brand.png",
+    "images/Cv-pro-brand.jpg",
+    "images/GK-brand.webp",
+    "images/ikonic-brand.webp",
   ]
 
   // Second row of brands (for continuous animation effect)
   // const brandsRow2 = ["Wella", "Schwarzkopf", "Clinique", "Lakme", "Kryolan", "Forest Essentials"]
   const brandsRow2 = [
     "https://www.geetanjalisalon.com/wp-content/uploads/2023/09/brands-1-300x129.jpg", 
-    "https://www.geetanjalisalon.com/wp-content/uploads/2023/09/brands-2-300x129.jpg",
-    "https://www.geetanjalisalon.com/wp-content/uploads/2023/09/brands-2-300x129.jpg",
-    "https://www.geetanjalisalon.com/wp-content/uploads/2023/09/brands-2-300x129.jpg",
-    "https://www.geetanjalisalon.com/wp-content/uploads/2023/09/brands-2-300x129.jpg",
+    "images/richfeel-brand.avif",
+    "images/streax-brand.jpeg",
+    "images/temptu-brand.webp",
+    "images/aroma-magic.webp",
   ]
 
   return (
