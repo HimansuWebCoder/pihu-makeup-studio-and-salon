@@ -89,7 +89,7 @@ export default function GalleryPage() {
         <DialogContent className="max-w-4xl p-0 overflow-hidden">
           {selectedImage && (
             <div className="relative h-[80vh]">
-              <Image src={selectedImage || "/placeholder.svg"} alt="Gallery image" fill className="object-contain" />
+              <Image src={selectedImage || "/placeholder.svg"} alt="Gallery image" fill className="object-cover" />
             </div>
           )}
         </DialogContent>

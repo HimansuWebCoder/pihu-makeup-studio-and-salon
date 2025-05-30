@@ -82,7 +82,7 @@ export default function Services() {
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         {services.map((service, index) => (
           <Card key={index} className="overflow-hidden">
-            <div className="relative h-48 w-full">
+            <div className="relative aspect-square overflow-hidden rounded-md">
               <Image src={service.image || "/placeholder.svg"} alt={service.title} fill className="object-cover" />
             </div>
             <CardHeader>

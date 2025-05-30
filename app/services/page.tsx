@@ -31,7 +31,8 @@ export default function ServicesPage() {
 
         <TabsContent value="makeup" className="space-y-8">
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="relative h-[400px] rounded-lg overflow-hidden">
+            {/*<div className="relative h-[400px] rounded-lg overflow-hidden">*/}
+            <div className="relative aspect-square overflow-hidden rounded-md overflow-hidden">
               <Image src="/images/party4.jpg" alt="Makeup Services" fill className="object-cover" />
             </div>
             <div>
@@ -132,7 +133,7 @@ export default function ServicesPage() {
 
         <TabsContent value="hair" className="space-y-8">
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="relative h-[400px] rounded-lg overflow-hidden">
+            <div className="relative aspect-square overflow-hidden rounded-md overflow-hidden">
               <Image src="/images/hair34.jpg" alt="Hair Services" fill className="object-cover" />
             </div>
             <div>
@@ -222,7 +223,7 @@ export default function ServicesPage() {
 
         <TabsContent value="skincare" className="space-y-8">
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="relative h-[400px] rounded-lg overflow-hidden">
+            <div className="relative aspect-square overflow-hidden rounded-md overflow-hidden">
               <Image
                 src="/images/skincare1.jpg"
                 alt="Skincare Services"
@@ -312,7 +313,7 @@ export default function ServicesPage() {
 
         <TabsContent value="nails" className="space-y-8">
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="relative h-[400px] rounded-lg overflow-hidden">
+            <div className="relative aspect-square overflow-hidden rounded-md overflow-hidden">
               <Image src="/images/hair-styling.jpg" alt="Nail Services" fill className="object-cover" />
             </div>
             <div>
@@ -394,7 +395,7 @@ export default function ServicesPage() {
 
         <TabsContent value="spa" className="space-y-8">
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="relative h-[400px] rounded-lg overflow-hidden">
+            <div className="relative aspect-square overflow-hidden rounded-md overflow-hidden">
               <Image src="/images/hair-styling.jpg" alt="Spa Services" fill className="object-cover" />
             </div>
             <div>
@@ -485,7 +486,7 @@ export default function ServicesPage() {
 
         <TabsContent value="bridal" className="space-y-8">
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="relative h-[400px] rounded-lg overflow-hidden">
+            <div className="relative aspect-square overflow-hidden rounded-md overflow-hidden">
               <Image src="/images/bridal6.jpg" alt="Bridal Services" fill className="object-cover" />
             </div>
             <div>
@@ -612,7 +613,8 @@ function ServiceCard({
 }) {
   return (
     <Card>
-      <div className="relative h-48 w-full">
+      {/*<div className="relative h-48 w-full">*/}
+      <div className="relative aspect-square overflow-hidden rounded-md">
         <Image src={image || "/placeholder.svg"} alt={title} fill className="object-cover rounded-t-lg" />
       </div>
       <CardHeader>
