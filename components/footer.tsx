@@ -179,7 +179,7 @@ export default function Footer() {
                 <Mail className="h-5 w-5 mr-3 mt-0.5 text-primary" />
                 <div>
                   <h3 className="font-medium text-muted-foreground">Email</h3>
-                  <p className="text-muted-foreground">info@pihumakeupstudio.com</p>
+                  <p className="text-muted-foreground">pihumakeupstudio8@gmail.com</p>
                 </div>
               </div>
 
