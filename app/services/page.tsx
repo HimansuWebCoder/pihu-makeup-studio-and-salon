@@ -149,13 +149,13 @@ export default function ServicesPage() {
                   items={[
                     "Ironing / Curls (With Wash & Conditioning)",
                     "Advanced Protein Styling",
-                    "Dandruff Wash",
+                    "Dandruff Treatment",
                     "Special Occasion Styling",
                   ]}
                 />
                 <ServiceCategory
                   title="Hair Coloring"
-                  items={["Full Color", "Highlights/Lowlights", "Root Touch-up", "Fashion Colors"]}
+                  items={["Global Color", "Highlights/Lowlights", "Root Touch-up", "Fashion Colors"]}
                 />
                 <ServiceCategory
                   title="Hair Treatments"
@@ -164,7 +164,6 @@ export default function ServicesPage() {
                     "Keratin Treatment",
                     "Hair Spa",
                     "Hairfall Treatment",
-                    "Anti-Frizz Treatment",
                   ]}
                 />
                 {/*<ServiceCategory
@@ -251,7 +250,7 @@ export default function ServicesPage() {
                 />
                 <ServiceCategory
                   title="Advanced Treatments"
-                  items={["Chemical Peels","Hydrafacial", "Oxygen Facial"]}
+                  items={["Facial","Hydrafacial", "Oxygen Facial"]}
                 />
                 <ServiceCategory
                   title="Skin Concerns"
@@ -259,13 +258,12 @@ export default function ServicesPage() {
                     "Acne Treatment",
                     "Pigmentation Treatment",
                     "Sensitive Skin Treatment",
-                    "Rosacea Treatment",
                     "Anti-Aging Treatment",
                   ]}
                 />
                 <ServiceCategory
                   title="Body Treatments"
-                  items={["Body Polishing", "Back Facial", "Body Scrub", "Skin Brightening", "De-Tan Treatment"]}
+                  items={["Body Polishing", "Back Facial", "Body Scrub", "Skin Brightening", "Bleaching and D-Tan Treatment"]}
                 />
               </div>
             </div>
@@ -487,7 +485,7 @@ export default function ServicesPage() {
         <TabsContent value="bridal" className="space-y-8">
           <div className="grid md:grid-cols-2 gap-8">
             <div className="relative aspect-square overflow-hidden rounded-md overflow-hidden">
-              <Image src="/images/bridal6.jpg" alt="Bridal Services" fill className="object-cover" />
+              <Image src="/images/bridal13.jpg" alt="Bridal Services" fill className="object-cover" />
             </div>
             <div>
               <h2 className={`${playfair.className} text-3xl font-bold mb-4`}>Bridal Services</h2>
@@ -527,8 +525,7 @@ export default function ServicesPage() {
                     "Mother of Bride/Groom",
                     "Bridesmaid Makeup",
                     "Bridesmaid Hair",
-                    "Flower Girl Services",
-                    "Groom Grooming",
+                    "Groom Makeover",
                   ]}
                 />
               </div>
@@ -540,7 +537,7 @@ export default function ServicesPage() {
               title="Complete Bridal Package"
               description="Comprehensive package including pre-wedding treatments, trial, and day-of services"
               price="₹35,000"
-              image="/images/bridal12.jpg"
+              image="/images/bridal6.jpg"
             />
             <ServiceCard
               title="Bridal Makeup & Hair"

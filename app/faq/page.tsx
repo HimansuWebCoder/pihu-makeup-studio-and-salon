@@ -45,7 +45,7 @@ export default function FAQPage() {
 
   const servicesFaqs = [
     {
-      question: "What brands of makeup and skincare products do you use?",
+      question: "What brands of makeup, skincare and hair products do you use?",
       answer:
         "We use premium, internationally recognized brands including CVPro, GK Hair Professional, CABELO CHAVE Professional, TEMPTU, L'Oréal Professional, Aroma Magic, Streax Professional, RICHFEEL NATURALS and Kérastase, among others. We select products based on quality, performance, and suitability for Indian skin tones and hair types.",
     },
